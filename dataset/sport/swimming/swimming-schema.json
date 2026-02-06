@@ -1,0 +1,105 @@
+{
+  "type": "object",
+  "properties": {
+    "age_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rank": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "evaluation_config": "string_semantic"
+                },
+                "time": {
+                  "type": "string",
+                  "evaluation_config": "string_exact"
+                },
+                "records": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "enum": [
+                          "WR",
+                          "CR",
+                          "NR",
+                          "AR",
+                          "ER"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "evaluation_config": "array_llm"
+                },
+                "athlete_details": {
+                  "type": "object",
+                  "properties": {
+                    "team": {
+                      "type": "string",
+                      "evaluation_config": "string_fuzzy"
+                    },
+                    "athlete": {
+                      "type": "string",
+                      "evaluation_config": "string_fuzzy"
+                    },
+                    "country": {
+                      "type": "string",
+                      "evaluation_config": "string_semantic"
+                    },
+                    "year_birth": {
+                      "type": "integer",
+                      "evaluation_config": "integer_exact"
+                    }
+                  }
+                }
+              }
+            },
+            "evaluation_config": "array_llm"
+          },
+          "age_group": {
+            "type": "string",
+            "evaluation_config": "string_exact"
+          }
+        }
+      },
+      "evaluation_config": "array_llm"
+    },
+    "championship": {
+      "type": "string",
+      "evaluation_config": "string_fuzzy"
+    },
+    "event_details": {
+      "type": "object",
+      "properties": {
+        "sex": {
+          "type": "string",
+          "evaluation_config": "string_case_insensitive"
+        },
+        "length": {
+          "type": "string",
+          "evaluation_config": "string_exact"
+        },
+        "category": {
+          "type": "string",
+          "evaluation_config": "string_exact"
+        }
+      }
+    }
+  }
+}
