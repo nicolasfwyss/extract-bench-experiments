@@ -1,5 +1,7 @@
 # Extract Bench
 
+[![arXiv](https://img.shields.io/badge/arXiv-2602.12247-b31b1b.svg)](https://arxiv.org/abs/2602.12247)
+
 A benchmark for structured extraction from PDF documents, comprising:
 
 1. **[Dataset](dataset/)** -- 35 human-validated PDF-to-JSON extraction tasks across 5 schemas and 4 domains (finance, academia, hiring, sports).
@@ -23,6 +25,7 @@ A benchmark for structured extraction from PDF documents, comprising:
   - [Environment Setup](#environment-setup)
   - [LLM Model Configuration](#llm-model-configuration)
 - [Architecture](#architecture)
+- [Citation](#citation)
 - [Development](#development)
 
 ## Getting Started
@@ -345,6 +348,19 @@ extract-bench/
 ```
 
 Schema → AST → Values instantiated → Metrics evaluated async in parallel → Report generated.
+
+## Citation
+
+If you use ExtractBench in your research, please cite:
+
+```bibtex
+@article{ferguson2026extractbench,
+  title={ExtractBench: A Benchmark and Evaluation Methodology for Complex Structured Extraction},
+  author={Ferguson, Nick and Pennington, Josh and Beghian, Narek and Mohan, Aravind and Kiela, Douwe and Agrawal, Sheshansh and Nguyen, Thien Hang},
+  journal={arXiv preprint arXiv:2602.12247},
+  year={2026}
+}
+```
 
 ## Development
 
