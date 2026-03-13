@@ -25,10 +25,10 @@ from .schema_value_instantiator import SchemaValueInstantiator
 class AsyncEvaluationConfig:
     """Configuration for parallelizing evaluation calls."""
 
-    metric_timeout_seconds: int = 60
-    n_max_retries: int = 3
-    sleep_base_seconds_for_retry: int = 3
-    max_sleep_time_seconds: int = 30
+    metric_timeout_seconds: int = 180
+    n_max_retries: int = 2
+    sleep_base_seconds_for_retry: int = 2
+    max_sleep_time_seconds: int = 60
     parallel_traversal: bool = True
 
 
