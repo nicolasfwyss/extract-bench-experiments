@@ -57,12 +57,23 @@ class SchemaValueInstantiator(SchemaInstanceVisitor):
         return self.schema
 
     def _validate_type(
-        self, value: Any, expected_types: type | tuple, type_name: str, source: str
-    ) -> None:
-        if value is not MISSING and not isinstance(value, expected_types):
-            raise ValueError(
-                f"{source} instance is not {type_name} at {type_name.lower()} schema: {self._path()}"
-            )
+        self, value: Any, expected_types: type | tuple, type_name: str, source: str, is_extracted: bool = False
+    ) -> Any:
+        """Validate type, converting to MISSING for extracted values on type mismatch instead of raising."""
+        if value is MISSING:
+            return value
+        
+        if not isinstance(value, expected_types):
+            if is_extracted:
+                # For extracted values, convert type mismatches to MISSING instead of crashing
+                # This allows evaluation to proceed and score as a complete miss
+                return MISSING
+            else:
+                # Gold values should still validate strictly
+                raise ValueError(
+                    f"{source} instance is not {type_name} at {type_name.lower()} schema: {self._path()}"
+                )
+        return value
 
     def _validate_and_set(
         self,
@@ -72,8 +83,8 @@ class SchemaValueInstantiator(SchemaInstanceVisitor):
         expected_types: type | tuple,
         type_name: str,
     ) -> None:
-        self._validate_type(gold_value, expected_types, type_name, "Gold")
-        self._validate_type(extracted_value, expected_types, type_name, "Extracted")
+        self._validate_type(gold_value, expected_types, type_name, "Gold", is_extracted=False)
+        extracted_value = self._validate_type(extracted_value, expected_types, type_name, "Extracted", is_extracted=True)
         node.set_gold_value(gold_value)
         node.set_extracted_value(extracted_value)
 
