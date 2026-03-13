@@ -16,7 +16,7 @@ from .base_metric import BaseMetric, MetricContext, MetricResult
 from .metric_prompts import LLM_JUDGE_PROMPT
 from .policy_metric import PolicyAwareMetric
 
-DEFAULT_LLM_MODEL_ID = os.getenv("DEFAULT_LLM_MODEL", "vertex_ai/gemini-2.5-flash")
+DEFAULT_LLM_MODEL_ID = "openrouter/google/gemini-2.5-flash"
 DEFAULT_PASS_THRESHOLD = 0.7
 _DEFAULT_SYSTEM_PROMPT = "You are an impartial and detail-oriented judge that evaluates the quality of a predicted value against a gold reference. "
 
