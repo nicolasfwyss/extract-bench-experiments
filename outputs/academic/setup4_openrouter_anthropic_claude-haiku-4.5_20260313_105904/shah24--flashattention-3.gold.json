@@ -1,0 +1,1457 @@
+{
+  "ids": null,
+  "title": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+  "venue": null,
+  "authors": [
+    {
+      "name": "Jay Shah",
+      "email": "jayhshah@colfax-intl.com",
+      "affiliation": "Colfax Research"
+    },
+    {
+      "name": "Ganesh Bikshandi",
+      "email": "ganesh@colfax-intl.com",
+      "affiliation": "Colfax Research"
+    },
+    {
+      "name": "Ying Zhang",
+      "email": "yingz@meta.com",
+      "affiliation": "Meta"
+    },
+    {
+      "name": "Vijay Thakkar",
+      "affiliation": "NVIDIA"
+    },
+    {
+      "name": "Pradeep Ramani",
+      "email": "prraman@nvidia.com",
+      "affiliation": "NVIDIA"
+    },
+    {
+      "name": "Tri Dao",
+      "email": "tri@tridao.me",
+      "affiliation": "Princeton University, Together AI"
+    }
+  ],
+  "abstract": "Attention, as a core layer of the ubiquitous Transformer architecture, is the bottleneck for large language models and long-context applications. FlashAttention elaborated an approach to speed up attention on GPUs through minimizing memory reads/writes. However, it has yet to take advantage of new capabilities present in recent hardware, with FlashAttention-2 achieving only 35% utilization on the H100 GPU. We develop three main techniques to speed up attention on Hopper GPUs: exploiting asynchrony of the Tensor Cores and TMA to (1) overlap overall computation and data movement via warp-specialization and (2) interleave block-wise matmul and softmax operations, and (3) block quantization and incoherent processing that leverages hardware support for FP8 low-precision. We demonstrate that our method, FlashAttention-3, achieves speedup on H100 GPUs by 1.5-2.0\u00d7 with FP16 reaching up to 740 TFLOPs/s (75% utilization), and with FP8 reaching close to 1.2 PFLOPs/s. We validate that FP8 FlashAttention-3 achieves 2.6\u00d7 lower numerical error than a baseline FP8 attention.",
+  "keywords": [
+    "Attention mechanism",
+    "GPU optimization",
+    "Transformer",
+    "Low-precision computation",
+    "FP8",
+    "Asynchronous execution",
+    "Warp specialization",
+    "Hardware acceleration",
+    "NVIDIA Hopper"
+  ],
+  "citations": [
+    {
+      "title": "Performance, design, and autotuning of batched gemm for gpus",
+      "year": 2016,
+      "authors": [
+        {
+          "name": "Ahmad Abdelfattah"
+        },
+        {
+          "name": "Azzam Haidar"
+        },
+        {
+          "name": "Stanimire Tomov"
+        },
+        {
+          "name": "Jack Dongarra"
+        }
+      ]
+    },
+    {
+      "title": "Introducing jamba: Ai21's groundbreaking ssm-transformer model",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "AI21"
+        }
+      ]
+    },
+    {
+      "title": "GQA: Training generalized multi-query transformer models from multi-head checkpoints",
+      "year": 2023,
+      "ids": "arXiv:2305.13245",
+      "authors": [
+        {
+          "name": "Joshua Ainslie"
+        },
+        {
+          "name": "James Lee-Thorp"
+        },
+        {
+          "name": "Michiel de Jong"
+        },
+        {
+          "name": "Yury Zemlyanskiy"
+        },
+        {
+          "name": "Federico Lebr\u00f3n"
+        },
+        {
+          "name": "Sumit Sanghai"
+        }
+      ]
+    },
+    {
+      "title": "CudaDMA: Optimizing GPU Memory Bandwidth via Warp Specialization",
+      "year": 2011,
+      "venue": "Proceedings of 2011 International Conference for High Performance Computing, Networking, Storage and Analysis",
+      "authors": [
+        {
+          "name": "Michael Bauer"
+        },
+        {
+          "name": "Henry Cook"
+        },
+        {
+          "name": "Brucek Khailany"
+        }
+      ]
+    },
+    {
+      "title": "xlstm: Extended long short-term memory",
+      "year": 2024,
+      "ids": "arXiv:2405.04517",
+      "authors": [
+        {
+          "name": "Maximilian Beck"
+        },
+        {
+          "name": "Korbinian P\u00f6ppel"
+        },
+        {
+          "name": "Markus Spanring"
+        },
+        {
+          "name": "Andreas Auer"
+        },
+        {
+          "name": "Oleksandra Prudnikova"
+        },
+        {
+          "name": "Michael Kopp"
+        },
+        {
+          "name": "G\u00fcnter Klambauer"
+        },
+        {
+          "name": "Johannes Brandstetter"
+        },
+        {
+          "name": "Sepp Hochreiter"
+        }
+      ]
+    },
+    {
+      "title": "Delivering 1 PFLOP/s of Performance with FP8 FlashAttention-2",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ganesh Bikshandi"
+        },
+        {
+          "name": "Jay Shah"
+        }
+      ]
+    },
+    {
+      "title": "Longformer: The long-document transformer",
+      "year": 2020,
+      "ids": "arXiv:2004.05150",
+      "authors": [
+        {
+          "name": "Iz Beltagy"
+        },
+        {
+          "name": "Matthew E Peters"
+        },
+        {
+          "name": "Arman Cohan"
+        }
+      ]
+    },
+    {
+      "title": "Striped attention: Faster ring attention for causal transformers",
+      "year": 2023,
+      "ids": "arXiv:2311.09431",
+      "authors": [
+        {
+          "name": "William Brandon"
+        },
+        {
+          "name": "Aniruddha Nrusimha"
+        },
+        {
+          "name": "Kevin Qian"
+        },
+        {
+          "name": "Zachary Ankner"
+        },
+        {
+          "name": "Tian Jin"
+        },
+        {
+          "name": "Zhiye Song"
+        },
+        {
+          "name": "Jonathan Ragan-Kelley"
+        }
+      ]
+    },
+    {
+      "title": "QuIP: 2-bit quantization of large language models with guarantees",
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Jerry Chee"
+        },
+        {
+          "name": "Yaohui Cai"
+        },
+        {
+          "name": "Volodymyr Kuleshov"
+        },
+        {
+          "name": "Christopher M De Sa"
+        }
+      ]
+    },
+    {
+      "title": "Scatterbrain: Unifying sparse and low-rank attention",
+      "year": 2021,
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+      "authors": [
+        {
+          "name": "Beidi Chen"
+        },
+        {
+          "name": "Tri Dao"
+        },
+        {
+          "name": "Eric Winsor"
+        },
+        {
+          "name": "Zhao Song"
+        },
+        {
+          "name": "Atri Rudra"
+        },
+        {
+          "name": "Christopher R\u00e9"
+        }
+      ]
+    },
+    {
+      "title": "Scaling vision transformers to gigapixel images via hierarchical self-supervised learning",
+      "year": 2022,
+      "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "authors": [
+        {
+          "name": "Richard J Chen"
+        },
+        {
+          "name": "Chen Chenkuan"
+        },
+        {
+          "name": "Yicong Li"
+        },
+        {
+          "name": "Tiffany Y Chen"
+        },
+        {
+          "name": "Andrew D Trister"
+        },
+        {
+          "name": "Rahul G Krishnan"
+        },
+        {
+          "name": "Faisal Mahmood"
+        }
+      ]
+    },
+    {
+      "title": "Generating long sequences with sparse transformers",
+      "year": 2019,
+      "ids": "arXiv:1904.10509",
+      "authors": [
+        {
+          "name": "Rewon Child"
+        },
+        {
+          "name": "Scott Gray"
+        },
+        {
+          "name": "Alec Radford"
+        },
+        {
+          "name": "Ilya Sutskever"
+        }
+      ]
+    },
+    {
+      "title": "Rethinking attention with performers",
+      "year": 2021,
+      "venue": "The International Conference on Learning Representations (ICLR)",
+      "authors": [
+        {
+          "name": "Krzysztof Choromanski"
+        },
+        {
+          "name": "Valerii Likhosherstov"
+        },
+        {
+          "name": "David Dohan"
+        },
+        {
+          "name": "Xingyou Song"
+        },
+        {
+          "name": "Andreea Gane"
+        },
+        {
+          "name": "Tamas Sarlos"
+        },
+        {
+          "name": "Peter Hawkins"
+        },
+        {
+          "name": "Jared Davis"
+        },
+        {
+          "name": "Afroz Mohiuddin"
+        },
+        {
+          "name": "Lukasz Kaiser"
+        }
+      ]
+    },
+    {
+      "title": "Rethinking attention with performers",
+      "year": 2020,
+      "venue": "International Conference on Learning Representations (ICLR)",
+      "authors": [
+        {
+          "name": "Krzysztof Marcin Choromanski"
+        },
+        {
+          "name": "Valerii Likhosherstov"
+        },
+        {
+          "name": "David Dohan"
+        },
+        {
+          "name": "Xingyou Song"
+        },
+        {
+          "name": "Andreea Gane"
+        },
+        {
+          "name": "Tamas Sarlos"
+        },
+        {
+          "name": "Peter Hawkins"
+        },
+        {
+          "name": "Jared Quincy Davis"
+        },
+        {
+          "name": "Afroz Mohiuddin"
+        },
+        {
+          "name": "Lukasz Kaiser"
+        }
+      ]
+    },
+    {
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "year": 2023,
+      "ids": "arXiv:2307.08691",
+      "authors": [
+        {
+          "name": "Tri Dao"
+        }
+      ]
+    },
+    {
+      "title": "Transformers are SSMs: Generalized models and efficient algorithms with structured state space duality",
+      "year": 2024,
+      "venue": "International Conference on Machine Learning (ICML)",
+      "authors": [
+        {
+          "name": "Tri Dao"
+        },
+        {
+          "name": "Albert Gu"
+        }
+      ]
+    },
+    {
+      "title": "FlashAttention: Fast and memory-efficient exact attention with IO-awareness",
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Tri Dao"
+        },
+        {
+          "name": "Daniel Y. Fu"
+        },
+        {
+          "name": "Stefano Ermon"
+        },
+        {
+          "name": "Atri Rudra"
+        },
+        {
+          "name": "Christopher R\u00e9"
+        }
+      ]
+    },
+    {
+      "title": "Hungry hungry hippos: Towards language modeling with state space models",
+      "year": 2023,
+      "venue": "The International Conference on Learning Representations (ICLR)",
+      "authors": [
+        {
+          "name": "Tri Dao"
+        },
+        {
+          "name": "Daniel Y Fu"
+        },
+        {
+          "name": "Khaled K Saab"
+        },
+        {
+          "name": "Armin W Thomas"
+        },
+        {
+          "name": "Atri Rudra"
+        },
+        {
+          "name": "Christopher R\u00e9"
+        }
+      ]
+    },
+    {
+      "title": "DeepSeek-V2: A strong, economical, and efficient mixture-of-experts language model",
+      "year": 2024,
+      "ids": "arXiv:2405.04434",
+      "authors": [
+        {
+          "name": "DeepSeek-AI"
+        }
+      ]
+    },
+    {
+      "title": "LLM.int8(): 8-bit matrix multiplication for transformers at scale",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Tim Dettmers"
+        },
+        {
+          "name": "Mike Lewis"
+        },
+        {
+          "name": "Younes Belkada"
+        },
+        {
+          "name": "Luke Zettlemoyer"
+        }
+      ]
+    },
+    {
+      "title": "Is flash attention stable?",
+      "year": 2024,
+      "ids": "arXiv:2405.02803",
+      "authors": [
+        {
+          "name": "Alicia Golden"
+        },
+        {
+          "name": "Samuel Hsia"
+        },
+        {
+          "name": "Fei Sun"
+        },
+        {
+          "name": "Bilge Acun"
+        },
+        {
+          "name": "Basil Hosmer"
+        },
+        {
+          "name": "Yejin Lee"
+        },
+        {
+          "name": "Zachary DeVito"
+        },
+        {
+          "name": "Jeff Johnson"
+        },
+        {
+          "name": "Gu-Yeon Wei"
+        },
+        {
+          "name": "David Brooks"
+        }
+      ]
+    },
+    {
+      "title": "Mamba: Linear-time sequence modeling with selective state spaces",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Albert Gu"
+        },
+        {
+          "name": "Tri Dao"
+        }
+      ]
+    },
+    {
+      "title": "Conformer: Convolution-augmented transformer for speech recognition",
+      "year": 2020,
+      "ids": "arXiv:2005.08100",
+      "authors": [
+        {
+          "name": "Anmol Gulati"
+        },
+        {
+          "name": "Qin Qin"
+        },
+        {
+          "name": "Chung-Cheng Chiu"
+        },
+        {
+          "name": "Niki Parmar"
+        },
+        {
+          "name": "Yu Zhang"
+        },
+        {
+          "name": "Jiahui Yu"
+        },
+        {
+          "name": "Wei Han"
+        },
+        {
+          "name": "Shibo Wang"
+        },
+        {
+          "name": "Zhongqi Zhang"
+        },
+        {
+          "name": "Yonghui Wu"
+        }
+      ]
+    },
+    {
+      "title": "LongT5: Efficient text-to-text transformer for long sequences",
+      "year": 2021,
+      "ids": "arXiv:2112.07916",
+      "authors": [
+        {
+          "name": "Mandy Guo"
+        },
+        {
+          "name": "Joshua Ainslie"
+        },
+        {
+          "name": "David Uthus"
+        },
+        {
+          "name": "Santiago Ontanon"
+        },
+        {
+          "name": "Jianmo Ni"
+        },
+        {
+          "name": "Yun-Hsuan Sung"
+        },
+        {
+          "name": "Yinfei Yang"
+        }
+      ]
+    },
+    {
+      "title": "Video diffusion models",
+      "year": 2022,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Jonathan Ho"
+        },
+        {
+          "name": "Tim Salimans"
+        },
+        {
+          "name": "Alexey Gritsenko"
+        },
+        {
+          "name": "William Chan"
+        },
+        {
+          "name": "Mohammad Norouzi"
+        },
+        {
+          "name": "David J Fleet"
+        }
+      ]
+    },
+    {
+      "title": "KVQuant: Towards 10 million context length LLM inference with KV cache quantization",
+      "year": 2024,
+      "ids": "arXiv:2401.18079",
+      "authors": [
+        {
+          "name": "Coleman Hooper"
+        },
+        {
+          "name": "Sehoon Kim"
+        },
+        {
+          "name": "Hiva Mohammadzadeh"
+        },
+        {
+          "name": "Michael W Mahoney"
+        },
+        {
+          "name": "Yakun Sophia Shao"
+        },
+        {
+          "name": "Kurt Keutzer"
+        },
+        {
+          "name": "Amir Gholami"
+        }
+      ]
+    },
+    {
+      "title": "Transformers are RNNs: Fast autoregressive transformers with linear attention",
+      "year": 2020,
+      "venue": "International Conference on Machine Learning",
+      "authors": [
+        {
+          "name": "Angelos Katharopoulos"
+        },
+        {
+          "name": "Apoorv Vyas"
+        },
+        {
+          "name": "Nikolaos Pappas"
+        },
+        {
+          "name": "Fran\u00e7ois Fleuret"
+        }
+      ]
+    },
+    {
+      "title": "Reformer: The efficient transformer",
+      "year": 2020,
+      "venue": "The International Conference on Machine Learning (ICML)",
+      "authors": [
+        {
+          "name": "Nikita Kitaev"
+        },
+        {
+          "name": "\u0141ukasz Kaiser"
+        },
+        {
+          "name": "Levskaya"
+        }
+      ]
+    },
+    {
+      "title": "Efficient memory management for large language model serving with pagedattention",
+      "year": 2023,
+      "venue": "Proceedings of the 29th Symposium on Operating Systems Principles",
+      "authors": [
+        {
+          "name": "Woosuk Kwon"
+        },
+        {
+          "name": "Zihuan Li"
+        },
+        {
+          "name": "Siyuan Zhuang"
+        },
+        {
+          "name": "Ying Sheng"
+        },
+        {
+          "name": "Lianmin Zheng"
+        },
+        {
+          "name": "Cody Hao Yu"
+        },
+        {
+          "name": "Joseph Gonzalez"
+        },
+        {
+          "name": "Hao Zhang"
+        },
+        {
+          "name": "Ion Stoica"
+        }
+      ]
+    },
+    {
+      "title": "StarCoder: May the source be with you!",
+      "year": 2023,
+      "ids": "arXiv:2305.06161",
+      "authors": [
+        {
+          "name": "Raymond Li"
+        },
+        {
+          "name": "Loubna Ben Allal"
+        },
+        {
+          "name": "Yankian Zi"
+        },
+        {
+          "name": "Niklas Muennighoff"
+        },
+        {
+          "name": "Denis Kocetkov"
+        },
+        {
+          "name": "Chenghao Mou"
+        },
+        {
+          "name": "Marc Marone"
+        },
+        {
+          "name": "Christopher Akiki"
+        },
+        {
+          "name": "Jia Li"
+        },
+        {
+          "name": "Jenny Chim"
+        }
+      ]
+    },
+    {
+      "title": "Ring attention with blockwise transformers for near-infinite context",
+      "year": 2023,
+      "ids": "arXiv:2310.01889",
+      "authors": [
+        {
+          "name": "Hao Liu"
+        },
+        {
+          "name": "Matei Zaharia"
+        },
+        {
+          "name": "Pieter Abbeel"
+        }
+      ]
+    },
+    {
+      "title": "World model on million-length video and language with ring attention",
+      "year": 2024,
+      "ids": "arXiv:2402.08268",
+      "authors": [
+        {
+          "name": "Hao Liu"
+        },
+        {
+          "name": "Wilson Yan"
+        },
+        {
+          "name": "Matei Zaharia"
+        },
+        {
+          "name": "Pieter Abbeel"
+        }
+      ]
+    },
+    {
+      "title": "KiVi: A tuning-free asymmetric 2bit quantization for KV cache",
+      "year": 2024,
+      "ids": "arXiv:2402.02750",
+      "authors": [
+        {
+          "name": "Zirui Liu"
+        },
+        {
+          "name": "Jiayi Yuan"
+        },
+        {
+          "name": "Hongye Jin"
+        },
+        {
+          "name": "Shaochen Zhong"
+        },
+        {
+          "name": "Zhaozhuo Xu"
+        },
+        {
+          "name": "Vladimir Braverman"
+        },
+        {
+          "name": "Beidi Chen"
+        },
+        {
+          "name": "Xia Hu"
+        }
+      ]
+    },
+    {
+      "title": "Benchmarking and Dissecting the Nvidia Hopper GPU Architecture",
+      "year": 2024,
+      "ids": "arXiv:2402.13499",
+      "authors": [
+        {
+          "name": "Weile Luo"
+        },
+        {
+          "name": "Ruibo Fan"
+        },
+        {
+          "name": "Zeyu Li"
+        },
+        {
+          "name": "Dayou Du"
+        },
+        {
+          "name": "Qiang Wang"
+        },
+        {
+          "name": "Xiaowen Chu"
+        }
+      ]
+    },
+    {
+      "title": "MEGA: Moving average equipped gated attention",
+      "year": 2023,
+      "venue": "The International Conference on Learning Representations (ICLR)",
+      "authors": [
+        {
+          "name": "Xuezhe Ma"
+        },
+        {
+          "name": "Chunting Zhou"
+        },
+        {
+          "name": "Xiang Kong"
+        },
+        {
+          "name": "Xianghei He"
+        },
+        {
+          "name": "Jianhui Gui"
+        },
+        {
+          "name": "Graham Neubig"
+        },
+        {
+          "name": "Jonathan May"
+        },
+        {
+          "name": "Luke Zettlemoyer"
+        }
+      ]
+    },
+    {
+      "title": "Megalodon: Efficient LLM pretraining and inference with unlimited context length",
+      "year": 2024,
+      "ids": "arXiv:2404.08801",
+      "authors": [
+        {
+          "name": "Xuezhe Ma"
+        },
+        {
+          "name": "Xiaomeng Yang"
+        },
+        {
+          "name": "Wenhan Xiong"
+        },
+        {
+          "name": "Beidi Chen"
+        },
+        {
+          "name": "Lili Yu"
+        },
+        {
+          "name": "Hao Zhang"
+        },
+        {
+          "name": "Jonathan May"
+        },
+        {
+          "name": "Luke Zettlemoyer"
+        },
+        {
+          "name": "Omer Levy"
+        },
+        {
+          "name": "Chunting Zhou"
+        }
+      ]
+    },
+    {
+      "title": "FP8 formats for deep learning",
+      "year": 2022,
+      "ids": "arXiv:2209.05433",
+      "authors": [
+        {
+          "name": "Paulius Micikevicius"
+        },
+        {
+          "name": "Dusan Stosic"
+        },
+        {
+          "name": "Neil Burgess"
+        },
+        {
+          "name": "Marius Cornea"
+        },
+        {
+          "name": "Pradeep Dubey"
+        },
+        {
+          "name": "Richard Grisenthwaite"
+        },
+        {
+          "name": "Sangwon Ha"
+        },
+        {
+          "name": "Alexander Heinecke"
+        },
+        {
+          "name": "Patrick Judd"
+        },
+        {
+          "name": "John Kamalu"
+        }
+      ]
+    },
+    {
+      "title": "Stream-K: Work-centric parallel decomposition for dense matrix-matrix multiplication on the GPU",
+      "year": 2023,
+      "venue": "Proceedings of the 28th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming",
+      "authors": [
+        {
+          "name": "Muhammad Osama"
+        },
+        {
+          "name": "Duane Merrill"
+        },
+        {
+          "name": "Cris Cecka"
+        },
+        {
+          "name": "Michael Garland"
+        },
+        {
+          "name": "John D. Owens"
+        }
+      ]
+    },
+    {
+      "title": "RWKV: Reinventing RNNs for the Transformer era",
+      "year": 2023,
+      "ids": "arXiv:2305.13048",
+      "authors": [
+        {
+          "name": "Bo Peng"
+        },
+        {
+          "name": "Eric Alcaide"
+        },
+        {
+          "name": "Quentin Anthony"
+        },
+        {
+          "name": "Alon Albalak"
+        },
+        {
+          "name": "Samuel Arcadinho"
+        },
+        {
+          "name": "Huanqi Cao"
+        },
+        {
+          "name": "Xin Cheng"
+        },
+        {
+          "name": "Michael Chung"
+        },
+        {
+          "name": "Matteo Grella"
+        },
+        {
+          "name": "Kranthi Kiran GV"
+        }
+      ]
+    },
+    {
+      "title": "YaRN: Efficient context window extension of large language models",
+      "year": 2023,
+      "ids": "arXiv:2309.00071",
+      "authors": [
+        {
+          "name": "Bowen Peng"
+        },
+        {
+          "name": "Jeffrey Quesnelle"
+        },
+        {
+          "name": "Honglu Fan"
+        },
+        {
+          "name": "Enrico Shippole"
+        }
+      ]
+    },
+    {
+      "title": "Random feature attention",
+      "year": 2021,
+      "venue": "The International Conference on Learning Representations (ICLR)",
+      "authors": [
+        {
+          "name": "Hao Peng"
+        },
+        {
+          "name": "Nikolaos Pappas"
+        },
+        {
+          "name": "Dani Yogatama"
+        },
+        {
+          "name": "Roy Schwartz"
+        },
+        {
+          "name": "Noah A Smith"
+        },
+        {
+          "name": "Lingpeng Kong"
+        }
+      ]
+    },
+    {
+      "title": "Self-attention does not need O(n^2) memory",
+      "year": 2021,
+      "ids": "arXiv:2112.05682",
+      "authors": [
+        {
+          "name": "Markus N Rabe"
+        },
+        {
+          "name": "Charles Staats"
+        }
+      ]
+    },
+    {
+      "title": "Efficient content-based sparse attention with routing Transformers",
+      "year": 2020,
+      "ids": "arXiv:2003.05997",
+      "authors": [
+        {
+          "name": "Aurko Roy"
+        },
+        {
+          "name": "Mohammad Saffar"
+        },
+        {
+          "name": "Ashish Vaswani"
+        },
+        {
+          "name": "Fran\u00e7ois Dion Grier"
+        }
+      ]
+    },
+    {
+      "title": "Code Llama: Open foundation models for code",
+      "year": 2023,
+      "ids": "arXiv:2308.12950",
+      "authors": [
+        {
+          "name": "Baptiste Roziere"
+        },
+        {
+          "name": "Jonas Gehring"
+        },
+        {
+          "name": "Fabian Gloeckle"
+        },
+        {
+          "name": "Sten Sootla"
+        },
+        {
+          "name": "Itai Gat"
+        },
+        {
+          "name": "Xiaqing Ellen Tan"
+        },
+        {
+          "name": "Yossi Adi"
+        },
+        {
+          "name": "Jingyu Liu"
+        },
+        {
+          "name": "Tal Remez"
+        },
+        {
+          "name": "J\u00e9r\u00e9my Rapin"
+        }
+      ]
+    },
+    {
+      "title": "Lean attention: Hardware-aware scalable attention mechanism for the decode-phase of transformers",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Rya Sanovar"
+        },
+        {
+          "name": "Srikant Bharadwaj"
+        },
+        {
+          "name": "Renee St. Amant"
+        },
+        {
+          "name": "Victor R\u00fchle"
+        },
+        {
+          "name": "Saravan Rajmohan"
+        }
+      ]
+    },
+    {
+      "title": "SCROLLS: Standardized comparison over long language sequences",
+      "year": 2022,
+      "ids": "arXiv:2201.03533",
+      "authors": [
+        {
+          "name": "Uri Shaham"
+        },
+        {
+          "name": "Elad Segal"
+        },
+        {
+          "name": "Maor Ivgi"
+        },
+        {
+          "name": "Avia Efrat"
+        },
+        {
+          "name": "Ori Yoran"
+        },
+        {
+          "name": "Adi Haviv"
+        },
+        {
+          "name": "Ankit Gupta"
+        },
+        {
+          "name": "Wenhan Xiong"
+        },
+        {
+          "name": "Mor Geva"
+        },
+        {
+          "name": "Jonathan Berant"
+        }
+      ]
+    },
+    {
+      "title": "Fast transformer decoding: One write-head is all you need",
+      "year": 2019,
+      "ids": "arXiv:1911.02150",
+      "authors": [
+        {
+          "name": "Noam Shazeer"
+        }
+      ]
+    },
+    {
+      "title": "Efficient transformers: A survey",
+      "year": 2020,
+      "ids": "arXiv:2009.06732",
+      "authors": [
+        {
+          "name": "Yi Tay"
+        },
+        {
+          "name": "Mostafa Dehghani"
+        },
+        {
+          "name": "Dara Bahri"
+        },
+        {
+          "name": "Donald Metzler"
+        }
+      ]
+    },
+    {
+      "title": "CUTLASS",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Vijay Thakkar"
+        },
+        {
+          "name": "Pradeep Ramani"
+        },
+        {
+          "name": "Cris Cecka"
+        },
+        {
+          "name": "Aniket Shivam"
+        },
+        {
+          "name": "Honghao Lu"
+        },
+        {
+          "name": "Ethan Yan"
+        },
+        {
+          "name": "Jack Kosaian"
+        },
+        {
+          "name": "Mark Hoemmen"
+        },
+        {
+          "name": "Haicheng Wu"
+        },
+        {
+          "name": "Andrew Kerr"
+        },
+        {
+          "name": "Matt Nicely"
+        },
+        {
+          "name": "Duane Merrill"
+        },
+        {
+          "name": "Dustyn Blasig"
+        },
+        {
+          "name": "Fengqi Qiao"
+        },
+        {
+          "name": "Piotr Majcher"
+        },
+        {
+          "name": "Paul Springer"
+        },
+        {
+          "name": "Markus Hohnerbach"
+        },
+        {
+          "name": "Jin Wang"
+        },
+        {
+          "name": "Manish Gupta"
+        }
+      ]
+    },
+    {
+      "title": "QuIP#: Even better LLM quantization with Hadamard incoherence and lattice codebooks",
+      "year": 2024,
+      "ids": "arXiv:2402.04396",
+      "authors": [
+        {
+          "name": "Albert Tseng"
+        },
+        {
+          "name": "Jerry Chee"
+        },
+        {
+          "name": "Qingyao Sun"
+        },
+        {
+          "name": "Volodymyr Kuleshov"
+        },
+        {
+          "name": "Christopher De Sa"
+        }
+      ]
+    },
+    {
+      "title": "Attention is all you need",
+      "year": 2017,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Ashish Vaswani"
+        },
+        {
+          "name": "Noam Shazeer"
+        },
+        {
+          "name": "Niki Parmar"
+        },
+        {
+          "name": "Jakob Uszkoreit"
+        },
+        {
+          "name": "Llion Jones"
+        },
+        {
+          "name": "Aidan N Gomez"
+        },
+        {
+          "name": "\u0141ukasz Kaiser"
+        },
+        {
+          "name": "Illia Polosukhin"
+        }
+      ]
+    },
+    {
+      "title": "An empirical study of mamba-based language models",
+      "year": 2024,
+      "ids": "arXiv:2406.07887",
+      "authors": [
+        {
+          "name": "Roger Waleffe"
+        },
+        {
+          "name": "Wonmin Byeon"
+        },
+        {
+          "name": "Duncan Riach"
+        },
+        {
+          "name": "Brandon Norick"
+        },
+        {
+          "name": "Vijay Korthikanti"
+        },
+        {
+          "name": "Tri Dao"
+        },
+        {
+          "name": "Albert Gu"
+        },
+        {
+          "name": "Ali Hatamizadeh"
+        },
+        {
+          "name": "Sudhakar Singh"
+        },
+        {
+          "name": "Deepak Narayanan"
+        }
+      ]
+    },
+    {
+      "title": "Nystr\u00f6mformer: A Nyst\u00f6m-based algorithm for approximating self-attention",
+      "year": 2021,
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "authors": [
+        {
+          "name": "Yunyang Xiong"
+        },
+        {
+          "name": "Zhanpeng Zeng"
+        },
+        {
+          "name": "Rudrasis Chakraborty"
+        },
+        {
+          "name": "Mingxing Tan"
+        },
+        {
+          "name": "Glenn Fung"
+        },
+        {
+          "name": "Yin Li"
+        },
+        {
+          "name": "Vikas Singh"
+        }
+      ]
+    },
+    {
+      "title": "ReAct: Synergizing reasoning and acting in language models",
+      "year": 2022,
+      "ids": "arXiv:2210.03629",
+      "authors": [
+        {
+          "name": "Shunyu Yao"
+        },
+        {
+          "name": "Jeffrey Zhao"
+        },
+        {
+          "name": "Dian Yu"
+        },
+        {
+          "name": "Nan Du"
+        },
+        {
+          "name": "Izhak Shafran"
+        },
+        {
+          "name": "Narasimhan Karthik"
+        },
+        {
+          "name": "Cao Yuan"
+        }
+      ]
+    },
+    {
+      "title": "Big bird: Transformers for longer sequences",
+      "year": 2020,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Manzil Zaheer"
+        },
+        {
+          "name": "Guru Guruganesh"
+        },
+        {
+          "name": "Kumar Avinava Dubey"
+        },
+        {
+          "name": "Joshua Ainslie"
+        },
+        {
+          "name": "Chris Alberti"
+        },
+        {
+          "name": "Santiago Ontanon"
+        },
+        {
+          "name": "Philip Pham"
+        },
+        {
+          "name": "Anirudh Ravula"
+        },
+        {
+          "name": "Qifan Wang"
+        },
+        {
+          "name": "Li Yang"
+        }
+      ]
+    },
+    {
+      "title": "Zamba: A compact 7B SSM hybrid model",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zyphra"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 22,
+  "publication_date": "2024-07-16",
+  "publication_type": "Preprint"
+}

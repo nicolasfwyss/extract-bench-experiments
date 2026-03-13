@@ -1,0 +1,3629 @@
+{
+  "ids": null,
+  "title": "A Survey of State of the Art Large Vision Language Models: Alignment, Benchmark, Evaluations and Challenges",
+  "venue": null,
+  "authors": [
+    {
+      "name": "Zongxia Li",
+      "email": "zli12321@umd.edu",
+      "affiliation": "University of Maryland"
+    },
+    {
+      "name": "Xiyang Wu",
+      "email": "wuxiyang@umd.edu",
+      "affiliation": "University of Maryland"
+    },
+    {
+      "name": "Hongyang Du",
+      "email": "hdu1@umd.edu",
+      "affiliation": "University of Maryland"
+    },
+    {
+      "name": "Fuxiao Liu",
+      "email": "fl3es@umd.edu",
+      "affiliation": "University of Maryland"
+    },
+    {
+      "name": "Huy Nghiem",
+      "email": "nghiemh@umd.edu",
+      "affiliation": "University of Maryland"
+    },
+    {
+      "name": "Guangyao Shi",
+      "email": "shig@usc.edu",
+      "affiliation": "University of Southern California"
+    }
+  ],
+  "abstract": "Multimodal Vision Language Models (VLMs) have emerged as a transformative topic at the intersection of computer vision and natural language processing, enabling machines to perceive and reason about the world through both visual and textual modalities. For example, models such as CLIP, Claude, and GPT-4V demonstrate strong reasoning and understanding abilities on visual and textual data and beat classical single modality vision models on zero-shot classification. With their rapid advancements in research and growing popularity in various applications, we provide a comprehensive survey of VLMs. Specifically, we provide a systematic overview of VLMs in the following aspects: [1] model information of the major VLMs developed up to 2025; [2] the transition of VLM architectures and the newest VLM alignment methods; [3] summary and categorization of the popular benchmarks and evaluation metrics of VLMs; [4] the challenges and issues faced by current VLMs such as hallucination, alignment, and safety.",
+  "keywords": [
+    "Vision Language Models",
+    "Multimodal Learning",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Model Alignment",
+    "Benchmarks",
+    "Evaluation Metrics",
+    "Hallucination",
+    "Safety",
+    "Fairness"
+  ],
+  "citations": [
+    {
+      "title": "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality",
+      "year": 2023,
+      "authors": []
+    },
+    {
+      "title": "Phi-3 technical report: A highly capable language model locally on your phone",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Marah Abdin"
+        },
+        {
+          "name": "Jyoti Aneja"
+        },
+        {
+          "name": "Hany Awadalla"
+        }
+      ]
+    },
+    {
+      "title": "Fairness and bias in multimodal ai: A survey",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Tosin Adewumi"
+        },
+        {
+          "name": "Lama Alkhaled"
+        },
+        {
+          "name": "Namrata Gurung"
+        }
+      ]
+    },
+    {
+      "title": "Vqa: Visual question answering",
+      "year": 2016,
+      "authors": [
+        {
+          "name": "Aishwarya Agrawal"
+        },
+        {
+          "name": "Jiasen Lu"
+        },
+        {
+          "name": "Stanislaw Antol"
+        }
+      ]
+    },
+    {
+      "title": "Pixtral 12b",
+      "year": 2024,
+      "authors": []
+    },
+    {
+      "title": "The llama 4 herd: The beginning of a new era of natively multimodal ai innovation",
+      "year": 2025,
+      "authors": []
+    },
+    {
+      "title": "Gqa: Training generalized multi-query transformer models from multi-head checkpoints",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Joshua Ainslie"
+        },
+        {
+          "name": "James Lee-Thorp"
+        },
+        {
+          "name": "Michiel de Jong"
+        }
+      ]
+    },
+    {
+      "title": "Flamingo: a visual language model for few-shot learning",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Jean-Baptiste Alayrac"
+        },
+        {
+          "name": "Jeff Donahue"
+        },
+        {
+          "name": "Pauline Luc"
+        }
+      ]
+    },
+    {
+      "title": "Gemini: A family of highly capable multimodal models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Rohan Anil"
+        },
+        {
+          "name": "Sebastian Borgeaud"
+        },
+        {
+          "name": "Yonghui Wu"
+        }
+      ]
+    },
+    {
+      "title": "Claude: An ai assistant by anthropic",
+      "year": 2024,
+      "authors": []
+    },
+    {
+      "title": "Genesis: A universal and generative physics engine for robotics and beyond",
+      "year": 2024,
+      "authors": []
+    },
+    {
+      "title": "Mint-1t: Scaling open-source multimodal data by 10x: A multimodal dataset with one trillion tokens",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Anas Awadalla"
+        },
+        {
+          "name": "Le Xue"
+        },
+        {
+          "name": "Oscar Lo"
+        }
+      ]
+    },
+    {
+      "title": "Qwen2.5-vl technical report",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Shuai Bai"
+        },
+        {
+          "name": "Keqin Chen"
+        },
+        {
+          "name": "Xuejing Liu"
+        }
+      ]
+    },
+    {
+      "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Yuntao Bai"
+        },
+        {
+          "name": "Andy Jones"
+        },
+        {
+          "name": "Kamal Ndousse"
+        }
+      ]
+    },
+    {
+      "title": "Hallucination of multimodal large language models: A survey",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zechen Bai"
+        },
+        {
+          "name": "Pichao Wang"
+        },
+        {
+          "name": "Tianjun Xiao"
+        }
+      ]
+    },
+    {
+      "title": "Synthetic vision: Training vision-language models to understand physics",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Vahid Balazadeh"
+        },
+        {
+          "name": "Mohammadmehdi Ataei"
+        },
+        {
+          "name": "Hyunmin Cheong"
+        }
+      ]
+    },
+    {
+      "title": "Artifacts or abduction: How do LLMs answer multiple-choice questions without the question?",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Nishant Balepur"
+        },
+        {
+          "name": "Abhilasha Ravichander"
+        },
+        {
+          "name": "Rachel Rudinger"
+        }
+      ]
+    },
+    {
+      "title": "Videophy: Evaluating physical commonsense for video generation",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Hritik Bansal"
+        },
+        {
+          "name": "Zongyu Lin"
+        },
+        {
+          "name": "Tianyi Xie"
+        }
+      ]
+    },
+    {
+      "title": "Scene text visual question answering",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Ali Furkan Biten"
+        },
+        {
+          "name": "Ruben Tito"
+        },
+        {
+          "name": "Andres Mafla"
+        }
+      ]
+    },
+    {
+      "title": "Gptneox-20b: An open-source autoregressive language model",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Sid Black"
+        },
+        {
+          "name": "Stella Biderman"
+        },
+        {
+          "name": "Eric Hallahan"
+        }
+      ]
+    },
+    {
+      "title": "An introduction to vision-language modeling",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Florian Bordes"
+        },
+        {
+          "name": "Richard Yuanzhe Pang"
+        },
+        {
+          "name": "Anurag Ajay"
+        }
+      ]
+    },
+    {
+      "title": "Video generation models as world simulators",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Tim Brooks"
+        },
+        {
+          "name": "Bill Peebles"
+        },
+        {
+          "name": "Connor Holmes"
+        }
+      ]
+    },
+    {
+      "title": "Language models are few-shot learners",
+      "year": 2020,
+      "authors": [
+        {
+          "name": "Tom B. Brown"
+        },
+        {
+          "name": "Benjamin Mann"
+        },
+        {
+          "name": "Nick Ryder"
+        }
+      ]
+    },
+    {
+      "title": "Tomayto, tomahto. beyond token-level answer equivalence for question answering evaluation",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Jannis Bulian"
+        },
+        {
+          "name": "Christian Buck"
+        },
+        {
+          "name": "Wojciech Gajewski"
+        }
+      ]
+    },
+    {
+      "title": "Coyo-700m: Image-text pair dataset",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Minwoo Byeon"
+        },
+        {
+          "name": "Beomhee Park"
+        },
+        {
+          "name": "Haecheon Kim"
+        }
+      ]
+    },
+    {
+      "title": "Web agents with world models: Learning and leveraging environment dynamics in web navigation",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Hyungjoo Chae"
+        },
+        {
+          "name": "Namyoung Kim"
+        },
+        {
+          "name": "Kai Tzu iunn Ong"
+        }
+      ]
+    },
+    {
+      "title": "A survey on evaluation of large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yupeng Chang"
+        },
+        {
+          "name": "Xu Wang"
+        },
+        {
+          "name": "Jindong Wang"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating question answering evaluation",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Anthony Chen"
+        },
+        {
+          "name": "Gabriel Stanovsky"
+        },
+        {
+          "name": "Sameer Singh"
+        }
+      ]
+    },
+    {
+      "title": "Reading wikipedia to answer open-domain questions",
+      "year": 2017,
+      "authors": [
+        {
+          "name": "Danqi Chen"
+        },
+        {
+          "name": "Adam Fisch"
+        },
+        {
+          "name": "Antoine Bordes"
+        }
+      ]
+    },
+    {
+      "title": "Are we on the right way for evaluating large vision-language models?",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Lin Chen"
+        },
+        {
+          "name": "Jinsong Li"
+        },
+        {
+          "name": "Xiaoyi Dong"
+        }
+      ]
+    },
+    {
+      "title": "A simple framework for contrastive learning of visual representations",
+      "year": 2020,
+      "authors": [
+        {
+          "name": "Ting Chen"
+        },
+        {
+          "name": "Simon Kornblith"
+        },
+        {
+          "name": "Mohammad Norouzi"
+        }
+      ]
+    },
+    {
+      "title": "Pali: A jointly-scaled multilingual language-image model",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Xi Chen"
+        },
+        {
+          "name": "Xiao Wang"
+        },
+        {
+          "name": "Soravit Changpinyo"
+        }
+      ]
+    },
+    {
+      "title": "Januspro: Unified multimodal understanding and generation with data and model scaling",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Xiaokang Chen"
+        },
+        {
+          "name": "Zhiyu Wu"
+        },
+        {
+          "name": "Xingchao Liu"
+        }
+      ]
+    },
+    {
+      "title": "Internvl: Scaling up vision foundation models and aligning for generic visual-linguistic tasks",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zhe Chen"
+        },
+        {
+          "name": "Jiannan Wu"
+        },
+        {
+          "name": "Wenhai Wang"
+        }
+      ]
+    },
+    {
+      "title": "Instructeval: Towards holistic evaluation of instruction-tuned large language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Yew Ken Chia"
+        },
+        {
+          "name": "Pengfei Hong"
+        },
+        {
+          "name": "Lidong Bing"
+        }
+      ]
+    },
+    {
+      "title": "Physbench: Benchmarking and enhancing vision-language models for physical world understanding",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Wei Chow"
+        },
+        {
+          "name": "Jiageng Mao"
+        },
+        {
+          "name": "Boyi Li"
+        }
+      ]
+    },
+    {
+      "title": "Palm: Scaling language modeling with pathways",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Aakanksha Chowdhery"
+        },
+        {
+          "name": "Sharan Narang"
+        },
+        {
+          "name": "Jacob Devlin"
+        }
+      ]
+    },
+    {
+      "title": "Scaling instruction-finetuned language models",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Hyung Won Chung"
+        },
+        {
+          "name": "Le Hou"
+        },
+        {
+          "name": "Shayne Longpre"
+        }
+      ]
+    },
+    {
+      "title": "Efficient and effective text encoding for chinese llama and alpaca",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yiming Cui"
+        },
+        {
+          "name": "Ziqing Yang"
+        },
+        {
+          "name": "Yao"
+        },
+        {
+          "name": "Ziqing Yang"
+        }
+      ]
+    },
+    {
+      "title": "Deepseekmoe: Towards ultimate expert specialization in mixture-of-experts language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Damai Dai"
+        },
+        {
+          "name": "Chengqi Deng"
+        },
+        {
+          "name": "Chenggang Zhao"
+        }
+      ]
+    },
+    {
+      "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Wenliang Dai"
+        },
+        {
+          "name": "Junnan Li"
+        },
+        {
+          "name": "Dongxu Li"
+        }
+      ]
+    },
+    {
+      "title": "Nvlm: Open frontier-class multimodal llms",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Wenliang Dai"
+        },
+        {
+          "name": "Nayeon Lee"
+        },
+        {
+          "name": "Boxin Wang"
+        }
+      ]
+    },
+    {
+      "title": "Deepseekr1: Incentivizing reasoning capability in llms via reinforcement learning",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "DeepSeek-AI"
+        },
+        {
+          "name": "Daya Guo"
+        },
+        {
+          "name": "Dejian Yang"
+        }
+      ]
+    },
+    {
+      "title": "Procthor: Large-scale embodied ai using procedural generation",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Matt Deitke"
+        },
+        {
+          "name": "Eli VanderBilt"
+        },
+        {
+          "name": "Alvaro Herrasti"
+        }
+      ]
+    },
+    {
+      "title": "Molmo and pixmo: Open weights and open data for state-of-the-art vision-language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Matt Deitke"
+        },
+        {
+          "name": "Christopher Clark"
+        },
+        {
+          "name": "Sangho Lee"
+        }
+      ]
+    },
+    {
+      "title": "Imagenet: A large-scale hierarchical image database",
+      "year": 2009,
+      "authors": [
+        {
+          "name": "Jia Deng"
+        },
+        {
+          "name": "Wei Dong"
+        },
+        {
+          "name": "Richard Socher"
+        }
+      ]
+    },
+    {
+      "title": "Qlora: Efficient finetuning of quantized llms",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Tim Dettmers"
+        },
+        {
+          "name": "Artidoro Pagnoni"
+        },
+        {
+          "name": "Ari Holtzman"
+        }
+      ]
+    },
+    {
+      "title": "Hallu-pi: Evaluating hallucination in multi-modal large language models within perturbed inputs",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Peng Ding"
+        },
+        {
+          "name": "Jingyu Wu"
+        },
+        {
+          "name": "Jun Kuang"
+        }
+      ]
+    },
+    {
+      "title": "An image is worth 16x16 words: Transformers for image recognition at scale",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Alexey Dosovitskiy"
+        },
+        {
+          "name": "Lucas Beyer"
+        },
+        {
+          "name": "Alexander Kolesnikov"
+        }
+      ]
+    },
+    {
+      "title": "Towards multimodal in-context learning for vision & language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Sivan Doveh"
+        },
+        {
+          "name": "Shaked Perek"
+        },
+        {
+          "name": "M Jehanzeb Mirza"
+        }
+      ]
+    },
+    {
+      "title": "Palm-e: An embodied multimodal language model",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Danny Driess"
+        },
+        {
+          "name": "Fei Xia"
+        },
+        {
+          "name": "Mehdi S. M. Sajjadi"
+        }
+      ]
+    },
+    {
+      "title": "The llama 3 herd of models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Aaron Grattafiori"
+        }
+      ]
+    },
+    {
+      "title": "Video-r1: Reinforcing video reasoning in mllms",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Kaituo Feng"
+        },
+        {
+          "name": "Kaixiong Gong"
+        },
+        {
+          "name": "Bohao Li"
+        }
+      ]
+    },
+    {
+      "title": "Multimodal autoregressive pretraining of large vision encoders",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Enrico Fini"
+        },
+        {
+          "name": "Mustafa Shukor"
+        },
+        {
+          "name": "Xiujun Li"
+        }
+      ]
+    },
+    {
+      "title": "Mme: A comprehensive evaluation benchmark for multimodal large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Chaoyou Fu"
+        },
+        {
+          "name": "Peixian Chen"
+        },
+        {
+          "name": "Yunhang Shen"
+        }
+      ]
+    },
+    {
+      "title": "Video-mme: The first ever comprehensive evaluation benchmark of multi-modal llms in video analysis",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Chaoyou Fu"
+        },
+        {
+          "name": "Yuhan Dai"
+        },
+        {
+          "name": "Yongdong Luo"
+        }
+      ]
+    },
+    {
+      "title": "Mme-survey: A comprehensive survey on evaluation of multimodal llms",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Chaoyou Fu"
+        },
+        {
+          "name": "Yi-Fan Zhang"
+        },
+        {
+          "name": "Shukang Yin"
+        }
+      ]
+    },
+    {
+      "title": "Bias and fairness in large language models: A survey",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Isabel O Gallegos"
+        },
+        {
+          "name": "Ryan A Rossi"
+        },
+        {
+          "name": "Joe Barrow"
+        }
+      ]
+    },
+    {
+      "title": "Threedworld: A platform for interactive multi-modal physical simulation",
+      "year": 2020,
+      "authors": [
+        {
+          "name": "Chuang Gan"
+        },
+        {
+          "name": "Jeremy Schwartz"
+        },
+        {
+          "name": "Seth Alter"
+        }
+      ]
+    },
+    {
+      "title": "Towards generalizable vision-language robotic manipulation: A benchmark and llm-guided 3d policy",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ricardo Garcia"
+        },
+        {
+          "name": "Shizhe Chen"
+        },
+        {
+          "name": "Cordelia Schmid"
+        }
+      ]
+    },
+    {
+      "title": "Geneval: An object-focused framework for evaluating text-to-image alignment",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Dhruba Ghosh"
+        },
+        {
+          "name": "Hanna Hajishirzi"
+        },
+        {
+          "name": "Ludwig Schmidt"
+        }
+      ]
+    },
+    {
+      "title": "Why multimodality? why co-operative action?(transcribed by j. philipsen)",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Charles Goodwin"
+        },
+        {
+          "name": "Johanne Stege Bj\u00f8rndahl"
+        }
+      ]
+    },
+    {
+      "title": "Why only text: Empowering vision-and-language navigation with multi-modal prompts",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Haodong Hong"
+        },
+        {
+          "name": "Sen Wang"
+        },
+        {
+          "name": "Zi Huang"
+        }
+      ]
+    },
+    {
+      "title": "Universal language model fine-tuning for text classification",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Jeremy Howard"
+        },
+        {
+          "name": "Sebastian Ruder"
+        }
+      ]
+    },
+    {
+      "title": "Gaia-1: A generative world model for autonomous driving",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Anthony Hu"
+        },
+        {
+          "name": "Lloyd Russell"
+        },
+        {
+          "name": "Hudson Yeo"
+        }
+      ]
+    },
+    {
+      "title": "Lora: Low-rank adaptation of large language models",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Edward J Hu"
+        },
+        {
+          "name": "Yelong Shen"
+        },
+        {
+          "name": "Phillip Wallis"
+        }
+      ]
+    },
+    {
+      "title": "Ella: Equip diffusion models with llm for enhanced semantic alignment",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiwei Hu"
+        },
+        {
+          "name": "Rui Wang"
+        },
+        {
+          "name": "Yixiao Fang"
+        }
+      ]
+    },
+    {
+      "title": "T2i-compbench: A comprehensive benchmark for open-world compositional text-to-image generation",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Kaiyi Huang"
+        },
+        {
+          "name": "Kaiyue Sun"
+        },
+        {
+          "name": "Enze Xie"
+        }
+      ]
+    },
+    {
+      "title": "Vision-r1: Incentivizing reasoning capability in multimodal large language models",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Wenxuan Huang"
+        },
+        {
+          "name": "Bohan Jia"
+        },
+        {
+          "name": "Zijie Zhai"
+        }
+      ]
+    },
+    {
+      "title": "C-eval: A multi-level multi-discipline chinese evaluation suite for foundation models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Yuzhen Huang"
+        },
+        {
+          "name": "Yuzhuo Bai"
+        },
+        {
+          "name": "Zhihao Zhu"
+        }
+      ]
+    },
+    {
+      "title": "Vbench: Comprehensive benchmark suite for video generative models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ziqi Huang"
+        },
+        {
+          "name": "Yinan He"
+        },
+        {
+          "name": "Jiashuo Yu"
+        }
+      ]
+    },
+    {
+      "title": "Gqa: A new dataset for real-world visual reasoning and compositional question answering",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Drew A. Hudson"
+        },
+        {
+          "name": "Christopher D. Manning"
+        }
+      ]
+    },
+    {
+      "title": "Robots enact malignant stereotypes",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Andrew Hundt"
+        },
+        {
+          "name": "William Agnew"
+        },
+        {
+          "name": "Vicky Zeng"
+        }
+      ]
+    },
+    {
+      "title": "Pushing boundaries: Exploring zero shot object classification with large multimodal models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Ashhadul Islam"
+        },
+        {
+          "name": "Md. Rafiul Biswas"
+        },
+        {
+          "name": "Wajdi Zaghouani"
+        }
+      ]
+    },
+    {
+      "title": "Leveraging passage retrieval with generative models for open domain question answering",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Gautier Izacard"
+        },
+        {
+          "name": "Edouard Grave"
+        }
+      ]
+    },
+    {
+      "title": "Multi-modal bias: Introducing a framework for stereotypical bias assessment beyond gender and race in vision-language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Sepehr Janghorbani"
+        },
+        {
+          "name": "Gerard De Melo"
+        }
+      ]
+    },
+    {
+      "title": "Scaling up visual and vision-language representation learning with noisy text supervision",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Chao Jia"
+        },
+        {
+          "name": "Yinfei Yang"
+        },
+        {
+          "name": "Ye Xia"
+        }
+      ]
+    },
+    {
+      "title": "Haleval: A universal and fine-grained hallucination evaluation framework for large vision language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Chaoya Jiang"
+        },
+        {
+          "name": "Hongrui Jia"
+        },
+        {
+          "name": "Mengfan Dong"
+        }
+      ]
+    },
+    {
+      "title": "Vima: General robot manipulation with multimodal prompts",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Yunfan Jiang"
+        },
+        {
+          "name": "Agrim Gupta"
+        },
+        {
+          "name": "Zichen Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Jailbreakzoo: Survey, landscapes, and horizons in jailbreaking large language and vision-language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Haibo Jin"
+        },
+        {
+          "name": "Leyang Hu"
+        },
+        {
+          "name": "Xinuo Li"
+        }
+      ]
+    },
+    {
+      "title": "Fairmedfm: Fairness benchmarking for medical imaging foundation models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ruinan Jin"
+        },
+        {
+          "name": "Zikang Xu"
+        },
+        {
+          "name": "Yuan Zhong"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating open-domain question answering in the era of large language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Ehsan Kamalloo"
+        },
+        {
+          "name": "Nouha Dziri"
+        },
+        {
+          "name": "Charles Clarke"
+        }
+      ]
+    },
+    {
+      "title": "Embodied red teaming for auditing robotic foundation models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Sathwik Karnik"
+        },
+        {
+          "name": "Zhang-Wei Hong"
+        },
+        {
+          "name": "Nishant Abhangi"
+        }
+      ]
+    },
+    {
+      "title": "Gen2sim: Scaling up robot learning in simulation with generative models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Pushkal Katara"
+        },
+        {
+          "name": "Zhou Xian"
+        },
+        {
+          "name": "Katerina Fragkiadaki"
+        }
+      ]
+    },
+    {
+      "title": "A diagram is worth a dozen images",
+      "year": 2016,
+      "authors": [
+        {
+          "name": "Aniruddha Kembhavi"
+        },
+        {
+          "name": "Mike Salvato"
+        },
+        {
+          "name": "Eric Kolve"
+        }
+      ]
+    },
+    {
+      "title": "Vilt: Vision-and-language transformer without convolution or region supervision",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Wonjae Kim"
+        },
+        {
+          "name": "Bokyung Son"
+        },
+        {
+          "name": "Ildoo Kim"
+        }
+      ]
+    },
+    {
+      "title": "Auto-encoding variational bayes",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Diederik P Kingma"
+        },
+        {
+          "name": "Max Welling"
+        }
+      ]
+    },
+    {
+      "title": "Segment anything",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Alexander Kirillov"
+        },
+        {
+          "name": "Eric Mintun"
+        },
+        {
+          "name": "Nikhila Ravi"
+        }
+      ]
+    },
+    {
+      "title": "Ai2-thor: An interactive 3d environment for visual ai",
+      "year": 2017,
+      "authors": [
+        {
+          "name": "Eric Kolve"
+        },
+        {
+          "name": "Roozbeh Mottaghi"
+        },
+        {
+          "name": "Winson Han"
+        }
+      ]
+    },
+    {
+      "title": "Buy 4 reinforce samples, get a baseline for free!",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Wouter Kool"
+        },
+        {
+          "name": "Herke van Hoof"
+        },
+        {
+          "name": "Max Welling"
+        }
+      ]
+    },
+    {
+      "title": "Wikihow: A large scale text summarization dataset",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Mahnaz Koupaee"
+        },
+        {
+          "name": "William Yang Wang"
+        }
+      ]
+    },
+    {
+      "title": "Visual genome: Connecting language and vision using crowdsourced dense image annotations",
+      "year": 2016,
+      "authors": [
+        {
+          "name": "Ranjay Krishna"
+        },
+        {
+          "name": "Yuke Zhu"
+        },
+        {
+          "name": "Oliver Groth"
+        }
+      ]
+    },
+    {
+      "title": "What matters when building vision-language models?",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Hugo Lauren\u00e7on"
+        },
+        {
+          "name": "L\u00e9o Tronchon"
+        },
+        {
+          "name": "Matthieu Cord"
+        }
+      ]
+    },
+    {
+      "title": "Rlaif: Scaling reinforcement learning from human feedback with ai feedback",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Harrison Lee"
+        },
+        {
+          "name": "Samrat Phatale"
+        },
+        {
+          "name": "Hassan Mansoor"
+        }
+      ]
+    },
+    {
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Patrick Lewis"
+        },
+        {
+          "name": "Ethan Perez"
+        },
+        {
+          "name": "Aleksandra Piktus"
+        }
+      ]
+    },
+    {
+      "title": "Seed-bench: Benchmarking multimodal llms with generative comprehension",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Bohao Li"
+        },
+        {
+          "name": "Rui Wang"
+        },
+        {
+          "name": "Guangzhi Wang"
+        }
+      ]
+    },
+    {
+      "title": "Genai-bench: Evaluating and improving compositional text-to-visual generation",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Baiqi Li"
+        },
+        {
+          "name": "Zhiqiu Lin"
+        },
+        {
+          "name": "Deepak Pathak"
+        }
+      ]
+    },
+    {
+      "title": "Naturalbench: Evaluating vision-language models on natural adversarial samples",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Baiqi Li"
+        },
+        {
+          "name": "Zhiqiu Lin"
+        },
+        {
+          "name": "Wenxuan Peng"
+        }
+      ]
+    },
+    {
+      "title": "igibson 2.0: Object-centric simulation for robot learning of everyday household tasks",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Chengshu Li"
+        },
+        {
+          "name": "Fei Xia"
+        },
+        {
+          "name": "Roberto Mart\u00edn-Mart\u00edn"
+        }
+      ]
+    },
+    {
+      "title": "Worldmodelbench: Judging video generation models as world models",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Dacheng Li"
+        },
+        {
+          "name": "Yunhao Fang"
+        },
+        {
+          "name": "Yukang Chen"
+        }
+      ]
+    },
+    {
+      "title": "Cmmlu: Measuring massive multitask language understanding in chinese",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Haonan Li"
+        },
+        {
+          "name": "Yixuan Zhang"
+        },
+        {
+          "name": "Fajri Koto"
+        }
+      ]
+    },
+    {
+      "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Junnan Li"
+        },
+        {
+          "name": "Dongxu Li"
+        },
+        {
+          "name": "Caiming Xiong"
+        }
+      ]
+    },
+    {
+      "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Junnan Li"
+        },
+        {
+          "name": "Dongxu Li"
+        },
+        {
+          "name": "Silvio Savarese"
+        }
+      ]
+    },
+    {
+      "title": "Mvbench: A comprehensive multimodal video understanding benchmark",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Kunchang Li"
+        },
+        {
+          "name": "Yali Wang"
+        },
+        {
+          "name": "Yinan He"
+        }
+      ]
+    },
+    {
+      "title": "Visualbert: A simple and performant baseline for vision and language",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Liunian Harold Li"
+        },
+        {
+          "name": "Mark Yatskar"
+        },
+        {
+          "name": "Da Yin"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating object hallucination in large vision-language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Yifan Li"
+        },
+        {
+          "name": "Yifan Du"
+        },
+        {
+          "name": "Kun Zhou"
+        }
+      ]
+    },
+    {
+      "title": "Images are achilles' heel of alignment: Exploiting visual vulnerabilities for jailbreaking multimodal large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yifan Li"
+        },
+        {
+          "name": "Hangyu Guo"
+        },
+        {
+          "name": "Kun Zhou"
+        }
+      ]
+    },
+    {
+      "title": "Beyond finite data: Towards data-free out-of-distribution generalization via extrapola",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yijiang Li"
+        },
+        {
+          "name": "Sucheng Ren"
+        },
+        {
+          "name": "Weipeng Deng"
+        }
+      ]
+    },
+    {
+      "title": "Ocean-omni: To understand the world with omni-modality",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yadong Li"
+        },
+        {
+          "name": "Haoze Sun"
+        },
+        {
+          "name": "Mingan Lin"
+        }
+      ]
+    },
+    {
+      "title": "PEDANTS: Cheap but effective and interpretable answer equivalence",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zongxia Li"
+        },
+        {
+          "name": "Ishani Mondal"
+        },
+        {
+          "name": "Huy Nghiem"
+        }
+      ]
+    },
+    {
+      "title": "Large language models struggle to describe the haystack without human help: Human-in-the-loop evaluation of llms",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Zongxia Li"
+        },
+        {
+          "name": "Lorena Calvo-Bartolom\u00e9"
+        },
+        {
+          "name": "Alexander Hoyle"
+        }
+      ]
+    },
+    {
+      "title": "Dreamitate: Real-world visuomotor policy learning via video generation",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Junbang Liang"
+        },
+        {
+          "name": "Ruoshi Liu"
+        },
+        {
+          "name": "Ege Ozguroglu"
+        }
+      ]
+    },
+    {
+      "title": "ROUGE: A package for automatic evaluation of summaries",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "Chin-Yew Lin"
+        }
+      ]
+    },
+    {
+      "title": "Cat: Cross attention in vision transformer",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Hezheng Lin"
+        },
+        {
+          "name": "Xing Cheng"
+        },
+        {
+          "name": "Xiangyu Wu"
+        }
+      ]
+    },
+    {
+      "title": "Vila: On pre-training for visual language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ji Lin"
+        },
+        {
+          "name": "Hongxu Yin"
+        },
+        {
+          "name": "Wei Ping"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft coco: Common objects in context",
+      "year": 2015,
+      "authors": [
+        {
+          "name": "Tsung-Yi Lin"
+        },
+        {
+          "name": "Michael Maire"
+        },
+        {
+          "name": "Serge Belongie"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating text-to-visual generation with image-to-text generation",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zhiqiu Lin"
+        },
+        {
+          "name": "Deepak Pathak"
+        },
+        {
+          "name": "Baiqi Li"
+        }
+      ]
+    },
+    {
+      "title": "Mitigating hallucination in large multi-modal models via robust instruction tuning",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Fuxiao Liu"
+        },
+        {
+          "name": "Kevin Lin"
+        },
+        {
+          "name": "Linjie Li"
+        }
+      ]
+    },
+    {
+      "title": "Visual instruction tuning",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Haotian Liu"
+        },
+        {
+          "name": "Chunyuan Li"
+        },
+        {
+          "name": "Qingyang Wu"
+        }
+      ]
+    },
+    {
+      "title": "Improved baselines with visual instruction tuning",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Haotian Liu"
+        },
+        {
+          "name": "Chunyuan Li"
+        },
+        {
+          "name": "Yuheng Li"
+        }
+      ]
+    },
+    {
+      "title": "A survey on hallucination in large vision-language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Hanchao Liu"
+        },
+        {
+          "name": "Wenyuan Xue"
+        },
+        {
+          "name": "Yifei Chen"
+        }
+      ]
+    },
+    {
+      "title": "World model on million-length video and language with blockwise ringattention",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Hao Liu"
+        },
+        {
+          "name": "Wilson Yan"
+        },
+        {
+          "name": "Matei Zaharia"
+        }
+      ]
+    },
+    {
+      "title": "Vlpd: Context-aware pedestrian detection via vision-language semantic self-supervision",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Mengyin Liu"
+        },
+        {
+          "name": "Jie Jiang"
+        },
+        {
+          "name": "Chao Zhu"
+        }
+      ]
+    },
+    {
+      "title": "Mm-safetybench: A benchmark for safety evaluation of multimodal large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xin Liu"
+        },
+        {
+          "name": "Yichen Zhu"
+        },
+        {
+          "name": "Jindong Gu"
+        }
+      ]
+    },
+    {
+      "title": "Mmbench: Is your multi-modal model an all-around player?",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yuan Liu"
+        },
+        {
+          "name": "Haodong Duan"
+        },
+        {
+          "name": "Yuanhan Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Ocrbench: on the hidden mystery of ocr in large multimodal models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yuliang Liu"
+        },
+        {
+          "name": "Zhang Li"
+        },
+        {
+          "name": "Mingxin Huang"
+        }
+      ]
+    },
+    {
+      "title": "Visualrft: Visual reinforcement fine-tuning",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Ziyu Liu"
+        },
+        {
+          "name": "Zeyi Sun"
+        },
+        {
+          "name": "Yuhang Zang"
+        }
+      ]
+    },
+    {
+      "title": "Vilbert: Pretraining task-agnostic visiolinguistic representations for vision-and-language tasks",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Jiasen Lu"
+        },
+        {
+          "name": "Dhruv Batra"
+        },
+        {
+          "name": "Devi Parikh"
+        }
+      ]
+    },
+    {
+      "title": "Mathvista: Evaluating mathematical reasoning of foundation models in visual contexts",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Pan Lu"
+        },
+        {
+          "name": "Hritik Bansal"
+        },
+        {
+          "name": "Tony Xia"
+        }
+      ]
+    },
+    {
+      "title": "Jailbreakv-28k: A benchmark for assessing the robustness of multimodal large language models against jailbreak attacks",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Weidi Luo"
+        },
+        {
+          "name": "Siyuan Ma"
+        },
+        {
+          "name": "Xiaogeng Liu"
+        }
+      ]
+    },
+    {
+      "title": "Fairclip: Harnessing fairness in vision-language learning",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yan Luo"
+        },
+        {
+          "name": "Min Shi"
+        },
+        {
+          "name": "Muhammad Osama Khan"
+        }
+      ]
+    },
+    {
+      "title": "Gpt4motion: Scripting physical motions in text-to-video generation via blender-oriented gpt planning",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Jiaxi Lv"
+        },
+        {
+          "name": "Yi Huang"
+        },
+        {
+          "name": "Mingfu Yan"
+        }
+      ]
+    },
+    {
+      "title": "A survey on knowledge-enhanced multimodal learning",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Maria Lymperaiou"
+        },
+        {
+          "name": "Giorgos Stamou"
+        }
+      ]
+    },
+    {
+      "title": "Videogpt+: Integrating image and video encoders for enhanced video understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Muhammad Maaz"
+        },
+        {
+          "name": "Hanoona Rasheed"
+        },
+        {
+          "name": "Salman Khan"
+        }
+      ]
+    },
+    {
+      "title": "Large language models: Their success and impact",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Spyros Makridakis"
+        },
+        {
+          "name": "Fotios Petropoulos"
+        },
+        {
+          "name": "Yanfei Kang"
+        }
+      ]
+    },
+    {
+      "title": "Improving automatic vqa evaluation using large language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Oscar Ma\u00f1as"
+        },
+        {
+          "name": "Benno Krojer"
+        },
+        {
+          "name": "Aishwarya Agrawal"
+        }
+      ]
+    },
+    {
+      "title": "Egoschema: A diagnostic benchmark for very long-form video language understanding",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Karttikeya Mangalam"
+        },
+        {
+          "name": "Raiymbek Akshulakov"
+        },
+        {
+          "name": "Jitendra Malik"
+        }
+      ]
+    },
+    {
+      "title": "Chartqa: A benchmark for question answering about charts with visual and logical reasoning",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Ahmed Masry"
+        },
+        {
+          "name": "Do Xuan Long"
+        },
+        {
+          "name": "Jia Qing Tan"
+        }
+      ]
+    },
+    {
+      "title": "Infographicvqa",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Minesh Mathew"
+        },
+        {
+          "name": "Viraj Bagal"
+        },
+        {
+          "name": "Rub\u00e9n P\u00e9rez Tito"
+        }
+      ]
+    },
+    {
+      "title": "Docvqa: A dataset for vqa on document images",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Minesh Mathew"
+        },
+        {
+          "name": "Dimosthenis Karatzas"
+        },
+        {
+          "name": "C. V. Jawahar"
+        }
+      ]
+    },
+    {
+      "title": "Calvin: A benchmark for language-conditioned policy learning for long-horizon robot manipulation tasks",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Oier Mees"
+        },
+        {
+          "name": "Lukas Hermann"
+        },
+        {
+          "name": "Erick Rosete-Beas"
+        }
+      ]
+    },
+    {
+      "title": "MM-Eureka: Exploring visual aha moment with rule-based large-scale reinforcement learning",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Fanqing Meng"
+        },
+        {
+          "name": "Lingxiao Du"
+        },
+        {
+          "name": "Zongkai Liu"
+        }
+      ]
+    },
+    {
+      "title": "Self-supervised learning of pretext-invariant representations",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Ishan Misra"
+        },
+        {
+          "name": "Laurens van der Maaten"
+        }
+      ]
+    },
+    {
+      "title": "Mistral large 2: A new generation of advanced language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Mistral AI Team"
+        }
+      ]
+    },
+    {
+      "title": "Orbit: A unified simulation framework for interactive robot learning environments",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Mayank Mittal"
+        },
+        {
+          "name": "Calvin Yu"
+        },
+        {
+          "name": "Qinxi Yu"
+        }
+      ]
+    },
+    {
+      "title": "Large language model (llm) & gpt, a monolithic study in generative ai",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Atif Farid Mohammad"
+        },
+        {
+          "name": "Bryan Clark"
+        },
+        {
+          "name": "Ramya Hegde"
+        }
+      ]
+    },
+    {
+      "title": "SciDoc2Diagrammer-MAF: Towards generation of scientific diagrams from documents guided by multi-aspect feedback refinement",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ishani Mondal"
+        },
+        {
+          "name": "Zongxia Li"
+        },
+        {
+          "name": "Yufang Hou"
+        }
+      ]
+    },
+    {
+      "title": "Slip: Self-supervision meets language-image pretraining",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Norman Mu"
+        },
+        {
+          "name": "Alexander Kirillov"
+        },
+        {
+          "name": "David Wagner"
+        }
+      ]
+    },
+    {
+      "title": "Olmoe: Open mixture-of-experts language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Niklas Muennighoff"
+        },
+        {
+          "name": "Luca Soldaini"
+        },
+        {
+          "name": "Dirk Groeneveld"
+        }
+      ]
+    },
+    {
+      "title": "Multilayer perceptrons for classification and regression",
+      "year": 1991,
+      "authors": [
+        {
+          "name": "Fionn Murtagh"
+        }
+      ]
+    },
+    {
+      "title": "A comprehensive overview of large language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Humza Naveed"
+        },
+        {
+          "name": "Asad Ullah Khan"
+        },
+        {
+          "name": "Shi Qiu"
+        }
+      ]
+    },
+    {
+      "title": "Concise thoughts: Impact of output length on llm reasoning and cost",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Sania Nayab"
+        },
+        {
+          "name": "Giulio Rossolini"
+        },
+        {
+          "name": "Giorgio Buttazzo"
+        }
+      ]
+    },
+    {
+      "title": "Benchmarking vision language models for cultural understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Shravan Nayak"
+        },
+        {
+          "name": "Kanishk Jain"
+        },
+        {
+          "name": "Rabiul Awal"
+        }
+      ]
+    },
+    {
+      "title": "Wise: A world knowledge-informed semantic evaluation for text-to-image generation",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Yuwei Niu"
+        },
+        {
+          "name": "Munan Ning"
+        },
+        {
+          "name": "Mengren Zheng"
+        }
+      ]
+    },
+    {
+      "title": "Jailbreaking attack against multimodal large language model",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zhenxing Niu"
+        },
+        {
+          "name": "Haodong Ren"
+        },
+        {
+          "name": "Xinbo Gao"
+        }
+      ]
+    },
+    {
+      "title": "2 olmo 2 furious",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Team OLMo"
+        },
+        {
+          "name": "Pete Walsh"
+        },
+        {
+          "name": "Luca Soldaini"
+        }
+      ]
+    },
+    {
+      "title": "Gpt-4 technical report",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ]
+    },
+    {
+      "title": "An introduction to convolutional neural networks",
+      "year": 2015,
+      "authors": [
+        {
+          "name": "Keiron O'Shea"
+        },
+        {
+          "name": "Ryan Nash"
+        }
+      ]
+    },
+    {
+      "title": "Bleu: a method for automatic evaluation of machine translation",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "Kishore Papineni"
+        },
+        {
+          "name": "Salim Roukos"
+        },
+        {
+          "name": "Todd Ward"
+        }
+      ]
+    },
+    {
+      "title": "Context encoders: Feature learning by inpainting",
+      "year": 2016,
+      "authors": [
+        {
+          "name": "Deepak Pathak"
+        },
+        {
+          "name": "Philipp Krahenbuhl"
+        },
+        {
+          "name": "Jeff Donahue"
+        }
+      ]
+    },
+    {
+      "title": "Instruction tuning with gpt-4",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Baolin Peng"
+        },
+        {
+          "name": "Chunyuan Li"
+        },
+        {
+          "name": "Pengcheng He"
+        }
+      ]
+    },
+    {
+      "title": "Lmm-r1: Empowering 3b lmms with strong reasoning abilities through two-stage rule-based rl",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Yingzhe Peng"
+        },
+        {
+          "name": "Gongrui Zhang"
+        },
+        {
+          "name": "Miaosen Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Kosmos-2: Grounding multimodal large language models to the world",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Zhiliang Peng"
+        },
+        {
+          "name": "Wenhui Wang"
+        },
+        {
+          "name": "Li Dong"
+        }
+      ]
+    },
+    {
+      "title": "To tune or not to tune? adapting pretrained representations to diverse tasks",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Matthew E. Peters"
+        },
+        {
+          "name": "Sebastian Ruder"
+        },
+        {
+          "name": "Noah A. Smith"
+        }
+      ]
+    },
+    {
+      "title": "Virtualhome: Simulating household activities via programs",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Xavier Puig"
+        },
+        {
+          "name": "Kevin Ra"
+        },
+        {
+          "name": "Marko Boben"
+        }
+      ]
+    },
+    {
+      "title": "Perception test: A diagnostic benchmark for multimodal video models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Viorica P\u0103tr\u0103ucean"
+        },
+        {
+          "name": "Lucas Smaira"
+        },
+        {
+          "name": "Ankush Gupta"
+        }
+      ]
+    },
+    {
+      "title": "Worldsimbench: Towards video generation models as world simulators",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yiran Qin"
+        },
+        {
+          "name": "Zhelun Shi"
+        },
+        {
+          "name": "Jiwen Yu"
+        }
+      ]
+    },
+    {
+      "title": "Qwen2.5 technical report",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Qwen"
+        },
+        {
+          "name": "An Yang"
+        },
+        {
+          "name": "Baosong Yang"
+        }
+      ]
+    },
+    {
+      "title": "Learning transferable visual models from natural language supervision",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Alec Radford"
+        },
+        {
+          "name": "Jong Wook Kim"
+        },
+        {
+          "name": "Chris Hallacy"
+        }
+      ]
+    },
+    {
+      "title": "Direct preference optimization: Your language model is secretly a reward model",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Rafael Rafailov"
+        },
+        {
+          "name": "Archit Sharma"
+        },
+        {
+          "name": "Eric Mitchell"
+        }
+      ]
+    },
+    {
+      "title": "Jailbreaking llm-controlled robots",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Alexander Robey"
+        },
+        {
+          "name": "Zachary Ravichandran"
+        },
+        {
+          "name": "Vijay Kumar"
+        }
+      ]
+    },
+    {
+      "title": "Object hallucination in image captioning",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Anna Rohrbach"
+        },
+        {
+          "name": "Lisa Anne Hendricks"
+        },
+        {
+          "name": "Kaylee Burns"
+        }
+      ]
+    },
+    {
+      "title": "Habitat: A Platform for Embodied AI Research",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Manolis Savva"
+        },
+        {
+          "name": "Abhishek Kadian"
+        },
+        {
+          "name": "Oleksandr Maksymets"
+        }
+      ]
+    },
+    {
+      "title": "Laion-5b: An open large-scale dataset for training next generation image-text models",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Christoph Schuhmann"
+        },
+        {
+          "name": "Romain Beaumont"
+        },
+        {
+          "name": "Richard Vencu"
+        }
+      ]
+    },
+    {
+      "title": "Proximal policy optimization algorithms",
+      "year": 2017,
+      "authors": [
+        {
+          "name": "John Schulman"
+        },
+        {
+          "name": "Filip Wolski"
+        },
+        {
+          "name": "Prafulla Dhariwal"
+        }
+      ]
+    },
+    {
+      "title": "Synth 2 : Boosting visual-language models with synthetic captions and image embeddings",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Sahand Sharifzadeh"
+        },
+        {
+          "name": "Christos Kaplanis"
+        },
+        {
+          "name": "Shreya Pathak"
+        }
+      ]
+    },
+    {
+      "title": "Shield: An evaluation benchmark for face spoofing and forgery detection with multimodal large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Yichen Shi"
+        },
+        {
+          "name": "Yuhao Gao"
+        },
+        {
+          "name": "Yingxin Lai"
+        }
+      ]
+    },
+    {
+      "title": "Towards vqa models that can read",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Amanpreet Singh"
+        },
+        {
+          "name": "Vivek Natarajan"
+        },
+        {
+          "name": "Meet Shah"
+        }
+      ]
+    },
+    {
+      "title": "Moviechat: From dense token to sparse memory for long video understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Enxin Song"
+        },
+        {
+          "name": "Wenhao Chai"
+        },
+        {
+          "name": "Guanhong Wang"
+        }
+      ]
+    },
+    {
+      "title": "M3gia: A cognition inspired multilingual and multimodal general intelligence ability benchmark",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Wei Song"
+        },
+        {
+          "name": "Yadong Li"
+        },
+        {
+          "name": "Jianhua Xu"
+        }
+      ]
+    },
+    {
+      "title": "Wit: Wikipedia-based image text dataset for multimodal multilingual machine learning",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Krishna Srinivasan"
+        },
+        {
+          "name": "Karthik Raman"
+        },
+        {
+          "name": "Jiecao Chen"
+        }
+      ]
+    },
+    {
+      "title": "Content-rich aigc video quality assessment via intricate text alignment and motion-aware consistency",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Shangkun Sun"
+        },
+        {
+          "name": "Xiaoyu Liang"
+        },
+        {
+          "name": "Bowen Qu"
+        }
+      ]
+    },
+    {
+      "title": "Kalie: Fine-tuning vision-language models for open-world manipulation without robot data",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Grace Tang"
+        },
+        {
+          "name": "Swetha Rajkumar"
+        },
+        {
+          "name": "Yifei Zhou"
+        }
+      ]
+    },
+    {
+      "title": "Mtvqa: Benchmarking multilingual text-centric visual question answering",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Jingqun Tang"
+        },
+        {
+          "name": "Qi Liu"
+        },
+        {
+          "name": "Yongjie Ye"
+        }
+      ]
+    },
+    {
+      "title": "Drivevlm: The convergence of autonomous driving and large vision-language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiaoyu Tian"
+        },
+        {
+          "name": "Junru Gu"
+        },
+        {
+          "name": "Bailin Li"
+        }
+      ]
+    },
+    {
+      "title": "Llama 2: Open foundation and fine-tuned chat models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Hugo Touvron"
+        },
+        {
+          "name": "Louis Martin"
+        }
+      ]
+    },
+    {
+      "title": "Multimodal few-shot learning with frozen language models",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Maria Tsimpoukelli"
+        },
+        {
+          "name": "Jacob Menick"
+        },
+        {
+          "name": "Serkan Cabi"
+        }
+      ]
+    },
+    {
+      "title": "Computing machinery and intelligence",
+      "year": 1950,
+      "authors": [
+        {
+          "name": "A. M. Turing"
+        }
+      ]
+    },
+    {
+      "title": "Representation learning with contrastive predictive coding",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Aaron van den Oord"
+        },
+        {
+          "name": "Yazhe Li"
+        },
+        {
+          "name": "Oriol Vinyals"
+        }
+      ]
+    },
+    {
+      "title": "Veo 2",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Veo-Team"
+        }
+      ]
+    },
+    {
+      "title": "Position: Will we run out of data? limits of llm scaling based on human-generated data",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Pablo Villalobos"
+        },
+        {
+          "name": "Anson Ho"
+        },
+        {
+          "name": "Jaime Sevilla"
+        }
+      ]
+    },
+    {
+      "title": "Can linguistic knowledge improve multimodal alignment in vision-language pretraining?",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Fei Wang"
+        },
+        {
+          "name": "Liang Ding"
+        },
+        {
+          "name": "Jun Rao"
+        }
+      ]
+    },
+    {
+      "title": "An llm-free multi-dimensional benchmark for mllms hallucination evaluation",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Junyang Wang"
+        },
+        {
+          "name": "Yuhang Wang"
+        },
+        {
+          "name": "Guohai Xu"
+        }
+      ]
+    },
+    {
+      "title": "Measuring multimodal mathematical reasoning with math-vision dataset",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ke Wang"
+        },
+        {
+          "name": "Junting Pan"
+        },
+        {
+          "name": "Weikang Shi"
+        }
+      ]
+    },
+    {
+      "title": "Auxiliary-loss-free load balancing strategy for mixture-of-experts",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Lean Wang"
+        },
+        {
+          "name": "Huazuo Gao"
+        },
+        {
+          "name": "Chenggang Zhao"
+        }
+      ]
+    },
+    {
+      "title": "Qwen2-vl: Enhancing vision-language model's perception of the world at any resolution",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Peng Wang"
+        },
+        {
+          "name": "Shuai Bai"
+        },
+        {
+          "name": "Sinan Tan"
+        }
+      ]
+    },
+    {
+      "title": "Cogvlm: Visual expert for pretrained language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Weihan Wang"
+        },
+        {
+          "name": "Qingsong Lv"
+        },
+        {
+          "name": "Wenmeng Yu"
+        }
+      ]
+    },
+    {
+      "title": "Enhancing visual-language modality alignment in large vision language models via self-improvement",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiyao Wang"
+        },
+        {
+          "name": "Jiuhai Chen"
+        },
+        {
+          "name": "Zhaoyang Wang"
+        }
+      ]
+    },
+    {
+      "title": "Mitigating hallucinations in large vision-language models with instruction contrastive decoding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xintong Wang"
+        },
+        {
+          "name": "Jingheng Pan"
+        },
+        {
+          "name": "Liang Ding"
+        }
+      ]
+    },
+    {
+      "title": "Emu3: Next-token prediction is all you need",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xinlong Wang"
+        },
+        {
+          "name": "Xiaosong Zhang"
+        },
+        {
+          "name": "Zhengxiong Luo"
+        }
+      ]
+    },
+    {
+      "title": "Robogen: Towards unleashing infinite data for automated robot learning via generative simulation",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Yufei Wang"
+        },
+        {
+          "name": "Zhou Xian"
+        },
+        {
+          "name": "Feng Chen"
+        }
+      ]
+    },
+    {
+      "title": "Simvlm: Simple visual language model pretraining with weak supervision",
+      "year": 2021,
+      "authors": [
+        {
+          "name": "Zirui Wang"
+        },
+        {
+          "name": "Jiahui Yu"
+        },
+        {
+          "name": "Adams Wei Yu"
+        }
+      ]
+    },
+    {
+      "title": "Extending multi-modal contrastive representations",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Zehan Wang"
+        },
+        {
+          "name": "Ziang Zhang"
+        },
+        {
+          "name": "Luping Liu"
+        }
+      ]
+    },
+    {
+      "title": "On the de-duplication of laion-2b",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Ryan Webster"
+        },
+        {
+          "name": "Julien Rabin"
+        },
+        {
+          "name": "Loic Simon"
+        }
+      ]
+    },
+    {
+      "title": "Referring multi-object tracking",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Dongming Wu"
+        },
+        {
+          "name": "Wencheng Han"
+        },
+        {
+          "name": "Tiancai Wang"
+        }
+      ]
+    },
+    {
+      "title": "Daydreamer: World models for physical robot learning",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Philipp Wu"
+        },
+        {
+          "name": "Alejandro Escontrela"
+        },
+        {
+          "name": "Danijar Hafner"
+        }
+      ]
+    },
+    {
+      "title": "Fmbench: Benchmarking fairness in multimodal large language models on medical tasks",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Peiran Wu"
+        },
+        {
+          "name": "Che Liu"
+        },
+        {
+          "name": "Canyu Chen"
+        }
+      ]
+    },
+    {
+      "title": "Highlighting the safety concerns of deploying llms/vlms in robotics",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiyang Wu"
+        },
+        {
+          "name": "Souradip Chakraborty"
+        },
+        {
+          "name": "Ruiqi Xian"
+        }
+      ]
+    },
+    {
+      "title": "Autohallusion: Automatic generation of hallucination benchmarks for vision-language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiyang Wu"
+        },
+        {
+          "name": "Tianrui Guan"
+        },
+        {
+          "name": "Dianqi Li"
+        }
+      ]
+    },
+    {
+      "title": "Deepseek-vl2: Mixture-of-experts vision-language models for advanced multimodal understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zhiyu Wu"
+        },
+        {
+          "name": "Xiaokang Chen"
+        },
+        {
+          "name": "Zizheng Pan"
+        }
+      ]
+    },
+    {
+      "title": "Grok-1.5v: The multimodal version of our ai",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "X.AI"
+        }
+      ]
+    },
+    {
+      "title": "Gibson env: Real-world perception for embodied agents",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Fei Xia"
+        },
+        {
+          "name": "Amir R Zamir"
+        },
+        {
+          "name": "Zhiyang He"
+        }
+      ]
+    },
+    {
+      "title": "A critical evaluation of evaluations for long-form question answering",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Fangyuan Xu"
+        },
+        {
+          "name": "Yixiao Song"
+        },
+        {
+          "name": "Mohit Iyyer"
+        }
+      ]
+    },
+    {
+      "title": "Hallucination is inevitable: An innate limitation of large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Ziwei Xu"
+        },
+        {
+          "name": "Sanjay Jain"
+        },
+        {
+          "name": "Mohan Kankanhalli"
+        }
+      ]
+    },
+    {
+      "title": "xgen-mm (blip-3): A family of open large multimodal models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Le Xue"
+        },
+        {
+          "name": "Manli Shu"
+        },
+        {
+          "name": "Anas Awadalla"
+        }
+      ]
+    },
+    {
+      "title": "Baichuan 2: Open large-scale language models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Aiyuan Yang"
+        },
+        {
+          "name": "Bin Xiao"
+        },
+        {
+          "name": "Bingning Wang"
+        }
+      ]
+    },
+    {
+      "title": "Qwen2 technical report",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "An Yang"
+        },
+        {
+          "name": "Baosong Yang"
+        },
+        {
+          "name": "Binyuan Hui"
+        }
+      ]
+    },
+    {
+      "title": "Learning interactive real-world simulators",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Mengjiao Yang"
+        },
+        {
+          "name": "Yilun Du"
+        },
+        {
+          "name": "Kamyar Ghasemipour"
+        }
+      ]
+    },
+    {
+      "title": "The dawn of lmms: Preliminary explorations with gpt-4v (ision)",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Zhengyuan Yang"
+        },
+        {
+          "name": "Linjie Li"
+        },
+        {
+          "name": "Kevin Lin"
+        }
+      ]
+    },
+    {
+      "title": "Detclip: Dictionary-enriched visual-concept paralleled pre-training for open-world detection",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Lewei Yao"
+        },
+        {
+          "name": "Jianhua Han"
+        },
+        {
+          "name": "Youpeng Wen"
+        }
+      ]
+    },
+    {
+      "title": "What you see is what you read? improving text-image alignment evaluation",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Michal Yarom"
+        },
+        {
+          "name": "Yonatan Bitton"
+        },
+        {
+          "name": "Soravit Changpinyo"
+        }
+      ]
+    },
+    {
+      "title": "Beaf: Observing before-after changes to evaluate hallucination in vision-language models",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Moon Ye-Bin"
+        },
+        {
+          "name": "Nam Hyeon-Woo"
+        },
+        {
+          "name": "Wonseok Choi"
+        }
+      ]
+    },
+    {
+      "title": "Mmt-bench: A comprehensive multimodal benchmark for evaluating large vision-language models towards multitask agi",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Kaining Ying"
+        },
+        {
+          "name": "Fanqing Meng"
+        },
+        {
+          "name": "Jin Wang"
+        }
+      ]
+    },
+    {
+      "title": "Safebench: A safety evaluation framework for multimodal large language models",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Zonghao Ying"
+        },
+        {
+          "name": "Aishan Liu"
+        },
+        {
+          "name": "Siyuan Liang"
+        }
+      ]
+    },
+    {
+      "title": "Mm-vet: Evaluating large multimodal models for integrated capabilities",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Weihao Yu"
+        },
+        {
+          "name": "Zhengyuan Yang"
+        },
+        {
+          "name": "Linjie Li"
+        }
+      ]
+    },
+    {
+      "title": "Safe-vln: Collision avoidance for vision-and-language navigation of autonomous robots operating in continuous environments",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Lu Yue"
+        },
+        {
+          "name": "Dongliang Zhou"
+        },
+        {
+          "name": "Liang Xie"
+        }
+      ]
+    },
+    {
+      "title": "Mmmu: A massive multi-discipline multimodal understanding and reasoning benchmark for expert agi",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiang Yue"
+        },
+        {
+          "name": "Yuansheng Ni"
+        },
+        {
+          "name": "Kai Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Mmmu-pro: A more robust multi-discipline multimodal understanding benchmark",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Xiang Yue"
+        },
+        {
+          "name": "Tianyu Zheng"
+        },
+        {
+          "name": "Yuansheng Ni"
+        }
+      ]
+    },
+    {
+      "title": "Taskonomy: Disentangling task transfer learning",
+      "year": 2018,
+      "authors": [
+        {
+          "name": "Amir Zamir"
+        },
+        {
+          "name": "Alexander Sax"
+        },
+        {
+          "name": "William Shen"
+        }
+      ]
+    },
+    {
+      "title": "From recognition to cognition: Visual commonsense reasoning",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Rowan Zellers"
+        },
+        {
+          "name": "Yonatan Bisk"
+        },
+        {
+          "name": "Ali Farhadi"
+        }
+      ]
+    },
+    {
+      "title": "Halle-switch: Rethinking and controlling object existence hallucinations in large vision language models for detailed caption",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Bohan Zhai"
+        },
+        {
+          "name": "Shijia Yang"
+        },
+        {
+          "name": "Xiangchen Zhao"
+        }
+      ]
+    },
+    {
+      "title": "Sigmoid loss for language image pre-training",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Xiaohua Zhai"
+        },
+        {
+          "name": "Basil Mustafa"
+        },
+        {
+          "name": "Alexander Kolesnikov"
+        }
+      ]
+    },
+    {
+      "title": "Root mean square layer normalization",
+      "year": 2019,
+      "authors": [
+        {
+          "name": "Biao Zhang"
+        },
+        {
+          "name": "Rico Sennrich"
+        }
+      ]
+    },
+    {
+      "title": "Aquila2 technical report",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Bo-Wen Zhang"
+        },
+        {
+          "name": "Liangdong Wang"
+        },
+        {
+          "name": "Jijie Li"
+        }
+      ]
+    },
+    {
+      "title": "Vision-language models for vision tasks: A survey",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Jingyi Zhang"
+        },
+        {
+          "name": "Jiaxing Huang"
+        },
+        {
+          "name": "Sheng Jin"
+        }
+      ]
+    },
+    {
+      "title": "R1-vl: Learning to reason with multimodal large language models via step-wise group relative policy optimization",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Jingyi Zhang"
+        },
+        {
+          "name": "Jiaxing Huang"
+        },
+        {
+          "name": "Huanjin Yao"
+        }
+      ]
+    },
+    {
+      "title": "Mm-rlhf: The next step forward in multimodal llm alignment",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Yi-Fan Zhang"
+        },
+        {
+          "name": "Tao Yu"
+        },
+        {
+          "name": "Haochen Tian"
+        }
+      ]
+    },
+    {
+      "title": "Videoprism: A foundational visual encoder for video understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Long Zhao"
+        },
+        {
+          "name": "Nitesh B. Gundavarapu"
+        },
+        {
+          "name": "Liangzhe Yuan"
+        }
+      ]
+    },
+    {
+      "title": "Large language models are effective table-to-text generators, evaluators, and feedback providers",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Yilun Zhao"
+        },
+        {
+          "name": "Haowei Zhang"
+        },
+        {
+          "name": "Shengyun Si"
+        }
+      ]
+    },
+    {
+      "title": "Movq: Modulating quantized vectors for high-fidelity image generation",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Chuanxia Zheng"
+        },
+        {
+          "name": "Long Tung Vuong"
+        },
+        {
+          "name": "Jianfei Cai"
+        }
+      ]
+    },
+    {
+      "title": "VLMbench: A compositional benchmark for vision-and-language manipulation",
+      "year": 2022,
+      "authors": [
+        {
+          "name": "Kaizhi Zheng"
+        },
+        {
+          "name": "Xiaotong Chen"
+        },
+        {
+          "name": "Odest Jenkins"
+        }
+      ]
+    },
+    {
+      "title": "Agieval: A human-centric benchmark for evaluating foundation models",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Wanjun Zhong"
+        },
+        {
+          "name": "Ruixiang Cui"
+        },
+        {
+          "name": "Yiduo Guo"
+        }
+      ]
+    },
+    {
+      "title": "Transfusion: Predict the next token and diffuse images with one multi-modal model",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Chunting Zhou"
+        },
+        {
+          "name": "Lili Yu"
+        },
+        {
+          "name": "Arun Babu"
+        }
+      ]
+    },
+    {
+      "title": "R1-zero's 'aha moment' in visual reasoning on a 2b non-sft model",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Hengguang Zhou"
+        },
+        {
+          "name": "Xirui Li"
+        },
+        {
+          "name": "Ruochen Wang"
+        }
+      ]
+    },
+    {
+      "title": "You only teach once: Learn one-shot bimanual robotic manipulation from video demonstrations",
+      "year": 2025,
+      "authors": [
+        {
+          "name": "Huayi Zhou"
+        },
+        {
+          "name": "Ruixiang Wang"
+        },
+        {
+          "name": "Yunxin Tai"
+        }
+      ]
+    },
+    {
+      "title": "Mlvu: A comprehensive benchmark for multitask long video understanding",
+      "year": 2024,
+      "authors": [
+        {
+          "name": "Junjie Zhou"
+        },
+        {
+          "name": "Yan Shu"
+        },
+        {
+          "name": "Bo Zhao"
+        }
+      ]
+    },
+    {
+      "title": "Webarena: A realistic web environment for building autonomous agents",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Shuyan Zhou"
+        },
+        {
+          "name": "Frank F Xu"
+        },
+        {
+          "name": "Hao Zhu"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": null,
+  "publication_date": null,
+  "publication_type": "Preprint"
+}

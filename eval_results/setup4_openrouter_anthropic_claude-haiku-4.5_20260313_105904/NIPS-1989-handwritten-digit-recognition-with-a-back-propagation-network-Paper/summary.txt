@@ -1,0 +1,81 @@
+================================================================================
+EVALUATION REPORT: NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper
+Timestamp: 2026-03-13T10:59:24.837627
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Pass Rate: 40.0%
+  Overall Score: 0.400
+  Evaluated Fields: 10
+  Passed: 4
+  Failed: 6
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 30
+  Required Keys: 6
+  Optional Keys: 13
+  By Type: anyof: 3, array: 4, integer: 2, null: 3, object: 4, string: 14
+
+COVERAGE
+----------------------------------------
+  Present in Both: 21
+  Missing in Extracted: 19
+  Spurious in Extracted: 84
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 0.0% (0/3)
+  integer_exact: 100.0% (1/1)
+  string_exact: 50.0% (1/2)
+  string_semantic: 50.0% (2/4)
+
+LLM METRICS
+----------------------------------------
+  Calls: 7
+  Avg Score: 0.286
+  Median Score: 0.000
+
+  Top Lowest-Scoring Fields:
+    - venue (string_semantic): 0.000
+    - keywords (array_llm): 0.000
+    - publication_date (string_semantic): 0.000
+    - authors (array_llm): 0.000
+      Reason: The gold and predicted arrays contain objects with 'name' and 'affiliation' fields. For a pair to be...
+    - citations (array_llm): 0.000
+      Reason: The gold array contains strings representing citations, while the predicted array contains objects w...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    semantic_mismatch: 3
+    gold_absent: 2
+    value_mismatch: 1
+  By Path Prefix:
+    venue: 1
+    keywords: 1
+    publication_date: 1
+    publication_type: 1
+    authors: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  venue
+    Metric: string_semantic, Score: 0.000
+    Reason: gold_null
+  keywords
+    Metric: array_llm, Score: 0.000
+    Reason: gold_empty_array
+  publication_date
+    Metric: string_semantic, Score: 0.000
+    Reason: gold_null
+  publication_type
+    Metric: string_exact, Score: 0.000
+  authors
+    Metric: array_llm, Score: 0.000
+  citations
+    Metric: array_llm, Score: 0.000
+
+================================================================================

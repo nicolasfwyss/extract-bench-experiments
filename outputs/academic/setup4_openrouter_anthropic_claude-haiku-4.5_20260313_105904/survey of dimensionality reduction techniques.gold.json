@@ -1,0 +1,2104 @@
+{
+  "ids": null,
+  "title": "A survey of dimensionality reduction techniques",
+  "venue": null,
+  "authors": [
+    {
+      "name": "C.O.S. Sorzano",
+      "email": "coss@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC), C/Darwin, 3. Campus Univ. Aut\u00f3noma, 28049 Cantoblanco, Madrid, Spain"
+    },
+    {
+      "name": "J. Vargas",
+      "email": "jvargas@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC), C/Darwin, 3. Campus Univ. Aut\u00f3noma, 28049 Cantoblanco, Madrid, Spain"
+    },
+    {
+      "name": "A. Pascual-Montano",
+      "email": "pascual@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC), C/Darwin, 3. Campus Univ. Aut\u00f3noma, 28049 Cantoblanco, Madrid, Spain"
+    }
+  ],
+  "abstract": "Experimental life sciences like biology or chemistry have seen in the recent decades an explosion of the data available from experiments. Laboratory instruments become more and more complex and report hundreds or thousands measurements for a single experiment and therefore the statistical methods face challenging tasks when dealing with such high-dimensional data. However, much of the data is highly redundant and can be efficiently brought down to a much smaller number of variables without a significant loss of information. The mathematical procedures making possible this reduction are called dimensionality reduction techniques; they have widely been developed by fields like Statistics or Machine Learning, and are currently a hot research topic. In this review we categorize the plethora of dimension reduction techniques available and give the mathematical insight behind them.",
+  "keywords": [
+    "Dimensionality Reduction",
+    "Data Mining",
+    "Machine Learning",
+    "Statistics"
+  ],
+  "citations": [
+    {
+      "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+      "year": 1901,
+      "authors": [
+        {
+          "name": "K. Pearson"
+        }
+      ]
+    },
+    {
+      "title": "A review of dimension reduction techniques",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "M. A. Carreira-Perpin\u00e1n"
+        }
+      ]
+    },
+    {
+      "title": "A survey of dimension reduction techniques",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "I. K. Fodor"
+        }
+      ]
+    },
+    {
+      "title": "Dimensionality Reduction: A Comparative Review",
+      "year": 2009,
+      "authors": [
+        {
+          "name": "L. van der Mateen"
+        },
+        {
+          "name": "E. Postma"
+        },
+        {
+          "name": "J. van den Herik"
+        }
+      ]
+    },
+    {
+      "title": "The Self-Organizing Map",
+      "year": 1990,
+      "authors": [
+        {
+          "name": "T. Kohonen"
+        }
+      ]
+    },
+    {
+      "title": "Principal Component Analysis",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "I. T. Jolliffe"
+        }
+      ]
+    },
+    {
+      "title": "Principal Component Analysis",
+      "year": 1989,
+      "authors": [
+        {
+          "name": "G. H. Dunteman"
+        }
+      ]
+    },
+    {
+      "title": "Principal component analysis",
+      "year": 1987,
+      "authors": [
+        {
+          "name": "S. Wold"
+        },
+        {
+          "name": "K. Esbensen"
+        },
+        {
+          "name": "P. Geladi"
+        }
+      ]
+    },
+    {
+      "title": "Independent Component Analysis",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "A. Hyv\u00e4rinen"
+        },
+        {
+          "name": "J. Karhunen"
+        },
+        {
+          "name": "E. Oja"
+        }
+      ]
+    },
+    {
+      "title": "Feature selection for classification",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "M. Dash"
+        },
+        {
+          "name": "H. Liu"
+        }
+      ]
+    },
+    {
+      "title": "An introduction to variable and feature selection",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "I. Guyon"
+        },
+        {
+          "name": "A. Eliseeff"
+        }
+      ]
+    },
+    {
+      "title": "A review of feature selection techniques in bioinformatics",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "Y. Saeys"
+        },
+        {
+          "name": "I. Inza"
+        },
+        {
+          "name": "P. Larra\u00f1aga"
+        }
+      ]
+    },
+    {
+      "title": "An introduction to wavelets",
+      "year": 1995,
+      "authors": [
+        {
+          "name": "A. Graps"
+        }
+      ]
+    },
+    {
+      "title": "Wavelets and signal processing",
+      "year": 1991,
+      "authors": [
+        {
+          "name": "O. Rioul"
+        },
+        {
+          "name": "M. Vetterli"
+        }
+      ]
+    },
+    {
+      "title": "The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis",
+      "year": 1998,
+      "authors": [
+        {
+          "name": "H. E. Huang"
+        }
+      ]
+    },
+    {
+      "title": "On empirical mode decomposition and its algorithms",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "G. Rilling"
+        },
+        {
+          "name": "P. Flandrin"
+        },
+        {
+          "name": "P. Goncalves"
+        }
+      ]
+    },
+    {
+      "title": "Low-dimensional models for dimensionality reduction and signal recovery: a geometric perspective",
+      "year": 2012,
+      "authors": [
+        {
+          "name": "R. G. Baraniuk"
+        },
+        {
+          "name": "V. Cevher"
+        },
+        {
+          "name": "M. B. Wakin"
+        }
+      ]
+    },
+    {
+      "title": "The Use of Multiple Measurements in Taxonomic Problems",
+      "year": 1936,
+      "authors": [
+        {
+          "name": "R. A. Fisher"
+        }
+      ]
+    },
+    {
+      "title": "Factor analysis as a statistical method",
+      "year": 1971,
+      "authors": [
+        {
+          "name": "D. N. Lawley"
+        },
+        {
+          "name": "A. E. Maxwell"
+        }
+      ]
+    },
+    {
+      "title": "Modern Factor Analysis",
+      "year": 1976,
+      "authors": [
+        {
+          "name": "H. H. Harman"
+        }
+      ]
+    },
+    {
+      "title": "The foundations of factor analysis",
+      "year": 1971,
+      "authors": [
+        {
+          "name": "S. A. Mulaik"
+        }
+      ]
+    },
+    {
+      "title": "The application of electronic computers to factor analysis",
+      "year": 1960,
+      "authors": [
+        {
+          "name": "H. F. Kaiser"
+        }
+      ]
+    },
+    {
+      "title": "Multiple Factor Analysis",
+      "year": 1947,
+      "authors": [
+        {
+          "name": "L. Thurstone"
+        }
+      ]
+    },
+    {
+      "title": "'General Intelligence' Objectively Determined and Measured",
+      "year": 1904,
+      "authors": [
+        {
+          "name": "C. Spearman"
+        }
+      ]
+    },
+    {
+      "title": "Vector quantization",
+      "year": 1984,
+      "authors": [
+        {
+          "name": "R. M. Gray"
+        }
+      ]
+    },
+    {
+      "title": "Vector quantization and signal compression",
+      "year": 1992,
+      "authors": [
+        {
+          "name": "A. Gersho"
+        },
+        {
+          "name": "R. M. Gray"
+        }
+      ]
+    },
+    {
+      "title": "Algorithm AS 136: A K-Means Clustering Algorithm",
+      "year": 1979,
+      "authors": [
+        {
+          "name": "J. A. Hartigan"
+        },
+        {
+          "name": "M. A. Wong"
+        }
+      ]
+    },
+    {
+      "title": "Pattern Recognition with Fuzzy Objective Function Algorithms",
+      "year": 1981,
+      "authors": [
+        {
+          "name": "J. C. Bezdek"
+        }
+      ]
+    },
+    {
+      "title": "FCM: The fuzzy c-means clustering algorithm",
+      "year": 1984,
+      "authors": [
+        {
+          "name": "J. C. Bezdek"
+        },
+        {
+          "name": "R. Ehrlich"
+        },
+        {
+          "name": "W. Full"
+        }
+      ]
+    },
+    {
+      "title": "Fitting a mixture model by expectation maximization to discover motifs in biopolymers",
+      "year": 1994,
+      "authors": [
+        {
+          "name": "T. L. Bailey"
+        },
+        {
+          "name": "C. Elkan"
+        }
+      ]
+    },
+    {
+      "title": "Singular value decomposition and least squares solutions",
+      "year": 1970,
+      "authors": [
+        {
+          "name": "G. H. Golub"
+        },
+        {
+          "name": "C. Reinsch"
+        }
+      ]
+    },
+    {
+      "title": "The singular value decomposition: Its computation and some applications",
+      "year": 1980,
+      "authors": [
+        {
+          "name": "V. Klema"
+        },
+        {
+          "name": "A. Laub"
+        }
+      ]
+    },
+    {
+      "title": "A practical approach to microarray data analysis Singular Value Decomposition and Principal Component Analysis",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "M. Wall"
+        },
+        {
+          "name": "A. Rechtsteiner"
+        },
+        {
+          "name": "L. Rocha"
+        }
+      ]
+    },
+    {
+      "title": "Kernel Principal Component Analysis",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "B. Sch\u00f6lkopf"
+        },
+        {
+          "name": "A. Smola"
+        },
+        {
+          "name": "K. R. M\u00fcller"
+        }
+      ]
+    },
+    {
+      "title": "Kernel Principal Component Analysis",
+      "year": 1999,
+      "authors": [
+        {
+          "name": "B. Sch\u00f6lkopf"
+        },
+        {
+          "name": "A. Smola"
+        },
+        {
+          "name": "K. R. M\u00fcller"
+        }
+      ]
+    },
+    {
+      "title": "Learning the parts of objects by non-negative matrix factorization",
+      "year": 1999,
+      "authors": [
+        {
+          "name": "D. D. Lee"
+        },
+        {
+          "name": "S. Seung"
+        }
+      ]
+    },
+    {
+      "title": "Algorithms for non-negative matrix factorization",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "D. D. Lee"
+        },
+        {
+          "name": "H. S. Seung"
+        }
+      ]
+    },
+    {
+      "title": "Principal curves",
+      "year": 1989,
+      "authors": [
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "W. Stuetzle"
+        }
+      ]
+    },
+    {
+      "title": "Nonlinear Principal Component Analysis Using Autoassociative Neural Networks",
+      "year": 1991,
+      "authors": [
+        {
+          "name": "M. A. Kramer"
+        }
+      ]
+    },
+    {
+      "title": "Neural networks and principal component analysis: Learning from examples without local minima",
+      "year": 1989,
+      "authors": [
+        {
+          "name": "P. Baldi"
+        },
+        {
+          "name": "K. Hornik"
+        }
+      ]
+    },
+    {
+      "title": "Nonlinear dimensionality reduction",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "D. DeMers"
+        },
+        {
+          "name": "G. Cottrell"
+        }
+      ]
+    },
+    {
+      "title": "Dimension reduction by local Principal Component Analysis",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "N. Kambhatla"
+        },
+        {
+          "name": "T. K. Leen"
+        }
+      ]
+    },
+    {
+      "title": "Nonlinear Principal Component Analysis: Neural Network Models and Applications",
+      "year": 2008,
+      "authors": [
+        {
+          "name": "M. Scholz"
+        },
+        {
+          "name": "M. Fraunholz"
+        },
+        {
+          "name": "J. Selbig"
+        }
+      ]
+    },
+    {
+      "title": "GTM: The Generative Topographic Mapping",
+      "year": 1998,
+      "authors": [
+        {
+          "name": "C. M. Bishop"
+        },
+        {
+          "name": "M. Svens\u00e9n"
+        },
+        {
+          "name": "C. K. I. Williams"
+        }
+      ]
+    },
+    {
+      "title": "Regularized principal manifolds",
+      "year": 1999,
+      "authors": [
+        {
+          "name": "A. J. Smola"
+        },
+        {
+          "name": "R. C. Williamson"
+        },
+        {
+          "name": "S. Mika"
+        },
+        {
+          "name": "B. Sch\u00f6lkopf"
+        }
+      ]
+    },
+    {
+      "title": "Things you haven't heard about the self-organizing map",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "T. Kohonen"
+        }
+      ]
+    },
+    {
+      "title": "Self-Organizing Maps",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "T. Kohonen"
+        }
+      ]
+    },
+    {
+      "title": "A growing neural gas network learns topologies",
+      "year": 1995,
+      "authors": [
+        {
+          "name": "B. Fritzke"
+        }
+      ]
+    },
+    {
+      "title": "Neural-gas network for vector quantization and its application to time-series prediction",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "T. M. Martinetz"
+        },
+        {
+          "name": "S. G. Berkovich"
+        },
+        {
+          "name": "K. J. Schulten"
+        }
+      ]
+    },
+    {
+      "title": "A \"neural-gas\" network learns topologies",
+      "year": 1991,
+      "authors": [
+        {
+          "name": "T. Martinetz"
+        },
+        {
+          "name": "K. Schulten"
+        }
+      ]
+    },
+    {
+      "title": "Constructive methods of invariant manifolds for kinetic problems",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "A. N. Gorban"
+        },
+        {
+          "name": "I. V. Karlin"
+        },
+        {
+          "name": "A. Y. Zinovyev"
+        }
+      ]
+    },
+    {
+      "title": "Principal Manifolds for Data Visualization and Dimension Reduction",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "A. N. Gorban"
+        },
+        {
+          "name": "B. K\u00e9gl"
+        },
+        {
+          "name": "D. C. Wunsch"
+        },
+        {
+          "name": "A. Zinovyev"
+        }
+      ]
+    },
+    {
+      "title": "Multidimensional Scaling",
+      "year": 1964,
+      "authors": [
+        {
+          "name": "J. B. Kruskal"
+        }
+      ]
+    },
+    {
+      "title": "Nonmetric multidimensional scaling: a numerical method",
+      "year": 1964,
+      "authors": [
+        {
+          "name": "J. B. Kruskal"
+        }
+      ]
+    },
+    {
+      "title": "Introduction to multidimensional scaling: Theory, methods, and applications",
+      "year": 1981,
+      "authors": [
+        {
+          "name": "S. S. Schiffman"
+        },
+        {
+          "name": "M. L. Reynolds"
+        },
+        {
+          "name": "F. W. Young"
+        }
+      ]
+    },
+    {
+      "title": "Multidimensional scaling",
+      "year": 1986,
+      "authors": [
+        {
+          "name": "J. B. Kruskal"
+        },
+        {
+          "name": "M. Wish"
+        }
+      ]
+    },
+    {
+      "title": "Modern Multidimensional Scaling",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "I. Borg"
+        },
+        {
+          "name": "P. F. Groenen"
+        }
+      ]
+    },
+    {
+      "title": "A global geometric framework for nonlinear dimensionality reduction",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "J. B. Tenenbaum"
+        },
+        {
+          "name": "V. de Silva"
+        },
+        {
+          "name": "J. C. Langford"
+        }
+      ]
+    },
+    {
+      "title": "Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "M. Belkin"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "title": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "M. Belkin"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "S. T. Roweis"
+        },
+        {
+          "name": "L. K. Saul"
+        }
+      ]
+    },
+    {
+      "title": "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "L. K. Saul"
+        },
+        {
+          "name": "S. T. Roweis"
+        }
+      ]
+    },
+    {
+      "title": "A nonlinear mapping for data structure analysis",
+      "year": 1969,
+      "authors": [
+        {
+          "name": "J. W. Sammon"
+        }
+      ]
+    },
+    {
+      "title": "Hessian eigenmaps: locally linear embedding techniques for high-dimensional data",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "D. L. Donoho"
+        },
+        {
+          "name": "C. Grimes"
+        }
+      ]
+    },
+    {
+      "title": "Principal Manifolds and Nonlinear Dimensionality Reduction via Tangent Space Alignment",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "Z. Zhang"
+        },
+        {
+          "name": "H. Zha"
+        }
+      ]
+    },
+    {
+      "title": "Adaptive manifold learning",
+      "year": 2012,
+      "authors": [
+        {
+          "name": "Z. Zhang"
+        },
+        {
+          "name": "J. Wang"
+        },
+        {
+          "name": "H. Zha"
+        }
+      ]
+    },
+    {
+      "title": "Locality Preserving Projections",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "X. He"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "title": "Neighborhood Preserving Embedding",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "X. He"
+        },
+        {
+          "name": "D. Cai"
+        },
+        {
+          "name": "S. Yan"
+        },
+        {
+          "name": "H. J. Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Orthogonal neighborhood preserving projections: a projection-based dimensionality reduction technique",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "E. Kokiopoulou"
+        },
+        {
+          "name": "Y. Saad"
+        }
+      ]
+    },
+    {
+      "title": "On a Connection between Kernel PCA and Metric Multidimensional Scaling",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "C. K. I. Williams"
+        }
+      ]
+    },
+    {
+      "title": "Learning eigenfunctions links spectral embedding and Kernel PCA",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "Y. Bengio"
+        },
+        {
+          "name": "O. Delalleau"
+        },
+        {
+          "name": "N. Le Roux"
+        },
+        {
+          "name": "J. F. Paiement"
+        },
+        {
+          "name": "P. Vincent"
+        },
+        {
+          "name": "M. Ouimet"
+        }
+      ]
+    },
+    {
+      "title": "Spectral Dimensionality Reduction",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "Y. Bengio"
+        },
+        {
+          "name": "O. Delalleau"
+        },
+        {
+          "name": "N. Le Roux"
+        },
+        {
+          "name": "J. F. Paiement"
+        },
+        {
+          "name": "P. Vincent"
+        },
+        {
+          "name": "M. Ouimet"
+        }
+      ]
+    },
+    {
+      "title": "Algorithms for manifold learning",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "L. Cayton"
+        }
+      ]
+    },
+    {
+      "title": "Fast and robust fixed-point algorithms for independent component analysis",
+      "year": 1999,
+      "authors": [
+        {
+          "name": "A. Hyv\u00e4rinen"
+        }
+      ]
+    },
+    {
+      "title": "Independent Component Analysis: algorithms and applications",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "A. Hyv\u00e4rinen"
+        },
+        {
+          "name": "E. Oja"
+        }
+      ]
+    },
+    {
+      "title": "Independent Component Analysis, a new concept?",
+      "year": 1994,
+      "authors": [
+        {
+          "name": "P. Common"
+        }
+      ]
+    },
+    {
+      "title": "A Projection Pursuit Algorithm for Exploratory Data Analysis",
+      "year": 1974,
+      "authors": [
+        {
+          "name": "J. H. Friedman"
+        },
+        {
+          "name": "J. W. Tukey"
+        }
+      ]
+    },
+    {
+      "title": "Exploratory projection pursuit",
+      "year": 1987,
+      "authors": [
+        {
+          "name": "J. H. Friedman"
+        }
+      ]
+    },
+    {
+      "title": "A unifying information-theoretic framework for independent component analysis",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "T. W. Lee"
+        },
+        {
+          "name": "M. Girolami"
+        },
+        {
+          "name": "A. J. Bell"
+        },
+        {
+          "name": "T. J. Sejnowski"
+        }
+      ]
+    },
+    {
+      "title": "Kernel entropy component analysis",
+      "year": 2010,
+      "authors": [
+        {
+          "name": "R. Jenssen"
+        }
+      ]
+    },
+    {
+      "title": "L1-norm PCA and a heuristic approach",
+      "year": 1996,
+      "authors": [
+        {
+          "name": "A. Baccini"
+        },
+        {
+          "name": "P. Besse"
+        },
+        {
+          "name": "A. Falguerolles"
+        }
+      ]
+    },
+    {
+      "title": "Robust L1 norm factorization in the presence of outliers and missing data by alternative convex programming",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "Q. Ke"
+        },
+        {
+          "name": "T. Kanade"
+        }
+      ]
+    },
+    {
+      "title": "R1-PCA: Rotational Invariant L1-norm Principal Component Analysis for Robust Subspace Factorization",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "C. Ding"
+        },
+        {
+          "name": "D. Zhou"
+        },
+        {
+          "name": "X. He"
+        },
+        {
+          "name": "H. Zha"
+        }
+      ]
+    },
+    {
+      "title": "Principal component analysis based on l1-norm maximization",
+      "year": 2008,
+      "authors": [
+        {
+          "name": "N. Kwak"
+        }
+      ]
+    },
+    {
+      "title": "A framework for robust subspace learning",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "F. De la Torre"
+        },
+        {
+          "name": "M. J. Black"
+        }
+      ]
+    },
+    {
+      "title": "Robust PCA and classification in biosciences",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "M. Hubert"
+        },
+        {
+          "name": "S. Engelen"
+        }
+      ]
+    },
+    {
+      "title": "Robust principal component analysis based on maximum correntropy criterion",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "R. He"
+        },
+        {
+          "name": "B.-G. Hu"
+        },
+        {
+          "name": "W.-S. Zheng"
+        },
+        {
+          "name": "X.-W. Kong"
+        }
+      ]
+    },
+    {
+      "title": "A weighted principal component analysis and its application to gene expression data",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "J. F. Pinto da Costa"
+        },
+        {
+          "name": "H. Alonso"
+        },
+        {
+          "name": "L. Roque"
+        }
+      ]
+    },
+    {
+      "title": "Dictionaries for sparse representation modeling",
+      "year": 2010,
+      "authors": [
+        {
+          "name": "R. Rubinstein"
+        },
+        {
+          "name": "A. M. Bruckstein"
+        },
+        {
+          "name": "M. Elad"
+        }
+      ]
+    },
+    {
+      "title": "Non-negative matrix and tensor factorizations",
+      "year": 2009,
+      "authors": [
+        {
+          "name": "A. Cichocki"
+        },
+        {
+          "name": "R. Zdunek"
+        },
+        {
+          "name": "A. H. Phan"
+        },
+        {
+          "name": "S. Amari"
+        }
+      ]
+    },
+    {
+      "title": "Nonnegative sparse coding",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "P. O. Hoyer"
+        }
+      ]
+    },
+    {
+      "title": "Sparse NMF",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "W. Liu"
+        },
+        {
+          "name": "N. Zheng"
+        },
+        {
+          "name": "X. Lu"
+        }
+      ]
+    },
+    {
+      "title": "Nonnegative matrix factorization with sparseness constraints",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "P. O. Hoyer"
+        }
+      ]
+    },
+    {
+      "title": "Nonnegative matrix factorization for spectral data analysis",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "V. P. Pauca"
+        },
+        {
+          "name": "J. Piper"
+        },
+        {
+          "name": "R. J. Plemmons"
+        }
+      ]
+    },
+    {
+      "title": "Nonsmooth nonnegative matrix factorization (nsNMF)",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "A. Pascual-Montano"
+        },
+        {
+          "name": "J. Carazo"
+        },
+        {
+          "name": "K. Kochi"
+        },
+        {
+          "name": "D. Lehmann"
+        },
+        {
+          "name": "R. Pascual-Marqui"
+        }
+      ]
+    },
+    {
+      "title": "Graph Regularized Non-Negative Matrix Factorization for Data Representation",
+      "year": 2010,
+      "authors": [
+        {
+          "name": "D. Cai"
+        },
+        {
+          "name": "X. He"
+        },
+        {
+          "name": "J. Han"
+        },
+        {
+          "name": "T. S. Huang"
+        }
+      ]
+    },
+    {
+      "title": "K-SVD: An Algorithm for Designing Overcomplete Dictionaries for Sparse Representation",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "M. Aharon"
+        },
+        {
+          "name": "M. Elad"
+        },
+        {
+          "name": "A. Bruckstein"
+        }
+      ]
+    },
+    {
+      "title": "Basis pursuit",
+      "year": 1994,
+      "authors": [
+        {
+          "name": "S. S. Chen"
+        },
+        {
+          "name": "D. L. Donoho"
+        }
+      ]
+    },
+    {
+      "title": "Atomic decomposition by basis pursuit",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "S. S. Chen"
+        },
+        {
+          "name": "D. L. Donoho"
+        },
+        {
+          "name": "M. A. Saunders"
+        }
+      ]
+    },
+    {
+      "title": "Matching pursuits with time-frequency dictionaries",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "S. G. Mallat"
+        },
+        {
+          "name": "Z. Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Orthogonal matching pursuit: recursive function approximation with applications to wavelet decomposition",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "Y. Pati"
+        },
+        {
+          "name": "R. Rezaiifar"
+        },
+        {
+          "name": "P. Krishnaprasad"
+        }
+      ]
+    },
+    {
+      "title": "Signal Recovery From Random Measurements Via Orthogonal Matching Pursuit",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "J. A. Tropp"
+        },
+        {
+          "name": "A. C. Gilbert"
+        }
+      ]
+    },
+    {
+      "title": "Orthogonal least squares learning algorithm for radial basis function networks",
+      "year": 1991,
+      "authors": [
+        {
+          "name": "S. Chen"
+        },
+        {
+          "name": "C. F. N. Cowan"
+        },
+        {
+          "name": "P. M. Grant"
+        }
+      ]
+    },
+    {
+      "title": "Sparse signal reconstruction from limited data using FOCUSS: re-weighted minimum norm algorithm",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "I. F. Gorodnitsky"
+        },
+        {
+          "name": "B. D. Rao"
+        }
+      ]
+    },
+    {
+      "title": "Gradient pursuits",
+      "year": 2008,
+      "authors": [
+        {
+          "name": "T. Blumensath"
+        },
+        {
+          "name": "M. E. Davies"
+        }
+      ]
+    },
+    {
+      "title": "From Sparse Solutions of Systems of Equations to Sparse Modeling of Signals and Images",
+      "year": 2009,
+      "authors": [
+        {
+          "name": "A. M. Bruckstein"
+        },
+        {
+          "name": "D. L. Donoho"
+        },
+        {
+          "name": "M. Elad"
+        }
+      ]
+    },
+    {
+      "title": "Dictionary learning algorithms for sparse representation",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "K. Kreutz-Delgado"
+        },
+        {
+          "name": "J. F. Murray"
+        },
+        {
+          "name": "B. D. Rao"
+        },
+        {
+          "name": "K. Engan"
+        },
+        {
+          "name": "T. Lee"
+        },
+        {
+          "name": "T. J. Sejnowski"
+        }
+      ]
+    },
+    {
+      "title": "Learning overcomplete representations",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "M. S. Lewicki"
+        },
+        {
+          "name": "T. J. Sejnowski"
+        }
+      ]
+    },
+    {
+      "title": "Multi-frame compression: theory and design",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "K. Engan"
+        },
+        {
+          "name": "S. O. Aase"
+        },
+        {
+          "name": "J. H. Husoy"
+        }
+      ]
+    },
+    {
+      "title": "A method for compact image representation using sparse matrix and tensor projections onto exemplar orthonormal bases",
+      "year": 2010,
+      "authors": [
+        {
+          "name": "K. S. Gurumoorthy"
+        },
+        {
+          "name": "A. Rajwade"
+        },
+        {
+          "name": "A. Banerjee"
+        },
+        {
+          "name": "A. Rangarajan"
+        }
+      ]
+    },
+    {
+      "title": "Foundations of the PARAFAC procedure: Models and conditions for an \"explanatory\" multimodal factor analysis",
+      "year": 1970,
+      "authors": [
+        {
+          "name": "R. A. Harshman"
+        }
+      ]
+    },
+    {
+      "title": "PARAFAC. Tutorial and applications",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "R. Bro"
+        }
+      ]
+    },
+    {
+      "title": "Some mathematical notes on three-mode factor analysis",
+      "year": 1966,
+      "authors": [
+        {
+          "name": "L. R. Tucker"
+        }
+      ]
+    },
+    {
+      "title": "Towards a Generalized Singular Value Decomposition",
+      "year": 1981,
+      "authors": [
+        {
+          "name": "C. C. Paige"
+        },
+        {
+          "name": "M. A. Saunders"
+        }
+      ]
+    },
+    {
+      "title": "Singular value decomposition (SVD) and Generalized Singular Value Decomposition (GSVD)",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "H. Abdi"
+        }
+      ]
+    },
+    {
+      "title": "The Earth Mover's Distance as a Metric for Image Retrieval",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "Y. Rubner"
+        },
+        {
+          "name": "C. Tomasi"
+        },
+        {
+          "name": "L. J. Guibas"
+        }
+      ]
+    },
+    {
+      "title": "Nonnegative Matrix Factorization with Earth Mover's Distance Metric for Image Analysis",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "R. Sandler"
+        },
+        {
+          "name": "M. Lindenbaum"
+        }
+      ]
+    },
+    {
+      "title": "Dimensionality reduction by random mapping: fast similarity computation for clustering",
+      "year": 1998,
+      "authors": [
+        {
+          "name": "S. Kaski"
+        }
+      ]
+    },
+    {
+      "title": "Experiments with random projection",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "S. Dasgupta"
+        }
+      ]
+    },
+    {
+      "title": "Random projection in dimensionality reduction: applications to image and text data",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "E. Bingham"
+        },
+        {
+          "name": "H. Mannila"
+        }
+      ]
+    },
+    {
+      "title": "DCT quantization matrices visually optimized for individual images",
+      "year": 1993,
+      "authors": [
+        {
+          "name": "A. B. Watson"
+        }
+      ]
+    },
+    {
+      "title": "Extraction of independent signal sources using a deflationary exploratory projection pursuit network with lateral inhibition",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "M. Girolami"
+        },
+        {
+          "name": "C. Fyfe"
+        }
+      ]
+    },
+    {
+      "title": "ICA Contrast Maximisation Using Oja's Nonlinear PCA Algorithm",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "M. Girolami"
+        },
+        {
+          "name": "C. Fyfe"
+        }
+      ]
+    },
+    {
+      "title": "Mercer kernel-based clustering in feature space",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "M. Girolami"
+        }
+      ]
+    },
+    {
+      "title": "Kernel k-means: spectral clustering and normalized cuts",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "I. S. Dhillon"
+        },
+        {
+          "name": "Y. Guan"
+        },
+        {
+          "name": "B. Kulis"
+        }
+      ]
+    },
+    {
+      "title": "Optimization of k-means with adaptive distance metric for clustering high-dimensional data",
+      "year": 2012,
+      "authors": [
+        {
+          "name": "S. Yu"
+        },
+        {
+          "name": "L.-C. Tranchevent"
+        },
+        {
+          "name": "X. Liu"
+        },
+        {
+          "name": "W. Gl\u00e4nzel"
+        },
+        {
+          "name": "J. A. K. Suykens"
+        },
+        {
+          "name": "B. De Moor"
+        },
+        {
+          "name": "Y. Moreau"
+        }
+      ]
+    },
+    {
+      "title": "Incremental PCA or On-Line Visual Learning and Recognition",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "M. Artac"
+        },
+        {
+          "name": "M. Jogan"
+        },
+        {
+          "name": "A. Leonardis"
+        }
+      ]
+    },
+    {
+      "title": "Approximation schemes for Euclidean k-medians and related problems",
+      "year": 1998,
+      "authors": [
+        {
+          "name": "S. Arora"
+        },
+        {
+          "name": "P. Raghavan"
+        },
+        {
+          "name": "S. Rao"
+        }
+      ]
+    },
+    {
+      "title": "Generative-discriminative basis learning for medical imaging",
+      "year": 2012,
+      "authors": [
+        {
+          "name": "N. K. Batmanghelich"
+        },
+        {
+          "name": "B. Taskar"
+        },
+        {
+          "name": "C. Davatzikos"
+        }
+      ]
+    },
+    {
+      "title": "Another look at principal curves and surfaces",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "P. Delicado"
+        }
+      ]
+    },
+    {
+      "title": "Local principal curves",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "J. Einbeck"
+        },
+        {
+          "name": "G. Tutz"
+        },
+        {
+          "name": "L. Evers"
+        }
+      ]
+    },
+    {
+      "title": "Representing Complex Data Using Localized Principal Components with Application to Astronomical Data",
+      "year": 2008,
+      "authors": [
+        {
+          "name": "J. Einbeck"
+        },
+        {
+          "name": "L. Evers"
+        },
+        {
+          "name": "C. Bailer-Jones"
+        }
+      ]
+    },
+    {
+      "title": "An algorithm for finding intrinsic dimensionality of data",
+      "year": 1971,
+      "authors": [
+        {
+          "name": "K. Fukunaga"
+        },
+        {
+          "name": "D. R. Olsen"
+        }
+      ]
+    },
+    {
+      "title": "An intrinsic dimensionality estimator from near-neighbor information",
+      "year": 1979,
+      "authors": [
+        {
+          "name": "K. W. Pettis"
+        },
+        {
+          "name": "T. A. Bailey"
+        },
+        {
+          "name": "A. K. Jain"
+        },
+        {
+          "name": "R. C. Dubes"
+        }
+      ]
+    },
+    {
+      "title": "Intrinsic Dimension Estimation Using Packing Numbers",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "B. K\u00e9gl"
+        }
+      ]
+    },
+    {
+      "title": "Geodesic Entropic Graphs for Dimension and Entropy Estimation in Manifold Learning",
+      "year": 2004,
+      "authors": [
+        {
+          "name": "J. A. Costa"
+        },
+        {
+          "name": "A. O. I. Hero"
+        }
+      ]
+    },
+    {
+      "title": "Learning linear discriminant projections for dimensionality reduction of image descriptors",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "H. Cai"
+        },
+        {
+          "name": "K. Mikolajczyk"
+        },
+        {
+          "name": "J. Matas"
+        }
+      ]
+    },
+    {
+      "title": "Max-min distance analysis by using sequential SDP relaxation for dimension reduction",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "W. Bian"
+        },
+        {
+          "name": "D. Tao"
+        }
+      ]
+    },
+    {
+      "title": "Central subspace dimensionality reduction using covariance operators",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "M. Kim"
+        },
+        {
+          "name": "V. Pavlovic"
+        }
+      ]
+    },
+    {
+      "title": "Multiple kernel learning for dimensionality reduction",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "Y. Y. Lin"
+        },
+        {
+          "name": "T. L. Liu"
+        },
+        {
+          "name": "C. S. Fuh"
+        }
+      ]
+    },
+    {
+      "title": "Improved system for object detection and star/galaxy classification via local subspace analysis",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "Z. Y. Liu"
+        },
+        {
+          "name": "K. C. Chiu"
+        },
+        {
+          "name": "L. Xu"
+        }
+      ]
+    },
+    {
+      "title": "A family of principal component analyses for dealing with outliers",
+      "year": 2007,
+      "authors": [
+        {
+          "name": "J. E. Iglesias"
+        },
+        {
+          "name": "M. de Bruijne"
+        },
+        {
+          "name": "M. Loog"
+        },
+        {
+          "name": "F. Lauze"
+        },
+        {
+          "name": "M. Nielsen"
+        }
+      ]
+    },
+    {
+      "title": "Noncircular Principal Component Analysis and Its Application to Model Selection",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "X. L. Li"
+        },
+        {
+          "name": "T. Adali"
+        },
+        {
+          "name": "M. Anderson"
+        }
+      ]
+    },
+    {
+      "title": "Vector l0 sparse variable PCA",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "M. O. Ulfarsson"
+        },
+        {
+          "name": "V. Solo"
+        }
+      ]
+    },
+    {
+      "title": "Sparse Principal Component Analysis",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "H. Zou"
+        },
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "R. Tibshirani"
+        }
+      ]
+    },
+    {
+      "title": "Generalized principal component analysis (GPCA)",
+      "year": 2005,
+      "authors": [
+        {
+          "name": "R. Vidal"
+        },
+        {
+          "name": "Y. Ma"
+        },
+        {
+          "name": "S. Sastry"
+        }
+      ]
+    },
+    {
+      "title": "Laplacian eigenfunctions learn population structure",
+      "year": 2009,
+      "authors": [
+        {
+          "name": "J. Zhang"
+        },
+        {
+          "name": "P. Niyogi"
+        },
+        {
+          "name": "M. S. McPeek"
+        }
+      ]
+    },
+    {
+      "title": "A least-squares framework for Component Analysis",
+      "year": 2012,
+      "authors": [
+        {
+          "name": "F. De la Torre"
+        }
+      ]
+    },
+    {
+      "title": "Smoothly Distributed Fuzzy c-Means: A New Self-Organizing Map",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "R. D. Pascual-Marqui"
+        },
+        {
+          "name": "A. Pascual-Montano"
+        },
+        {
+          "name": "K. Kochi"
+        },
+        {
+          "name": "J. M. Carazo"
+        }
+      ]
+    },
+    {
+      "title": "A novel neural network technique for analysis and classification of EM single-particle images",
+      "year": 2001,
+      "authors": [
+        {
+          "name": "A. Pascual-Montano"
+        },
+        {
+          "name": "L. E. Donate"
+        },
+        {
+          "name": "M. Valle"
+        },
+        {
+          "name": "M. B\u00e1rcena"
+        },
+        {
+          "name": "R. D. Pascual-Marqui"
+        },
+        {
+          "name": "J. M. Carazo"
+        }
+      ]
+    },
+    {
+      "title": "Local nonnegative matrix factorization as a visual representation",
+      "year": 2002,
+      "authors": [
+        {
+          "name": "T. Feng"
+        },
+        {
+          "name": "S. Z. Li"
+        },
+        {
+          "name": "H. Y. Shum"
+        },
+        {
+          "name": "H. Zhang"
+        }
+      ]
+    },
+    {
+      "title": "Subspace Estimation Using Projection Based M-Estimators over Grassmann Manifolds",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "R. Subbarao"
+        },
+        {
+          "name": "P. Meer"
+        }
+      ]
+    },
+    {
+      "title": "Uniqueness of Non-Gaussianity-Based Dimension Reduction",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "F. J. Theis"
+        },
+        {
+          "name": "M. Kawanabe"
+        },
+        {
+          "name": "K. R. Muller"
+        }
+      ]
+    },
+    {
+      "title": "Local distance functions: a taxonomy, new algorithms, and an evaluation",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "D. Ramanan"
+        },
+        {
+          "name": "S. Baker"
+        }
+      ]
+    },
+    {
+      "title": "Learning Nonlinear Principal Manifolds by Self-Organising Maps",
+      "year": 2008,
+      "authors": [
+        {
+          "name": "H. Yin"
+        }
+      ]
+    },
+    {
+      "title": "On a theorem stated by Eckart and Young",
+      "year": 1963,
+      "authors": [
+        {
+          "name": "R. M. Johnson"
+        }
+      ]
+    },
+    {
+      "title": "The varimax criterion for analytic rotation in factor analysis",
+      "year": 1958,
+      "authors": [
+        {
+          "name": "H. F. Kaiser"
+        }
+      ]
+    },
+    {
+      "title": "Encyclopedia for research methods for the social sciences Factor rotations in factor analyses",
+      "year": 2003,
+      "authors": [
+        {
+          "name": "H. Abdi"
+        }
+      ]
+    },
+    {
+      "title": "A general rotation criterion and its use in orthogonal rotation",
+      "year": 1970,
+      "authors": [
+        {
+          "name": "C. B. Crawford"
+        },
+        {
+          "name": "G. A. Ferguson"
+        }
+      ]
+    },
+    {
+      "title": "Maximal Linear Embedding for Dimensionality Reduction",
+      "year": 2011,
+      "authors": [
+        {
+          "name": "R. Wang"
+        },
+        {
+          "name": "S. Shan"
+        },
+        {
+          "name": "X. Chen"
+        },
+        {
+          "name": "J. Chen"
+        },
+        {
+          "name": "W. Gao"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": null,
+  "publication_date": null,
+  "publication_type": "Technical Report"
+}

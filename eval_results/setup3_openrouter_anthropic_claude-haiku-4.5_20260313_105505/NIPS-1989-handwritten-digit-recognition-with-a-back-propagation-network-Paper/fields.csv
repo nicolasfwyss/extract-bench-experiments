@@ -1,0 +1,13 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,,,both_null,
+$.properties.venue,venue,string_semantic,0.000000,false,,NIPS 1989,gold_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Back-propagation', 'Neural Networks', 'Handwritten Digit Recognition', 'Image Recognition', 'Convolutional Networks', 'Feature Extraction', 'Weight Sharing', 'Zipcode Recognition']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,9,9,,
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,,1989,gold_null,
+$.properties.publication_type,publication_type,string_exact,0.000000,false,conference paper,Conference Paper,,
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, indicating perfect semantic equivalence for the research paper title."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string. There are no differences in casing, punctuation, whitespace, or content. Therefore, the prediction is semantically equivalent and perfectly a..."
+$.properties.authors,authors,array_llm,0.000000,false,,,,"The gold and predicted arrays contain objects with 'name' and 'affiliation' fields. For a pair to be considered a match, both the 'name' and 'affiliation' fields must match exactly. 
+
+Upon comparing t..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains strings representing citations, while the predicted array contains structured objects with fields like 'title', 'year', 'authors', and 'venue'. Due to this fundamental differen..."

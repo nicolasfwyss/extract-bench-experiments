@@ -1,0 +1,468 @@
+{
+  "ids": null,
+  "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+  "venue": "KDD 2024",
+  "authors": [
+    {
+      "name": "Wenqi Fan",
+      "email": "wenqifan03@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Shijie Wang",
+      "email": "shijie.wang@connect.polyu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Yujuan Ding",
+      "email": "dingyujuan385@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Hengyun Li",
+      "email": "neilhengyun.li@polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Tat-Seng Chua",
+      "email": "dcscts@nus.edu.sg",
+      "affiliation": "National University of Singapore, Singapore"
+    },
+    {
+      "name": "Liangbo Ning",
+      "email": "BigLemon1123@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Dawei Yin",
+      "email": "yindawei@acm.org",
+      "affiliation": "Baidu Inc, China"
+    },
+    {
+      "name": "Qing Li",
+      "email": "csqli@comp.polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    }
+  ],
+  "abstract": "As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations, such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the generation quality of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: architectures, training strategies, and applications. As the preliminary knowledge, we briefly introduce the foundations and recent advances of LLMs. Then, to illustrate the practical significance of RAG for LLMs, we systematically review mainstream relevant work by their architectures, training strategies, and application areas, detailing specifically the challenges of each and the corresponding capabilities of RA-LLMs. Finally, to deliver deeper insights, we discuss current limitations and several promising directions for future research.",
+  "keywords": [
+    "Retrieval-Augmented Generation (RAG)",
+    "Large Language Model (LLM)",
+    "Pre-training",
+    "Fine-tuning",
+    "In-context Learning",
+    "Prompting"
+  ],
+  "citations": [
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "GPT-4 Technical Report",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Josh Achiam"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "In-context Examples Selection for Machine Translation",
+      "venue": "ACL (Findings)",
+      "authors": [
+        {
+          "name": "Sweta Agrawal"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Akari Asai"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "venue": "ICML",
+      "authors": [
+        {
+          "name": "Sebastian Borgeaud"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "Tom Brown"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2017,
+      "title": "Reading Wikipedia to Answer Open-Domain Questions",
+      "venue": "ACL",
+      "authors": [
+        {
+          "name": "Danqi Chen"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2019,
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "venue": "NAACL-HLT",
+      "authors": [
+        {
+          "name": "Jacob Devlin"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Entities as Experts: Sparse Memory Access with Entity Supervision",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Thibault F\u00e9vry"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+      "venue": "ACL",
+      "authors": [
+        {
+          "name": "Luyu Gao"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Retrieval-augmented generation for large language models: A survey",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Yunfan Gao"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Unsupervised dense information retrieval with contrastive learning",
+      "venue": "TMLR",
+      "authors": [
+        {
+          "name": "Gautier Izacard"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Re2G: Retrieve, Rerank, Generate",
+      "venue": "NAACL-HLT",
+      "authors": [
+        {
+          "name": "Michael R. Glass"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Retrieval augmented language model pre-training",
+      "venue": "ICML",
+      "authors": [
+        {
+          "name": "Kelvin Guu"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2021,
+      "title": "Efficient Nearest Neighbor Language Models",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Junxian He"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2021,
+      "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+      "venue": "EACL",
+      "authors": [
+        {
+          "name": "Gautier Izacard"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+      "venue": "JMLR",
+      "authors": [
+        {
+          "name": "Gautier Izacard"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Active Retrieval Augmented Generation",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Zhengbao Jiang"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Vladimir Karpukhin"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Generalization through Memorization: Nearest Neighbor Language Models",
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Urvashi Khandelwal"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Demonstrate-search-predict: Composing retrieval and language models for knowledge-intensive nlp",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Omar Khattab"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "ColBERT: Efficient and effective passage search via contextualized late interaction over BERT",
+      "venue": "SIGIR",
+      "authors": [
+        {
+          "name": "Omar Khattab"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Tree of Clarifications: Answering Ambiguous Questions with Retrieval-Augmented Large Language Models",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Gangwoo Kim"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Internet-Augmented Dialogue Generation",
+      "venue": "ACL",
+      "authors": [
+        {
+          "name": "Mojtaba Komeili"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Copy is All You Need",
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Tian Lan"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2022,
+      "title": "Internet-augmented language models through few-shot prompting for open-domain question answering",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Angeliki Lazaridou"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2021,
+      "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "venue": "ACL/IJCNLP",
+      "authors": [
+        {
+          "name": "Xiang Lisa Li"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+      "venue": "ACL",
+      "authors": [
+        {
+          "name": "Mike Lewis"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "Patrick Lewis"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "In-context retrieval-augmented language models",
+      "venue": "TACL",
+      "authors": [
+        {
+          "name": "Ori Ram"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+      "venue": "JMLR",
+      "authors": [
+        {
+          "name": "Colin Raffel"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "REPLUG: Retrieval-augmented black-box language models",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Weijia Shi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
+      "venue": "ACL",
+      "authors": [
+        {
+          "name": "Harsh Trivedi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "RECOMP: Improving retrieval-augmented LMs with context compression and selective augmentation",
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Fangyuan Xu"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2021,
+      "title": "Adaptive semiparametric language models",
+      "venue": "TACL",
+      "authors": [
+        {
+          "name": "Dani Yogatama"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Generate rather than Retrieve: Large Language Models are Strong Context Generators",
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Wenhao Yu"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Improving language models via plug-and-play retrieval feedback",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Wenhao Yu"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2023,
+      "title": "Query rewriting for retrieval-augmented large language models",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "Xinbei Ma"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": null,
+  "publication_date": "2024",
+  "publication_type": "Conference Paper"
+}

@@ -1,0 +1,16 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,arXiv:2501.02189v6,,extracted_null,
+$.properties.venue,venue,string_semantic,0.000000,false,arXiv,,extracted_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Vision Language Models', 'Multimodal Learning', 'Computer Vision', 'Natural Language Processing', 'Model Alignment', 'Benchmarks', 'Evaluation Metrics', 'Hallucination', 'Safety', 'Fairness']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,0.000000,false,22,,extracted_missing,
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,6 Apr 2025,,extracted_null,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is the addition of a space between 'A' and 'Survey', which is a minor formatting difference and does not alter t..."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is semantically identical to the gold string. The only differences are the removal of citation numbers (e.g., '[194]', '[11]', '[246]', '[94]'), which are formatting details and d..."
+$.properties.authors,authors,array_llm,1.000000,true,,,,"The gold and predicted arrays were compared item by item. For each gold item, a predicted item was sought where all fields matched. The 'name' and 'email' fields were present in both gold and predicte..."
+$.properties.citations,citations,error_2393507637296,0.000000,false,,,,
+$.properties.citations.items.properties.ids,citations.items.ids,string_exact,1.000000,true,,,both_null,
+$.properties.citations.items.properties.year,citations.items.year,integer_exact,1.000000,true,,,both_null,
+$.properties.citations.items.properties.title,citations.items.title,string_semantic,1.000000,true,,,both_null,
+$.properties.citations.items.properties.venue,citations.items.venue,string_semantic,1.000000,true,,,both_null,
+$.properties.citations.items.properties.authors,citations.items.authors,array_llm,1.000000,true,,,both_null,

@@ -1,0 +1,13 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,arXiv:2407.08608v2,arXiv:2407.08607,,
+$.properties.venue,venue,string_semantic,0.000000,false,arXiv,,extracted_null,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,22,22,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, indicating perfect semantic equivalence. No normalization or corrections are needed."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is semantically identical to the gold string. The only difference is the presence of a space before and after the multiplication symbol '×' in the predicted string, which is a min..."
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,,"The predicted string '2024-07-16' is a valid representation of the date 'July 16, 2024' in the YYYY-MM-DD format, which is explicitly allowed by the schema metadata. The semantic meaning is identical."
+$.properties.keywords,keywords,array_llm,0.000000,false,,,,"The gold array contains a single item 'NA'. The predicted array contains eleven distinct items, none of which are 'NA'. Therefore, there are no matches between the gold and predicted arrays. The singl..."
+$.properties.authors,authors,array_llm,0.666667,false,,,,"The gold and predicted arrays were compared to identify matches. Items were considered a match only if all fields ('name', 'email', 'affiliation') were identical. 
+
+- Gold item 0, 1, 2, 4 matched perf..."
+$.properties.citations,citations,array_llm,0.868852,true,,,,"The predicted array contains structured objects, while the gold array contains unstructured strings. This makes direct comparison difficult. The evaluation attempts to match predicted items to gold it..."

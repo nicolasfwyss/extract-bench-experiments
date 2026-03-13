@@ -1,0 +1,13 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,arXiv:2407.08608v2,,extracted_null,
+$.properties.venue,venue,string_semantic,0.000000,false,arXiv,,extracted_null,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,22,22,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string. There are no differences in casing, punctuation, whitespace, or content."
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, including casing, punctuation, and wording. There are no differences to penalize."
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,,"The predicted string '2024-07-16' is a valid representation of the date 'July 16, 2024' in the YYYY-MM-DD format, which is explicitly allowed by the schema metadata. The semantic meaning is identical."
+$.properties.keywords,keywords,array_llm,0.000000,false,,,,"The gold array contains a single item 'NA', which typically signifies 'Not Applicable' or 'No Answer'. The predicted array contains nine distinct technical terms related to computing and AI. Since 'NA..."
+$.properties.authors,authors,array_llm,0.666667,false,,,,"The evaluation process involved comparing each gold item with predicted items. 
+
+- **Jay Shah**, **Ganesh Bikshandi**, **Ying Zhang**, and **Pradeep Ramani** were perfectly matched as all their fields..."
+$.properties.citations,citations,array_llm,0.857143,true,,,,"The task is to match predicted items to gold items based on the provided schema. Each gold item is a string representing a citation, while each predicted item is an object with fields like 'title', 'y..."

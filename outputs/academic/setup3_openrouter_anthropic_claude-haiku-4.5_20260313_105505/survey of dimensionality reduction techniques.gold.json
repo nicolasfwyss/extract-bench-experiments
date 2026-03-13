@@ -1,0 +1,571 @@
+{
+  "ids": null,
+  "title": "A survey of dimensionality reduction techniques",
+  "venue": null,
+  "authors": [
+    {
+      "name": "C.O.S. Sorzano",
+      "email": "coss@cnb.csic.es",
+      "affiliation": "National Centre for Biotechnology (CSIC), Madrid, Spain"
+    },
+    {
+      "name": "J. Vargas",
+      "email": "jvargas@cnb.csic.es",
+      "affiliation": "National Centre for Biotechnology (CSIC), Madrid, Spain"
+    },
+    {
+      "name": "A. Pascual-Montano",
+      "email": "pascual@cnb.csic.es",
+      "affiliation": "National Centre for Biotechnology (CSIC), Madrid, Spain"
+    }
+  ],
+  "abstract": "Experimental life sciences like biology or chemistry have seen in the recent decades an explosion of the data available from experiments. Laboratory instruments become more and more complex and report hundreds or thousands measurements for a single experiment and therefore the statistical methods face challenging tasks when dealing with such high-dimensional data. However, much of the data is highly redundant and can be efficiently brought down to a much smaller number of variables without a significant loss of information. The mathematical procedures making possible this reduction are called dimensionality reduction techniques; they have widely been developed by fields like Statistics or Machine Learning, and are currently a hot research topic. In this review we categorize the plethora of dimension reduction techniques available and give the mathematical insight behind them.",
+  "keywords": [
+    "Dimensionality Reduction",
+    "Data Mining",
+    "Machine Learning",
+    "Statistics",
+    "Principal Component Analysis",
+    "Feature Selection",
+    "Manifold Learning",
+    "Dictionary Methods",
+    "Projection Methods"
+  ],
+  "citations": [
+    {
+      "ids": null,
+      "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+      "year": 1901,
+      "venue": "Philosophical Magazine",
+      "authors": [
+        {
+          "name": "K. Pearson"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "A review of dimension reduction techniques",
+      "year": 1997,
+      "venue": "Department of Computer Science, University of Sheffield",
+      "authors": [
+        {
+          "name": "M. A. Carreira-Perpin\u00e1n"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "A survey of dimension reduction techniques",
+      "year": 2002,
+      "venue": "Lawrence Livermore National Laboratory",
+      "authors": [
+        {
+          "name": "I. K. Fodor"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Dimensionality Reduction: A Comparative Review",
+      "year": 2009,
+      "venue": "Tilburg Centre for Creative Computing",
+      "authors": [
+        {
+          "name": "L. van der Mateen"
+        },
+        {
+          "name": "E. Postma"
+        },
+        {
+          "name": "J. van den Herik"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Feature selection for classification",
+      "year": 1997,
+      "venue": "Intelligent Data Analysis",
+      "authors": [
+        {
+          "name": "M. Dash"
+        },
+        {
+          "name": "H. Liu"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "An introduction to variable and feature selection",
+      "year": 2003,
+      "venue": "Journal of Machine Learning Research",
+      "authors": [
+        {
+          "name": "I. Guyon"
+        },
+        {
+          "name": "A. Eliseeff"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "A review of feature selection techniques in bioinformatics",
+      "year": 2007,
+      "venue": "Bioinformatics",
+      "authors": [
+        {
+          "name": "Y. Saeys"
+        },
+        {
+          "name": "I. Inza"
+        },
+        {
+          "name": "P. Larra\u00f1aga"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Principal Component Analysis",
+      "year": 1987,
+      "venue": "Chemometrics and Intelligent Laboratory Systems",
+      "authors": [
+        {
+          "name": "S. Wold"
+        },
+        {
+          "name": "K. Esbensen"
+        },
+        {
+          "name": "P. Geladi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Principal Component Analysis",
+      "year": 1989,
+      "venue": "Sage Publications",
+      "authors": [
+        {
+          "name": "G. H. Dunteman"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Principal Component Analysis",
+      "year": 2002,
+      "venue": "Wiley",
+      "authors": [
+        {
+          "name": "I. T. Jollife"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Independent Component Analysis, a new concept?",
+      "year": 1994,
+      "venue": "Signal Processing",
+      "authors": [
+        {
+          "name": "P. Common"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Independent Component Analysis: algorithms and applications",
+      "year": 2000,
+      "venue": "Neural Networks",
+      "authors": [
+        {
+          "name": "A. Hyvarinen"
+        },
+        {
+          "name": "E. Oja"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Independent Component Analysis",
+      "year": 2001,
+      "venue": "John Wiley & Sons, Inc.",
+      "authors": [
+        {
+          "name": "A. Hyvarinen"
+        },
+        {
+          "name": "J. Karhunen"
+        },
+        {
+          "name": "E. Oja"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Learning the parts of objects by non-negative matrix factorization",
+      "year": 1999,
+      "venue": "Nature",
+      "authors": [
+        {
+          "name": "D. D. Lee"
+        },
+        {
+          "name": "S. Seung"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Algorithms for non-negative matrix factorization",
+      "year": 2001,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "D. D. Lee"
+        },
+        {
+          "name": "H. S. Seung"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "year": 2000,
+      "venue": "Science",
+      "authors": [
+        {
+          "name": "S. T. Roweis"
+        },
+        {
+          "name": "L. K. Saul"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "A global geometric framework for nonlinear dimensionality reduction",
+      "year": 2000,
+      "venue": "Science",
+      "authors": [
+        {
+          "name": "J. B. Tenenbaum"
+        },
+        {
+          "name": "V. de Silva"
+        },
+        {
+          "name": "J. C. Langford"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Laplacian Eigenmaps and Spectral Techniques for Embedding and Clustering",
+      "year": 2001,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "M. Belkin"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+      "year": 2002,
+      "venue": "Neural Computation",
+      "authors": [
+        {
+          "name": "M. Belkin"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "GTM: The Generative Topographic Mapping",
+      "year": 1998,
+      "venue": "Neural Computation",
+      "authors": [
+        {
+          "name": "C. M. Bishop"
+        },
+        {
+          "name": "M. Svens\u00e9n"
+        },
+        {
+          "name": "C. K. I. Williams"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "The Self-Organizing Map",
+      "year": 1990,
+      "venue": "Proceedings of the IEEE",
+      "authors": [
+        {
+          "name": "T. Kohonen"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Algorithm AS 136: A K-Means Clustering Algorithm",
+      "year": 1979,
+      "venue": "Journal of the Royal Statistical Society",
+      "authors": [
+        {
+          "name": "J. A. Hartigan"
+        },
+        {
+          "name": "M. A. Wong"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Pattern Recognition with Fuzzy Objective Function Algorithms",
+      "year": 1981,
+      "venue": "Plenum",
+      "authors": [
+        {
+          "name": "J. C. Bezdek"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Principal curves",
+      "year": 1989,
+      "venue": "Journal of the American Statistical Association",
+      "authors": [
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "W. Stuetzle"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Kernel Principal Component Analysis",
+      "year": 1997,
+      "venue": "Proceedings of ICANN",
+      "authors": [
+        {
+          "name": "B. Sch\u00f6lkopf"
+        },
+        {
+          "name": "A. Smola"
+        },
+        {
+          "name": "K. R. M\u00fcller"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Multidimensional Scaling",
+      "year": 1964,
+      "venue": "Psychometrika",
+      "authors": [
+        {
+          "name": "J. B. Kruskal"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Singular value decomposition and least squares solutions",
+      "year": 1970,
+      "venue": "Numerische Mathematik",
+      "authors": [
+        {
+          "name": "G. H. Golub"
+        },
+        {
+          "name": "C. Reinsch"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Sparse Principal Component Analysis",
+      "year": 2006,
+      "venue": "Journal of Computational and Graphical Statistics",
+      "authors": [
+        {
+          "name": "H. Zou"
+        },
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "R. Tibshirani"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "K-SVD: An Algorithm for Designing Overcomplete Dictionaries for Sparse Representation",
+      "year": 2006,
+      "venue": "IEEE Transactions on Signal Processing",
+      "authors": [
+        {
+          "name": "M. Aharon"
+        },
+        {
+          "name": "M. Elad"
+        },
+        {
+          "name": "A. Bruckstein"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Non-negative matrix and tensor factorizations",
+      "year": 2009,
+      "venue": "Wiley",
+      "authors": [
+        {
+          "name": "A. Cichocki"
+        },
+        {
+          "name": "R. Zdunek"
+        },
+        {
+          "name": "A. H. Phan"
+        },
+        {
+          "name": "S. Amari"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Hessian eigenmaps: locally linear embedding techniques for high-dimensional data",
+      "year": 2003,
+      "venue": "Proceedings of the National Academy of Sciences USA",
+      "authors": [
+        {
+          "name": "D. L. Donoho"
+        },
+        {
+          "name": "C. Grimes"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Locality Preserving Projections",
+      "year": 2004,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "X. He"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Generalized principal component analysis (GPCA)",
+      "year": 2005,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "authors": [
+        {
+          "name": "R. Vidal"
+        },
+        {
+          "name": "Y. Ma"
+        },
+        {
+          "name": "S. Sastry"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "General Intelligence Objectively Determined and Measured",
+      "year": 1904,
+      "venue": "American Journal of Psychology",
+      "authors": [
+        {
+          "name": "C. Spearman"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Multiple Factor Analysis",
+      "year": 1947,
+      "venue": "University of Chicago Press",
+      "authors": [
+        {
+          "name": "L. Thurstone"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "The application of electronic computers to factor analysis",
+      "year": 1960,
+      "venue": "Educational and Psychological Measurement",
+      "authors": [
+        {
+          "name": "H. F. Kaiser"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "The Use of Multiple Measurements in Taxonomic Problems",
+      "year": 1936,
+      "venue": "Annals of Eugenics",
+      "authors": [
+        {
+          "name": "R. A. Fisher"
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "title": "Incremental PCA or On-Line Visual Learning and Recognition",
+      "year": 2002,
+      "venue": "Proceedings of the 16th International Conference on Pattern Recognition",
+      "authors": [
+        {
+          "name": "M. Artac"
+        },
+        {
+          "name": "M. Jogan"
+        },
+        {
+          "name": "A. Leonardis"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": null,
+  "publication_date": null,
+  "publication_type": "Journal Article"
+}

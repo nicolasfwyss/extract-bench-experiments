@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,,,both_null,
+$.properties.venue,venue,string_semantic,1.000000,true,,,both_null,
+$.properties.number_of_pages,number_of_pages,integer_exact,0.000000,false,35,,extracted_missing,
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,both_null,
+$.properties.publication_type,publication_type,string_exact,0.000000,false,Journal Article,Technical Report,,
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string. There are no differences in casing, punctuation, whitespace, or content."
+$.properties.keywords,keywords,array_llm,1.000000,true,,,,All items in the gold array were perfectly matched by items in the predicted array. There were no missed gold items or spurious predicted items.
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is casing, which is a normalization difference and does not alter the meaning of the research paper title."
+$.properties.authors,authors,array_llm,0.000000,false,,,,"The gold and predicted arrays both contain three items. For each gold item, I attempted to find a matching predicted item. The 'name' and 'email' fields matched exactly for all items. However, the 'af..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The predicted array contains structured objects with 'title', 'year', and 'authors' fields, while the gold array contains unstructured strings representing citations. This fundamental difference in fo..."
