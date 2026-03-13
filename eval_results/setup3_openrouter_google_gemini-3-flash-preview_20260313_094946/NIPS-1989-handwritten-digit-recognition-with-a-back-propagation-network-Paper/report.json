@@ -1,0 +1,437 @@
+{
+  "output_name": "NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper",
+  "timestamp": "2026-03-13T09:50:04.056120",
+  "schema_hash": "b5d963da",
+  "gold_hash": "d5c7fac1",
+  "extracted_hash": "23f399bf",
+  "schema_stats": {
+    "total_nodes": 30,
+    "counts_by_type": {
+      "object": 4,
+      "anyof": 3,
+      "string": 14,
+      "null": 3,
+      "array": 4,
+      "integer": 2
+    },
+    "required_keys_count": 6,
+    "optional_keys_count": 13,
+    "required_by_type": {
+      "string": 3,
+      "array": 2,
+      "integer": 1
+    },
+    "optional_by_type": {
+      "anyof": 3,
+      "string": 7,
+      "array": 2,
+      "integer": 1
+    }
+  },
+  "gold_stats": {
+    "label": "gold",
+    "total_keys": 31,
+    "counts_by_type": {
+      "string": 17,
+      "null": 3,
+      "array": 3,
+      "integer": 8
+    },
+    "array_stats": {
+      "array_field_count": 3,
+      "total_items": 18,
+      "min_length": 0,
+      "median_length": 7,
+      "max_length": 11
+    },
+    "null_count": 3,
+    "missing_count": 0
+  },
+  "extracted_stats": {
+    "label": "extracted",
+    "total_keys": 111,
+    "counts_by_type": {
+      "string": 85,
+      "array": 14,
+      "integer": 12
+    },
+    "array_stats": {
+      "array_field_count": 14,
+      "total_items": 67,
+      "min_length": 1,
+      "median_length": 4.0,
+      "max_length": 11
+    },
+    "null_count": 0,
+    "missing_count": 0
+  },
+  "coverage": {
+    "present_in_both": 21,
+    "missing_in_extracted": 19,
+    "spurious_in_extracted": 82,
+    "required_missing": 0,
+    "missing_paths": [
+      "authors[0].array_index",
+      "authors[1].array_index",
+      "authors[2].array_index",
+      "authors[3].array_index",
+      "authors[4].array_index",
+      "authors[5].array_index",
+      "authors[6].array_index",
+      "citations[0]",
+      "citations[10]",
+      "citations[1]",
+      "citations[2]",
+      "citations[3]",
+      "citations[4]",
+      "citations[5]",
+      "citations[6]",
+      "citations[7]",
+      "citations[8]",
+      "citations[9]",
+      "keywords"
+    ],
+    "spurious_paths": [
+      "citations[0].authors[0].name",
+      "citations[0].authors[1].name",
+      "citations[0].title",
+      "citations[0].venue",
+      "citations[0].year",
+      "citations[10].authors[0].name",
+      "citations[10].authors[1].name",
+      "citations[10].title",
+      "citations[10].venue",
+      "citations[10].year",
+      "citations[1].authors[0].name",
+      "citations[1].authors[1].name",
+      "citations[1].authors[2].name",
+      "citations[1].authors[3].name",
+      "citations[1].authors[4].name",
+      "citations[1].authors[5].name",
+      "citations[1].authors[6].name",
+      "citations[1].title",
+      "citations[1].venue",
+      "citations[1].year",
+      "citations[2].authors[0].name",
+      "citations[2].authors[1].name",
+      "citations[2].authors[2].name",
+      "citations[2].authors[3].name",
+      "citations[2].authors[4].name",
+      "citations[2].authors[5].name",
+      "citations[2].authors[6].name",
+      "citations[2].authors[7].name",
+      "citations[2].authors[8].name",
+      "citations[2].title",
+      "citations[2].venue",
+      "citations[2].year",
+      "citations[3].authors[0].name",
+      "citations[3].authors[1].name",
+      "citations[3].title",
+      "citations[3].venue",
+      "citations[3].year",
+      "citations[4].authors[0].name",
+      "citations[4].title",
+      "citations[4].venue",
+      "citations[4].year",
+      "citations[5].authors[0].name",
+      "citations[5].authors[1].name",
+      "citations[5].authors[2].name",
+      "citations[5].authors[3].name",
+      "citations[5].authors[4].name",
+      "citations[5].authors[5].name",
+      "citations[5].authors[6].name",
+      "citations[5].title",
+      "citations[5].venue",
+      "citations[5].year",
+      "citations[6].authors[0].name",
+      "citations[6].authors[1].name",
+      "citations[6].authors[2].name",
+      "citations[6].authors[3].name",
+      "citations[6].authors[4].name",
+      "citations[6].title",
+      "citations[6].venue",
+      "citations[6].year",
+      "citations[7].authors[0].name",
+      "citations[7].authors[1].name",
+      "citations[7].title",
+      "citations[7].venue",
+      "citations[7].year",
+      "citations[8].authors[0].name",
+      "citations[8].authors[1].name",
+      "citations[8].authors[2].name",
+      "citations[8].title",
+      "citations[8].venue",
+      "citations[8].year",
+      "citations[9].authors[0].name",
+      "citations[9].authors[1].name",
+      "citations[9].authors[2].name",
+      "citations[9].title",
+      "citations[9].venue",
+      "citations[9].year",
+      "keywords[0]",
+      "keywords[1]",
+      "keywords[2]",
+      "keywords[3]",
+      "keywords[4]",
+      "keywords[5]"
+    ]
+  },
+  "outcomes": {
+    "total_evaluated": 10,
+    "total_passed": 2,
+    "total_failed": 8,
+    "pass_rate": 0.2,
+    "pass_by_metric": {
+      "string_exact": {
+        "passed": 0,
+        "failed": 2
+      },
+      "string_semantic": {
+        "passed": 2,
+        "failed": 2
+      },
+      "array_llm": {
+        "passed": 0,
+        "failed": 3
+      },
+      "integer_exact": {
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "pass_by_type": {
+      "string": {
+        "passed": 2,
+        "failed": 4
+      },
+      "array": {
+        "passed": 0,
+        "failed": 3
+      },
+      "integer": {
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "pass_by_required": {
+      "optional": {
+        "passed": 2,
+        "failed": 8
+      }
+    },
+    "confusion": {
+      "true_positive": 2,
+      "false_positive": 4,
+      "false_negative": 4,
+      "true_negative": 0
+    },
+    "llm_stats": {
+      "call_count": 7,
+      "avg_score": 0.2714285714285714,
+      "median_score": 0.0,
+      "score_distribution": {
+        "0.0-0.2": 5,
+        "0.8-1.0": 2
+      },
+      "top_lowest_fields": [
+        {
+          "path": "venue",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "keywords",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "publication_date",
+          "metric_id": "string_semantic",
+          "score": 0.0,
+          "reasoning": ""
+        },
+        {
+          "path": "authors",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": "The gold and predicted arrays contain items representing authors with their names and affiliations. For an item to be considered a match, both the 'name' and 'affiliation' fields must match. The 'arra..."
+        },
+        {
+          "path": "citations",
+          "metric_id": "array_llm",
+          "score": 0.0,
+          "reasoning": "The gold array contains strings representing citations, while the predicted array contains objects with structured fields (year, title, venue, authors). Due to this fundamental difference in structure..."
+        }
+      ]
+    },
+    "error_breakdown": {
+      "by_path_prefix": {
+        "ids": 1,
+        "venue": 1,
+        "keywords": 1,
+        "number_of_pages": 1,
+        "publication_date": 1,
+        "publication_type": 1,
+        "authors": 1,
+        "citations": 1
+      },
+      "by_metric_type": {
+        "string_exact": 2,
+        "string_semantic": 2,
+        "array_llm": 3,
+        "integer_exact": 1
+      },
+      "by_reason": {
+        "gold_absent": 3,
+        "semantic_mismatch": 3,
+        "numeric_mismatch": 1,
+        "value_mismatch": 1
+      },
+      "details": [
+        {
+          "category": "gold_absent",
+          "count": 3,
+          "paths": []
+        },
+        {
+          "category": "semantic_mismatch",
+          "count": 3,
+          "paths": []
+        },
+        {
+          "category": "numeric_mismatch",
+          "count": 1,
+          "paths": []
+        },
+        {
+          "category": "value_mismatch",
+          "count": 1,
+          "paths": []
+        }
+      ]
+    }
+  },
+  "field_outcomes": [
+    {
+      "path": "$.properties.ids",
+      "normalized_path": "ids",
+      "metric_id": "string_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_null",
+      "gold_value": null,
+      "extracted_value": "NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper.pdf",
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.venue",
+      "normalized_path": "venue",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_null",
+      "gold_value": null,
+      "extracted_value": "Neural Information Processing Systems (NIPS) 1989",
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.keywords",
+      "normalized_path": "keywords",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_empty_array",
+      "gold_value": [],
+      "extracted_value": [
+        "back-propagation",
+        "digit recognition",
+        "neural networks",
+        "zipcode recognition",
+        "weight sharing",
+        "feature maps"
+      ],
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.number_of_pages",
+      "normalized_path": "number_of_pages",
+      "metric_id": "integer_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": 9,
+      "extracted_value": 8,
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.publication_date",
+      "normalized_path": "publication_date",
+      "metric_id": "string_semantic",
+      "score": 0.0,
+      "passed": false,
+      "reason": "gold_null",
+      "gold_value": null,
+      "extracted_value": "1989",
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.publication_type",
+      "normalized_path": "publication_type",
+      "metric_id": "string_exact",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": "conference paper",
+      "extracted_value": "Conference Paper",
+      "reasoning": null
+    },
+    {
+      "path": "$.properties.title",
+      "normalized_path": "title",
+      "metric_id": "string_semantic",
+      "score": 1.0,
+      "passed": true,
+      "reason": null,
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": "The predicted string is an exact match to the gold string, indicating perfect semantic equivalence."
+    },
+    {
+      "path": "$.properties.abstract",
+      "normalized_path": "abstract",
+      "metric_id": "string_semantic",
+      "score": 0.9,
+      "passed": true,
+      "reason": null,
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": "The predicted string has two minor differences from the gold string. First, 'handwritten' is hyphenated as 'hand-written'. Second, there is an extra space before the '%' symbol in '1 % error rate'. Wh..."
+    },
+    {
+      "path": "$.properties.authors",
+      "normalized_path": "authors",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": "The gold and predicted arrays contain items representing authors with their names and affiliations. For an item to be considered a match, both the 'name' and 'affiliation' fields must match. The 'arra..."
+    },
+    {
+      "path": "$.properties.citations",
+      "normalized_path": "citations",
+      "metric_id": "array_llm",
+      "score": 0.0,
+      "passed": false,
+      "reason": null,
+      "gold_value": null,
+      "extracted_value": null,
+      "reasoning": "The gold array contains strings representing citations, while the predicted array contains objects with structured fields (year, title, venue, authors). Due to this fundamental difference in structure..."
+    }
+  ],
+  "overall_score": 0.19,
+  "overall_pass_rate": 0.2
+}

@@ -1,0 +1,67 @@
+================================================================================
+EVALUATION REPORT: survey of dimensionality reduction techniques
+Timestamp: 2026-03-13T09:34:20.042091
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Pass Rate: 80.0%
+  Overall Score: 0.807
+  Evaluated Fields: 10
+  Passed: 8
+  Failed: 2
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 30
+  Required Keys: 6
+  Optional Keys: 13
+  By Type: anyof: 3, array: 4, integer: 2, null: 3, object: 4, string: 14
+
+COVERAGE
+----------------------------------------
+  Present in Both: 20
+  Missing in Extracted: 164
+  Spurious in Extracted: 48
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 66.7% (2/3)
+  integer_exact: 100.0% (1/1)
+  string_exact: 50.0% (1/2)
+  string_semantic: 100.0% (4/4)
+
+LLM METRICS
+----------------------------------------
+  Calls: 7
+  Avg Score: 0.868
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - citations (array_llm): 0.074
+      Reason: The task is to match predicted items to gold items based on semantic similarity, treating arrays as ...
+    - venue (string_semantic): 1.000
+    - publication_date (string_semantic): 1.000
+    - title (string_semantic): 1.000
+      Reason: The predicted string is semantically equivalent to the gold string. The only difference is casing, w...
+    - abstract (string_semantic): 1.000
+      Reason: The predicted string is an exact match to the gold string. There are no differences in casing, punct...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    value_mismatch: 1
+    semantic_mismatch: 1
+  By Path Prefix:
+    publication_type: 1
+    citations: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  publication_type
+    Metric: string_exact, Score: 0.000
+  citations
+    Metric: array_llm, Score: 0.074
+
+================================================================================

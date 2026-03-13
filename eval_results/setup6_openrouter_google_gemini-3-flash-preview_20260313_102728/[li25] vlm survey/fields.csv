@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,arXiv:2501.02189v6,arXiv:2501.02189v6,,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Vision-Language Models', 'Multimodal Learning', 'Alignment', 'Benchmarks', 'Hallucination', 'Safety']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,22,22,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.abstract,abstract,string_semantic,0.800000,true,,,,"The predicted string is largely similar to the gold string, but it omits a significant portion of the text in the middle. The ellipsis '...' indicates that content is missing. The missing content incl..."
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is the addition of a space between 'A' and 'Survey', which is a minor formatting difference and does not alter t..."
+$.properties.venue,venue,string_semantic,0.500000,false,,,,The gold string 'arXiv' indicates the publication venue. The predicted string 'arXiv preprint arXiv:2501.02189' correctly identifies 'arXiv' as part of the venue but adds extra information (preprint a...
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,,"The predicted date '2025-04-06' is semantically equivalent to the gold date '6 Apr 2025'. Both represent the same date, just in different formats. The schema metadata indicates that the format can be ..."
+$.properties.authors,authors,array_llm,1.000000,true,,,,"The gold and predicted arrays were compared item by item. For each gold item, a predicted item was sought where all fields matched. The 'name' and 'email' fields were present in both gold and predicte..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains strings representing citations, while the predicted array contains objects with 'title', 'year', and 'authors' fields. There is a fundamental schema mismatch between the gold a..."

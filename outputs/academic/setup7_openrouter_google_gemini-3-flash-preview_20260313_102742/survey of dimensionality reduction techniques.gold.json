@@ -1,0 +1,147 @@
+{
+  "ids": null,
+  "title": "A survey of dimensionality reduction techniques",
+  "venue": "Natl. Centre for Biotechnology (CSIC)",
+  "authors": [
+    {
+      "name": "C.O.S. Sorzano",
+      "email": "coss@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "J. Vargas",
+      "email": "jvargas@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "A. Pascual-Montano",
+      "email": "pascual@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    }
+  ],
+  "abstract": "Experimental life sciences like biology or chemistry have seen in the recent decades an explosion of the data available from experiments. Laboratory instruments become more and more complex and report hundreds or thousands measurements for a single experiment and therefore the statistical methods face challenging tasks when dealing with such high-dimensional data. However, much of the data is highly redundant and can be efficiently brought down to a much smaller number of variables without a significant loss of information. The mathematical procedures making possible this reduction are called dimensionality reduction techniques; they have widely been developed by fields like Statistics or Machine Learning, and are currently a hot research topic. In this review we categorize the plethora of dimension reduction techniques available and give the mathematical insight behind them.",
+  "keywords": [
+    "Dimensionality Reduction",
+    "Data Mining",
+    "Machine Learning",
+    "Statistics"
+  ],
+  "citations": [
+    {
+      "year": 1901,
+      "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+      "venue": "Philosophical Magazine",
+      "authors": [
+        {
+          "name": "K. Pearson"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "K-SVD: An Algorithm for Designing Overcomplete Dictionaries for Sparse Representation",
+      "venue": "IEEE Trans. Signal Processing",
+      "authors": [
+        {
+          "name": "M. Aharon"
+        },
+        {
+          "name": "M. Elad"
+        },
+        {
+          "name": "A. Bruckstein"
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Approximation schemes for Euclidean k-medians and related problems",
+      "venue": "Proc. 30th Annual ACM symposium on Theory of computing (STOC)",
+      "authors": [
+        {
+          "name": "S. Arora"
+        },
+        {
+          "name": "P. Raghavan"
+        },
+        {
+          "name": "S. Rao"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+      "venue": "Neural Computation",
+      "authors": [
+        {
+          "name": "M. Belkin"
+        },
+        {
+          "name": "P. Niyogi"
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Independent Component Analysis",
+      "venue": "John Wiley & Sons, Inc.",
+      "authors": [
+        {
+          "name": "A. Hyvarinen"
+        },
+        {
+          "name": "J. Karhunen"
+        },
+        {
+          "name": "E. Oja"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "Learning the parts of objects by non-negative matrix factorization",
+      "venue": "Nature",
+      "authors": [
+        {
+          "name": "D. D. Lee"
+        },
+        {
+          "name": "S. Seung"
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "venue": "Science",
+      "authors": [
+        {
+          "name": "S. T. Roweis"
+        },
+        {
+          "name": "L. K. Saul"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Sparse Principal Component Analysis",
+      "venue": "J. Computational and Graphical Statistics",
+      "authors": [
+        {
+          "name": "H. Zou"
+        },
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "R. Tibshirani"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 35,
+  "publication_date": "2012",
+  "publication_type": "Journal Article"
+}

@@ -1,0 +1,77 @@
+================================================================================
+EVALUATION REPORT: [zhao25] a survey of LLMs
+Timestamp: 2026-03-13T10:36:30.085187
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Pass Rate: 73.3%
+  Overall Score: 0.773
+  Evaluated Fields: 15
+  Passed: 11
+  Failed: 4
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 30
+  Required Keys: 6
+  Optional Keys: 13
+  By Type: anyof: 3, array: 4, integer: 2, null: 3, object: 4, string: 14
+
+COVERAGE
+----------------------------------------
+  Present in Both: 35
+  Missing in Extracted: 1103
+  Spurious in Extracted: 69
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 100.0% (3/3)
+  error_2284447873872: 0.0% (0/1)
+  integer_exact: 50.0% (1/2)
+  string_exact: 66.7% (2/3)
+  string_semantic: 83.3% (5/6)
+
+LLM METRICS
+----------------------------------------
+  Calls: 9
+  Avg Score: 0.956
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - abstract (string_semantic): 0.600
+      Reason: The predicted string captures the beginning and end of the gold string's summary, including the intr...
+    - title (string_semantic): 1.000
+      Reason: The predicted string is an exact match to the gold string, indicating perfect semantic equivalence.
+    - venue (string_semantic): 1.000
+      Reason: The predicted string is an exact match to the gold string, indicating perfect semantic equivalence.
+    - keywords (array_llm): 1.000
+      Reason: All items in the gold array were perfectly matched by items in the predicted array. There were no mi...
+    - publication_date (string_semantic): 1.000
+      Reason: The predicted string '2025-03-11' is a valid and semantically equivalent representation of the gold ...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    value_mismatch: 2
+    numeric_mismatch: 1
+    semantic_mismatch: 1
+  By Path Prefix:
+    ids: 1
+    number_of_pages: 1
+    abstract: 1
+    citations: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  ids
+    Metric: string_exact, Score: 0.000
+  number_of_pages
+    Metric: integer_exact, Score: 0.000
+  abstract
+    Metric: string_semantic, Score: 0.600
+  citations
+    Metric: error_2284447873872, Score: 0.000
+
+================================================================================

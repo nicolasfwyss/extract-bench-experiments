@@ -1,0 +1,94 @@
+{
+  "ids": "arXiv:2303.18223v16",
+  "title": "A Survey of Large Language Models",
+  "venue": "arXiv",
+  "authors": [
+    {
+      "name": "Wayne Xin Zhao",
+      "email": "batmanfly@gmail.com",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Kun Zhou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junyi Li",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China; DIRO, Universit\u00e9 de Montr\u00e9al, Canada"
+    },
+    {
+      "name": "Tianyi Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xiaolei Wang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yupeng Hou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yingqian Min",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Beichen Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    }
+  ],
+  "abstract": "Ever since the Turing Test was proposed in the 1950s, humans have explored the mastering of language intelligence by machine... In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Furthermore, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+  "keywords": [
+    "Large Language Models",
+    "Emergent Abilities",
+    "Adaptation Tuning",
+    "Utilization",
+    "Alignment",
+    "Capacity Evaluation"
+  ],
+  "citations": [
+    {
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "venue": "J. Mach. Learn. Res.",
+      "authors": [
+        {
+          "name": "Y. Bengio"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "Natural language processing (almost) from scratch",
+      "venue": "J. Mach. Learn. Res.",
+      "authors": [
+        {
+          "name": "R. Collobert"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "T. B. Brown"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Scaling laws for neural language models",
+      "venue": "arXiv",
+      "authors": [
+        {
+          "name": "J. Kaplan"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 144,
+  "publication_date": "2025-03-11",
+  "publication_type": "Preprint"
+}

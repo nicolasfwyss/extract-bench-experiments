@@ -1,0 +1,209 @@
+{
+  "ids": null,
+  "title": "A Survey of Large Language Models",
+  "venue": null,
+  "authors": [
+    {
+      "name": "Wayne Xin Zhao",
+      "email": "batmanfly@gmail.com",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Kun Zhou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junyi Li",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Tianyi Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xiaolei Wang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yupeng Hou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yingqian Min",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Beichen Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junjie Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zican Dong",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Du",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Chen Yang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yushuo Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zhipeng Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jinhao Jiang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Ruiyang Ren",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Li",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xinyu Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zikang Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Peiyu Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jian-Yun Nie",
+      "affiliation": "DIRO, Universit\u00e9 de Montr\u00e9al, Canada"
+    },
+    {
+      "name": "Ji-Rong Wen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    }
+  ],
+  "abstract": "Ever since the Turing Test was proposed in the 1950s, humans have explored the mastering of language intelligence by machine. Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable artificial intelligence (AI) algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been proposed by pretraining Transformer models over large-scale corpora, showing strong capabilities in solving various natural language processing (NLP) tasks. Since the researchers have found that model scaling can lead to an improved model capacity, they further investigate the scaling effect by increasing the parameter scale to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement, but also exhibit some special abilities (e.g., incontext learning) that are not present in small-scale language models (e.g., BERT). To discriminate the language models in different parameter scales, the research community has coined the term large language models (LLM) for the PLMs of significant size (e.g., containing tens or hundreds of billions of parameters). Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT (a powerful AI chatbot developed based on LLMs), which has attracted widespread attention from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. Considering this rapid technical progress, in this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Furthermore, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions. This survey provides an up-to-date review of the literature on LLMs, which can be a useful resource for both researchers and engineers.",
+  "keywords": [
+    "Large Language Models",
+    "Emergent Abilities",
+    "Adaptation Tuning",
+    "Utilization",
+    "Alignment",
+    "Capacity Evaluation"
+  ],
+  "citations": [
+    {
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "authors": [
+        {
+          "name": "Bengio"
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "Natural language processing (almost) from scratch",
+      "authors": [
+        {
+          "name": "Collobert"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Attention is all you need",
+      "authors": [
+        {
+          "name": "Vaswani"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Language models are unsupervised multitask learners",
+      "authors": [
+        {
+          "name": "Radford"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "authors": [
+        {
+          "name": "Brown"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Scaling laws for neural language models",
+      "authors": [
+        {
+          "name": "Kaplan"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Training language models to follow instructions with human feedback",
+      "authors": [
+        {
+          "name": "Ouyang"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Emergent abilities of large language models",
+      "authors": [
+        {
+          "name": "Wei"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Chain-of-thought prompting elicits reasoning in large language models",
+      "authors": [
+        {
+          "name": "Wei"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Training compute-optimal large language models",
+      "authors": [
+        {
+          "name": "Hoffmann"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "LLaMA: Open and efficient foundation language models",
+      "authors": [
+        {
+          "name": "Touvron"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 84,
+  "publication_date": "2025-03-11",
+  "publication_type": "Preprint"
+}

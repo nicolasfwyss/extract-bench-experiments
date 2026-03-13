@@ -1,0 +1,186 @@
+{
+  "ids": "arXiv:2303.18223",
+  "title": "A Survey of Large Language Models",
+  "venue": "arXiv",
+  "authors": [
+    {
+      "name": "Wayne Xin Zhao",
+      "email": "batmanfly@gmail.com",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Kun Zhou",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junyi Li",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Tianyi Tang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xiaolei Wang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yupeng Hou",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yingqian Min",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Beichen Zhang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junjie Zhang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zican Dong",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Du",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Chen Yang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yushuo Chen",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zhipeng Chen",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jinhao Jiang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Ruiyang Ren",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Li",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xinyu Tang",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zikang Liu",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Peiyu Liu",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jian-Yun Nie",
+      "email": null,
+      "affiliation": "DIRO, Universit\u00e9 de Montr\u00e9al, Canada"
+    },
+    {
+      "name": "Ji-Rong Wen",
+      "email": null,
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    }
+  ],
+  "abstract": "Ever since the Turing Test was proposed in the 1950s, humans have explored the mastering of language intelligence by machine. Recently, Large Language Models (LLMs) have been proposed by pretraining Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. In this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Furthermore, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+  "keywords": [
+    "Large Language Models",
+    "Emergent Abilities",
+    "Adaptation Tuning",
+    "Utilization",
+    "Alignment",
+    "Capacity Evaluation"
+  ],
+  "citations": [
+    {
+      "ids": "10.1162/153244303322533223",
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "venue": "J. Mach. Learn Res.",
+      "authors": [
+        {
+          "name": "Bengio et al."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2011,
+      "title": "Natural language processing (almost) from scratch",
+      "venue": "Journal of Machine Learning Research",
+      "authors": [
+        {
+          "name": "Collobert et al."
+        }
+      ]
+    },
+    {
+      "ids": "arXiv:1706.03762",
+      "year": 2017,
+      "title": "Attention is all you need",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "Vaswani et al."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "Brown et al."
+        }
+      ]
+    },
+    {
+      "ids": "arXiv:2201.11903",
+      "year": 2022,
+      "title": "Chain-of-thought prompting elicits reasoning in large language models",
+      "venue": "NeurIPS",
+      "authors": [
+        {
+          "name": "Wei et al."
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 31,
+  "publication_date": "2025-03-11",
+  "publication_type": "Preprint"
+}

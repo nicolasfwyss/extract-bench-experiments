@@ -1,0 +1,18 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,arXiv:2303.18223v16,arXiv:2303.18223v16,,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,144,144,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.keywords,keywords,array_llm,1.000000,true,,,,All items in the gold array were perfectly matched by items in the predicted array. There were no missed gold items or spurious predicted items.
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, indicating perfect semantic equivalence for the research paper title."
+$.properties.abstract,abstract,string_semantic,0.500000,false,,,,"The predicted string is significantly incomplete. It omits a large portion of the gold string's content, specifically the detailed explanation of language modeling, the evolution to pre-trained langua..."
+$.properties.authors,authors,array_llm,0.363636,false,,,,"The gold array contains 22 items, and the predicted array contains 8 items. 
+
+For each gold item, I attempted to find a matching predicted item. A match requires that all fields present in the gold it..."
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,,"The predicted string '2025-03-11' is a valid and semantically equivalent representation of the gold string '11 March 2025'. The schema metadata indicates that the date can be in YYYY-MM-DD format, whi..."
+$.properties.venue,venue,string_semantic,1.000000,true,,,,The predicted string is an exact match to the gold string.
+$.properties.citations,citations,error_2419782977568,0.000000,false,,,,
+$.properties.citations.items.properties.ids,citations.items.ids,string_exact,1.000000,true,,,both_null,
+$.properties.citations.items.properties.year,citations.items.year,integer_exact,1.000000,true,,,both_null,
+$.properties.citations.items.properties.title,citations.items.title,string_semantic,1.000000,true,,,both_null,
+$.properties.citations.items.properties.venue,citations.items.venue,string_semantic,1.000000,true,,,both_null,
+$.properties.citations.items.properties.authors,citations.items.authors,array_llm,1.000000,true,,,both_null,

@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,arXiv:2501.02189v6,arXiv:2501.02189v6,,
+$.properties.venue,venue,string_semantic,0.000000,false,arXiv,,extracted_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Large Vision Language Models', 'VLM Alignment', 'Benchmarks', 'Hallucination', 'Model Architectures']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,22,22,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.title,title,string_semantic,1.000000,true,,,,The predicted string is semantically equivalent to the gold string. The only difference is the capitalization of 'Survey' which is a minor formatting difference and does not change the meaning of the ...
+$.properties.publication_date,publication_date,string_semantic,1.000000,true,,,,"The predicted date '2025-04-06' is semantically equivalent to the gold date '6 Apr 2025'. Both represent the same date, just in different formats. The schema metadata indicates that the format can be ..."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is semantically identical to the gold string. The only differences are the removal of citation numbers (e.g., '[194]', '[11]', '[246]', '[94]'), which are formatting details and d..."
+$.properties.authors,authors,array_llm,1.000000,true,,,,"The gold and predicted arrays were compared item by item. For each gold item, a predicted item was sought where all fields matched. The 'name' and 'email' fields were present in both gold and predicte..."
+$.properties.citations,citations,array_llm,0.014440,false,,,,"The predicted array contains structured citation objects, while the gold array contains unstructured strings. This fundamental difference in format prevents direct matching based on exact string equal..."

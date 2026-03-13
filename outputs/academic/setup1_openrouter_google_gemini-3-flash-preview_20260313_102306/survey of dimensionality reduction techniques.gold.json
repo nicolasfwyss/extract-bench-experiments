@@ -1,0 +1,174 @@
+{
+  "ids": null,
+  "title": "A survey of dimensionality reduction techniques",
+  "venue": null,
+  "authors": [
+    {
+      "name": "C.O.S. Sorzano",
+      "email": "coss@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "J. Vargas",
+      "email": "jvargas@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "A. Pascual-Montano",
+      "email": "pascual@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    }
+  ],
+  "abstract": "Experimental life sciences like biology or chemistry have seen in the recent decades an explosion of the data available from experiments. Laboratory instruments become more and more complex and report hundreds or thousands measurements for a single experiment and therefore the statistical methods face challenging tasks when dealing with such high-dimensional data. However, much of the data is highly redundant and can be efficiently brought down to a much smaller number of variables without a significant loss of information. The mathematical procedures making possible this reduction are called dimensionality reduction techniques; they have widely been developed by fields like Statistics or Machine Learning, and are currently a hot research topic. In this review we categorize the plethora of dimension reduction techniques available and give the mathematical insight behind them.",
+  "keywords": [
+    "Dimensionality Reduction",
+    "Data Mining",
+    "Machine Learning",
+    "Statistics"
+  ],
+  "citations": [
+    {
+      "ids": null,
+      "year": 1901,
+      "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+      "venue": "Philosophical Magazine",
+      "authors": [
+        {
+          "name": "Pearson, K."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 1997,
+      "title": "A review of dimension reduction techniques",
+      "venue": "Dept. Computer Science, Univ. Sheffield",
+      "authors": [
+        {
+          "name": "Carreira-Perpi\u00f1\u00e1n, M. A."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2002,
+      "title": "A survey of dimension reduction techniques",
+      "venue": "Lawrence Livermore Natl. Laboratory",
+      "authors": [
+        {
+          "name": "Fodor, I. K."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2009,
+      "title": "Dimensionality Reduction: A Comparative Review",
+      "venue": "Tilburg Centre for Creative Computing, Tilburg Univ.",
+      "authors": [
+        {
+          "name": "van der Mateen, L."
+        },
+        {
+          "name": "Postma, E."
+        },
+        {
+          "name": "van den Herik, J."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 1997,
+      "title": "Feature selection for classification",
+      "venue": "Intelligent Data Analysis",
+      "authors": [
+        {
+          "name": "Dash, M."
+        },
+        {
+          "name": "Liu, H."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2003,
+      "title": "An introduction to variable and feature selection",
+      "venue": "J. Machine Learning Research",
+      "authors": [
+        {
+          "name": "Guyon, I."
+        },
+        {
+          "name": "Eliseeff, A."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2007,
+      "title": "A review of feature selection techniques in bioinformatics",
+      "venue": "Bioinformatics",
+      "authors": [
+        {
+          "name": "Saeys, Y."
+        },
+        {
+          "name": "Inza, I."
+        },
+        {
+          "name": "Larra\u00f1aga, P."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 1999,
+      "title": "Learning the parts of objects by non-negative matrix factorization",
+      "venue": "Nature",
+      "authors": [
+        {
+          "name": "Lee, D. D."
+        },
+        {
+          "name": "Seung, S."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2000,
+      "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "venue": "Science",
+      "authors": [
+        {
+          "name": "Roweis, S. T."
+        },
+        {
+          "name": "Saul, L. K."
+        }
+      ]
+    },
+    {
+      "ids": null,
+      "year": 2000,
+      "title": "A global geometric framework for nonlinear dimensionality reduction",
+      "venue": "Science",
+      "authors": [
+        {
+          "name": "Tenenbaum, J. B."
+        },
+        {
+          "name": "de Silva, V."
+        },
+        {
+          "name": "Langford, J. C."
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 35,
+  "publication_date": "2014",
+  "publication_type": "Journal Article"
+}

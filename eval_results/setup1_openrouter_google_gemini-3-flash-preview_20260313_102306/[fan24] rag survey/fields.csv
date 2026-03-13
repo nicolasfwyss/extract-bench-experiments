@@ -1,0 +1,14 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,arXiv:2405.06211v3,arXiv:2405.06211v3,,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,18,18,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.venue,venue,string_semantic,0.000000,false,,,,"The predicted value 'KDD 2024' is a specific conference, while the gold value 'arXiv' is a pre-print server. These are distinct types of publication venues and are not semantically equivalent. The pre..."
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,,,,The predicted date '2024-06-17' is completely different from the gold date 'Fri Jun 30 2017 23:00:00 GMT+0100 (British Summer Time)'. Both the year and the month/day are incorrect. The format is accep...
+$.properties.abstract,abstract,string_semantic,0.990000,true,,,,"The predicted string is almost identical to the gold string, with the only difference being the omission of the last sentence which provides a URL for updated information. While this is a minor omissi..."
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is the capitalization of 'Meeting' and the addition of a space, which are minor formatting variations and do not..."
+$.properties.authors,authors,array_llm,0.875000,true,,,,"The gold and predicted arrays contain 8 items each. I compared each gold item to the predicted items. 
+
+Seven items matched perfectly on all fields ('name', 'email', 'affiliation'). These include:
+- W..."
+$.properties.keywords,keywords,array_llm,1.000000,true,,,,"The predicted array perfectly matches the gold array. All six items in the gold array were found in the predicted array, and there were no spurious predictions. The only difference was a trailing peri..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The predicted array contains structured objects with fields like 'ids', 'year', 'title', 'venue', and 'authors'. The gold array, however, contains unstructured strings representing full citations. Due..."

@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,arXiv:2501.02189v6,,extracted_null,
+$.properties.venue,venue,string_semantic,0.000000,false,arXiv,,extracted_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Large Vision Language Models', 'Multimodal Alignment', 'Benchmarks', 'Evaluations', 'Hallucination', 'Safety']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,0.000000,false,22,17,,
+$.properties.publication_type,publication_type,string_exact,1.000000,true,Preprint,Preprint,,
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string. There are no differences in content, casing, punctuation, or formatting."
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is the addition of a space between 'A' and 'Survey', which is a minor formatting difference and does not alter t..."
+$.properties.publication_date,publication_date,string_semantic,0.500000,false,,,,"The gold string '6 Apr 2025' represents a full date, while the predicted string '2025' only provides the year. Although the year is correct, the prediction is incomplete according to the schema's desc..."
+$.properties.authors,authors,array_llm,1.000000,true,,,,"The gold and predicted arrays were compared item by item. For each gold item, a predicted item was sought where all fields matched. The 'name' and 'email' fields were present in both gold and predicte..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains strings representing citations, while the predicted array contains objects with 'title', 'year', 'venue', and 'authors' fields. This fundamental difference in structure means t..."

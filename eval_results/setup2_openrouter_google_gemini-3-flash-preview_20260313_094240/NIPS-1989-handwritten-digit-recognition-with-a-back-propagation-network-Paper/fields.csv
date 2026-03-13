@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,,NIPS-1989-handwritten-digit-recognition-with-a-back-propagation-network-Paper,gold_null,
+$.properties.venue,venue,string_semantic,0.000000,false,,Neural Information Processing Systems (NIPS) 1989,gold_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['back-propagation', 'digit recognition', 'neural networks', 'zipcode recognition', 'computer vision']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,0.000000,false,9,,extracted_missing,
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,,1989,gold_null,
+$.properties.publication_type,publication_type,string_exact,0.000000,false,conference paper,Conference Paper,,
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, indicating perfect semantic equivalence for the research paper title."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string. There are no differences in casing, punctuation, whitespace, or content. Therefore, the prediction is semantically equivalent and perfectly a..."
+$.properties.authors,authors,array_llm,0.000000,false,,,,"The gold and predicted arrays contain items representing authors with their names and affiliations. For an item to be considered a match, both the 'name' and 'affiliation' fields must match. The 'arra..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains strings representing citations, while the predicted array contains structured objects with fields like 'year', 'title', 'venue', and 'authors'. Since the schema type is 'array'..."

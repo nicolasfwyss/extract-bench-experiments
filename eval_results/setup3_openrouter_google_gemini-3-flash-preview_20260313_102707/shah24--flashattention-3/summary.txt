@@ -1,0 +1,79 @@
+================================================================================
+EVALUATION REPORT: shah24--flashattention-3
+Timestamp: 2026-03-13T10:27:57.640189
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Pass Rate: 50.0%
+  Overall Score: 0.573
+  Evaluated Fields: 10
+  Passed: 5
+  Failed: 5
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 30
+  Required Keys: 6
+  Optional Keys: 13
+  By Type: anyof: 3, array: 4, integer: 2, null: 3, object: 4, string: 14
+
+COVERAGE
+----------------------------------------
+  Present in Both: 26
+  Missing in Extracted: 70
+  Spurious in Extracted: 31
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 0.0% (0/3)
+  integer_exact: 100.0% (1/1)
+  string_exact: 50.0% (1/2)
+  string_semantic: 75.0% (3/4)
+
+LLM METRICS
+----------------------------------------
+  Calls: 7
+  Avg Score: 0.533
+  Median Score: 0.667
+
+  Top Lowest-Scoring Fields:
+    - venue (string_semantic): 0.000
+    - keywords (array_llm): 0.000
+      Reason: The gold array contains a single item 'NA'. The predicted array contains multiple specific technical...
+    - citations (array_llm): 0.062
+      Reason: The gold array contains 65 items, while the predicted array contains 4 items. The evaluation process...
+    - authors (array_llm): 0.667
+      Reason: The predicted array largely matches the gold array. There are 4 perfect matches where all fields (na...
+    - title (string_semantic): 1.000
+      Reason: The predicted string is an exact match to the gold string, indicating perfect semantic equivalence. ...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    semantic_mismatch: 3
+    value_mismatch: 1
+    extracted_absent: 1
+  By Path Prefix:
+    ids: 1
+    venue: 1
+    keywords: 1
+    authors: 1
+    citations: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  ids
+    Metric: string_exact, Score: 0.000
+  venue
+    Metric: string_semantic, Score: 0.000
+    Reason: extracted_null
+  keywords
+    Metric: array_llm, Score: 0.000
+  authors
+    Metric: array_llm, Score: 0.667
+  citations
+    Metric: array_llm, Score: 0.062
+
+================================================================================

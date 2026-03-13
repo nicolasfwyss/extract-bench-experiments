@@ -1,0 +1,15 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,1.000000,true,,,both_null,
+$.properties.venue,venue,string_semantic,0.000000,false,,Neural Information Processing Systems (NIPS) 1989,gold_null,
+$.properties.keywords,keywords,array_llm,0.000000,false,[],"['Back-propagation', 'Handwritten digit recognition', 'Neural networks', 'Machine vision', 'Zipcode recognition']",gold_empty_array,
+$.properties.number_of_pages,number_of_pages,integer_exact,1.000000,true,9,9,,
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,,1989,gold_null,
+$.properties.publication_type,publication_type,string_exact,0.000000,false,conference paper,Conference Paper,,
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is an exact match to the gold string, indicating perfect semantic equivalence for the research paper title."
+$.properties.abstract,abstract,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is a space before the '%' symbol in '1 %' and '9%', which is a minor formatting variation and does not alter the..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains strings representing citations, while the predicted array contains objects with structured fields like 'year', 'title', 'venue', and 'authors'. Since the gold items are simple ..."
+$.properties.authors,authors,array_llm,0.000000,false,,,,"The predicted array contains 7 items, and the gold array contains 7 items. 
+
+For each gold item, I attempted to find a matching predicted item. 
+
+1. Gold item `{""name"": ""Le Cun"", ""array_index"": 0, ""af..."

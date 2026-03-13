@@ -1,0 +1,111 @@
+{
+  "ids": "arXiv:2405.06211v3",
+  "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+  "venue": "KDD 2024",
+  "authors": [
+    {
+      "name": "Wenqi Fan",
+      "email": "wenqifan03@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Yujuan Ding",
+      "email": "dingyujuan385@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Liangbo Ning",
+      "email": "BigLemon1123@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Shijie Wang",
+      "email": "shijie.wang@connect.polyu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Hengyun Li",
+      "email": "neilhengyun.li@polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Dawei Yin",
+      "email": "yindawei@acm.org",
+      "affiliation": "Baidu Inc, China"
+    },
+    {
+      "name": "Tat-Seng Chua",
+      "email": "dcscts@nus.edu.sg",
+      "affiliation": "National University of Singapore, Singapore"
+    },
+    {
+      "name": "Qing Li",
+      "email": "csqli@comp.polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    }
+  ],
+  "abstract": "As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations, such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model\u2019s internal knowledge, to augment the generation quality of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: architectures, training strategies, and applications. As the preliminary knowledge, we briefly introduce the foundations and recent advances of LLMs. Then, to illustrate the practical significance of RAG for LLMs, we systematically review mainstream relevant work by their architectures, training strategies, and application areas, detailing specifically the challenges of each and the corresponding capabilities of RA-LLMs. Finally, to deliver deeper insights, we discuss current limitations and several promising directions for future research.",
+  "keywords": [
+    "Retrieval-Augmented Generation (RAG)",
+    "Large Language Model (LLM)",
+    "Pre-training",
+    "Fine-tuning",
+    "In-context Learning",
+    "Prompting"
+  ],
+  "citations": [
+    {
+      "ids": "arXiv:2303.08774",
+      "year": 2023,
+      "title": "Gpt-4 technical report",
+      "authors": [
+        {
+          "name": "Josh Achiam"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "venue": "International conference on machine learning",
+      "authors": [
+        {
+          "name": "Sebastian Borgeaud"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Retrieval augmented language model pre-training",
+      "venue": "International conference on machine learning",
+      "authors": [
+        {
+          "name": "Kelvin Guu"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Patrick Lewis"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "venue": "EMNLP",
+      "authors": [
+        {
+          "name": "Vladimir Karpukhin"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 18,
+  "publication_date": "2024-06-17",
+  "publication_type": "Preprint"
+}

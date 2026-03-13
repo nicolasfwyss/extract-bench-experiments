@@ -1,0 +1,154 @@
+{
+  "ids": "arXiv:2303.18223v16",
+  "title": "A Survey of Large Language Models",
+  "venue": "ArXiv",
+  "authors": [
+    {
+      "name": "Wayne Xin Zhao",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Kun Zhou",
+      "affiliation": "School of Information, Renmin University of China"
+    },
+    {
+      "name": "Junyi Li",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Tianyi Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Xiaolei Wang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Yupeng Hou",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Yingqian Min",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Beichen Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Junjie Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Zican Dong",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Yifan Du",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Chen Yang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Yushuo Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Zhipeng Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Jinhao Jiang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Ruiyang Ren",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Yifan Li",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Xinyu Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Zikang Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Peiyu Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    },
+    {
+      "name": "Jian-Yun Nie",
+      "affiliation": "DIRO, Universit\u00e9 de Montr\u00e9al"
+    },
+    {
+      "name": "Ji-Rong Wen",
+      "affiliation": "Gaoling School of Artificial Intelligence, Renmin University of China"
+    }
+  ],
+  "abstract": "Ever since the Turing Test was proposed in the 1950s, humans have explored the mastering of language intelligence by machine. Language is essentially a complex, intricate system of human expressions governed by grammatical rules... we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation.",
+  "keywords": [
+    "Large Language Models",
+    "Emergent Abilities",
+    "Adaptation Tuning",
+    "Utilization",
+    "Alignment",
+    "Capacity Evaluation"
+  ],
+  "citations": [
+    {
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "authors": [
+        {
+          "name": "Bengio et al."
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "authors": [
+        {
+          "name": "Brown et al."
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "Attention is all you need",
+      "authors": [
+        {
+          "name": "Vaswani et al."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Training language models to follow instructions with human feedback",
+      "authors": [
+        {
+          "name": "Ouyang et al."
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Chain of thought prompting elicits reasoning in large language models",
+      "authors": [
+        {
+          "name": "Wei et al."
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 144,
+  "publication_date": "2025-03-11",
+  "publication_type": "Preprint"
+}

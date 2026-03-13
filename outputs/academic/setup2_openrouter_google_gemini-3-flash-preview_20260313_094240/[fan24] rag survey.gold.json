@@ -1,0 +1,143 @@
+{
+  "ids": "arXiv:2404.14928",
+  "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+  "venue": "KDD 2024",
+  "authors": [
+    {
+      "name": "Wenqi Fan",
+      "email": "wenqifan03@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Shijie Wang",
+      "email": "shijie.wang@connect.polyu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Yujuan Ding",
+      "email": "dingyujuan385@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Hengyun Li",
+      "email": "neilhengyun.li@polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Tat-Seng Chua",
+      "email": "dcscts@nus.edu.sg",
+      "affiliation": "National University of Singapore, Singapore"
+    },
+    {
+      "name": "Liangbo Ning",
+      "email": "BigLemon1123@gmail.com",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    },
+    {
+      "name": "Dawei Yin",
+      "email": "yindawei@acm.org",
+      "affiliation": "Baidu Inc, China"
+    },
+    {
+      "name": "Qing Li",
+      "email": "csqli@comp.polyu.edu.hk",
+      "affiliation": "The Hong Kong Polytechnic University, HK SAR"
+    }
+  ],
+  "abstract": "As one of the most advanced techniques in AI, Retrieval-Augmented Generation (RAG) can offer reliable and up-to-date external knowledge, providing huge convenience for numerous tasks. Particularly in the era of AI-Generated Content (AIGC), the powerful capacity of retrieval in providing additional knowledge enables RAG to assist existing generative AI in producing high-quality outputs. Recently, Large Language Models (LLMs) have demonstrated revolutionary abilities in language understanding and generation, while still facing inherent limitations, such as hallucinations and out-of-date internal knowledge. Given the powerful abilities of RAG in providing the latest and helpful auxiliary information, Retrieval-Augmented Large Language Models (RA-LLMs) have emerged to harness external and authoritative knowledge bases, rather than solely relying on the model's internal knowledge, to augment the generation quality of LLMs. In this survey, we comprehensively review existing research studies in RA-LLMs, covering three primary technical perspectives: architectures, training strategies, and applications.",
+  "keywords": [
+    "Retrieval-Augmented Generation (RAG)",
+    "Large Language Model (LLM)",
+    "Pre-training",
+    "Fine-tuning",
+    "In-context Learning",
+    "Prompting"
+  ],
+  "citations": [
+    {
+      "title": "Gpt-4 technical report",
+      "year": 2023,
+      "authors": [
+        {
+          "name": "Josh Achiam"
+        },
+        {
+          "name": "Steven Adler"
+        }
+      ]
+    },
+    {
+      "title": "Improving language models by retrieving from trillions of tokens",
+      "year": 2022,
+      "venue": "International conference on machine learning",
+      "authors": [
+        {
+          "name": "Sebastian Borgeaud"
+        }
+      ]
+    },
+    {
+      "title": "Language models are few-shot learners",
+      "year": 2020,
+      "venue": "Advances in neural information processing systems",
+      "authors": [
+        {
+          "name": "Tom Brown"
+        }
+      ]
+    },
+    {
+      "title": "Retrieval augmented language model pre-training",
+      "year": 2020,
+      "venue": "International conference on machine learning",
+      "authors": [
+        {
+          "name": "Kelvin Guu"
+        }
+      ]
+    },
+    {
+      "title": "Retrieval-augmented generation for knowledge-intensive nlp tasks",
+      "year": 2020,
+      "venue": "Advances in Neural Information Processing Systems",
+      "authors": [
+        {
+          "name": "Patrick Lewis"
+        }
+      ]
+    },
+    {
+      "title": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+      "year": 2021,
+      "venue": "EACL",
+      "authors": [
+        {
+          "name": "Gautier Izacard"
+        }
+      ]
+    },
+    {
+      "title": "Generalization through Memorization: Nearest Neighbor Language Models",
+      "year": 2020,
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Urvashi Khandelwal"
+        }
+      ]
+    },
+    {
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "year": 2023,
+      "venue": "ICLR",
+      "authors": [
+        {
+          "name": "Akari Asai"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 12,
+  "publication_date": "2024",
+  "publication_type": "Conference Paper"
+}

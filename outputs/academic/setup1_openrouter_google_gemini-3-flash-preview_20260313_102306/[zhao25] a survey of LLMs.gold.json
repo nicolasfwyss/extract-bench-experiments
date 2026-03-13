@@ -1,0 +1,243 @@
+{
+  "ids": "arXiv:2303.18223v16",
+  "title": "A Survey of Large Language Models",
+  "venue": "arXiv",
+  "authors": [
+    {
+      "name": "Wayne Xin Zhao",
+      "email": "batmanfly@gmail.com",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Kun Zhou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junyi Li",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China; DIRO, Universit\u00e9 de Montr\u00e9al, Canada"
+    },
+    {
+      "name": "Tianyi Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xiaolei Wang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yupeng Hou",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yingqian Min",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Beichen Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Junjie Zhang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zican Dong",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Du",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Chen Yang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yushuo Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zhipeng Chen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jinhao Jiang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Ruiyang Ren",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Yifan Li",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Xinyu Tang",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Zikang Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Peiyu Liu",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    },
+    {
+      "name": "Jian-Yun Nie",
+      "affiliation": "DIRO, Universit\u00e9 de Montr\u00e9al, Canada"
+    },
+    {
+      "name": "Ji-Rong Wen",
+      "affiliation": "Gaoling School of Artificial Intelligence and School of Information, Renmin University of China, Beijing, China"
+    }
+  ],
+  "abstract": "Ever since the Turing Test was proposed in the 1950s, humans have explored the mastering of language intelligence by machine... Recently, pre-trained language models (PLMs) have been proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various natural language processing (NLP) tasks... when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance improvement, but also exhibit some special abilities (e.g., in-context learning) that are not present in small-scale language models (e.g., BERT)... in this survey, we review the recent advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation. Furthermore, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.",
+  "keywords": [
+    "Large Language Models",
+    "Emergent Abilities",
+    "Adaptation Tuning",
+    "Utilization",
+    "Alignment",
+    "Capacity Evaluation"
+  ],
+  "citations": [
+    {
+      "ids": "[1]",
+      "year": 2003,
+      "title": "A neural probabilistic language model",
+      "venue": "J. Mach. Learn Res.",
+      "authors": [
+        {
+          "name": "Y. Bengio"
+        },
+        {
+          "name": "R. Ducharme"
+        },
+        {
+          "name": "P. Vincent"
+        },
+        {
+          "name": "C. Janvin"
+        }
+      ]
+    },
+    {
+      "ids": "[22]",
+      "year": 2017,
+      "title": "Attention is all you need",
+      "venue": "Advances in Neural Information Processing Systems 30",
+      "authors": [
+        {
+          "name": "A. Vaswani"
+        },
+        {
+          "name": "N. Shazeer"
+        },
+        {
+          "name": "N. Parmar"
+        },
+        {
+          "name": "J. Uszkoreit"
+        },
+        {
+          "name": "L. Jones"
+        },
+        {
+          "name": "A. N. Gomez"
+        },
+        {
+          "name": "L. Kaiser"
+        },
+        {
+          "name": "I. Polosukhin"
+        }
+      ]
+    },
+    {
+      "ids": "[23]",
+      "year": 2019,
+      "title": "BERT: pre-training of deep bidirectional transformers for language understanding",
+      "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics",
+      "authors": [
+        {
+          "name": "J. Devlin"
+        },
+        {
+          "name": "M. Chang"
+        },
+        {
+          "name": "K. Lee"
+        },
+        {
+          "name": "K. Toutanova"
+        }
+      ]
+    },
+    {
+      "ids": "[30]",
+      "year": 2020,
+      "title": "Scaling laws for neural language models",
+      "venue": "CoRR",
+      "authors": [
+        {
+          "name": "J. Kaplan"
+        },
+        {
+          "name": "S. McCandlish"
+        },
+        {
+          "name": "T. Henighan"
+        },
+        {
+          "name": "T. B. Brown"
+        },
+        {
+          "name": "B. Chess"
+        },
+        {
+          "name": "R. Child"
+        },
+        {
+          "name": "S. Gray"
+        },
+        {
+          "name": "A. Radford"
+        },
+        {
+          "name": "J. Wu"
+        },
+        {
+          "name": "D. Amodei"
+        }
+      ]
+    },
+    {
+      "ids": "[55]",
+      "year": 2020,
+      "title": "Language models are few-shot learners",
+      "venue": "Advances in Neural Information Processing Systems 33",
+      "authors": [
+        {
+          "name": "T. B. Brown"
+        },
+        {
+          "name": "B. Mann"
+        },
+        {
+          "name": "N. Ryder"
+        },
+        {
+          "name": "M. Subbiah"
+        },
+        {
+          "name": "J. Kaplan"
+        }
+      ]
+    }
+  ],
+  "number_of_pages": 144,
+  "publication_date": "2025-03-11",
+  "publication_type": "Preprint"
+}

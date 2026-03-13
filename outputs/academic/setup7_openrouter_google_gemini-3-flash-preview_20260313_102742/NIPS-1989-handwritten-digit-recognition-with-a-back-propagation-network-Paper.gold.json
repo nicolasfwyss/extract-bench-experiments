@@ -1,0 +1,254 @@
+{
+  "ids": null,
+  "title": "Handwritten Digit Recognition with a Back-Propagation Network",
+  "venue": "Neural Information Processing Systems (NIPS 1989)",
+  "authors": [
+    {
+      "name": "Y. Le Cun",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "B. Boser",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "J. S. Denker",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "D. Henderson",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "R. E. Howard",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "W. Hubbard",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    },
+    {
+      "name": "L. D. Jackel",
+      "affiliation": "AT&T Bell Laboratories, Holmdel, N. J. 07733"
+    }
+  ],
+  "abstract": "We present an application of back-propagation networks to handwritten digit recognition. Minimal preprocessing of the data was required, but architecture of the network was highly constrained and specifically designed for the task. The input of the network consists of normalized images of isolated digits. The method has 1 % error rate and about a 9% reject rate on zipcode digits provided by the U.S. Postal Service.",
+  "keywords": [
+    "Back-propagation",
+    "Handwritten digit recognition",
+    "Convolutional neural networks",
+    "Zipcode recognition",
+    "Weight sharing"
+  ],
+  "citations": [
+    {
+      "year": 1989,
+      "title": "SN2: A Simulator for Connectionist Models",
+      "authors": [
+        {
+          "name": "L.-Y. Bottou"
+        },
+        {
+          "name": "Y. Le Cun"
+        }
+      ],
+      "venue": "Neuristique SA, Paris, France"
+    },
+    {
+      "year": 1987,
+      "title": "Large Automatic Learning, Rule Extraction and Generalization",
+      "authors": [
+        {
+          "name": "J. Denker"
+        },
+        {
+          "name": "D. Schwartz"
+        },
+        {
+          "name": "B. Wittner"
+        },
+        {
+          "name": "S. A. Solla"
+        },
+        {
+          "name": "R. Howard"
+        },
+        {
+          "name": "L. Jackel"
+        },
+        {
+          "name": "J. Hopfield"
+        }
+      ],
+      "venue": "Complex Systems"
+    },
+    {
+      "year": 1989,
+      "title": "Neural Network Recognizer for Hand-Written Zip Code Digits",
+      "authors": [
+        {
+          "name": "J. S. Denker"
+        },
+        {
+          "name": "W. R. Gardner"
+        },
+        {
+          "name": "H. P. Graf"
+        },
+        {
+          "name": "D. Henderson"
+        },
+        {
+          "name": "R. E. Howard"
+        },
+        {
+          "name": "W. Hubbard"
+        },
+        {
+          "name": "L. D. Jackel"
+        },
+        {
+          "name": "H. S. Baird"
+        },
+        {
+          "name": "I. Guyon"
+        }
+      ],
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "year": 1982,
+      "title": "Neocognitron: A new algorithm for pattern recognition tolerant of deformations and shifts in position",
+      "authors": [
+        {
+          "name": "K. Fukushima"
+        },
+        {
+          "name": "S. Miyake"
+        }
+      ],
+      "venue": "Pattern Recognition"
+    },
+    {
+      "year": 1989,
+      "title": "Generalization and Network Design Strategies",
+      "authors": [
+        {
+          "name": "Y. Le Cun"
+        }
+      ],
+      "venue": "Connectionism in Perspective"
+    },
+    {
+      "year": 1990,
+      "title": "Back-Propagation Applied to Handwritten Zipcode Recognition",
+      "authors": [
+        {
+          "name": "Y. Le Cun"
+        },
+        {
+          "name": "B. Boser"
+        },
+        {
+          "name": "J. S. Denker"
+        },
+        {
+          "name": "D. Henderson"
+        },
+        {
+          "name": "R. E. Howard"
+        },
+        {
+          "name": "W. Hubbard"
+        },
+        {
+          "name": "L. D. Jackel"
+        }
+      ],
+      "venue": "Neural Computation"
+    },
+    {
+      "year": 1990,
+      "title": "Optimal Brain Damage",
+      "authors": [
+        {
+          "name": "Y. Le Cun"
+        },
+        {
+          "name": "J. S. Denker"
+        },
+        {
+          "name": "S. Solla"
+        },
+        {
+          "name": "R. E. Howard"
+        },
+        {
+          "name": "L. D. Jackel"
+        }
+      ],
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "year": 1987,
+      "title": "Learning Networks of Neurons with Boolean Logic",
+      "authors": [
+        {
+          "name": "S. Patarnello"
+        },
+        {
+          "name": "P. Carnevali"
+        }
+      ],
+      "venue": "Europhysics Letters"
+    },
+    {
+      "year": 1986,
+      "title": "Learning internal representations by error propagation",
+      "authors": [
+        {
+          "name": "D. E. Rumelhart"
+        },
+        {
+          "name": "G. E. Hinton"
+        },
+        {
+          "name": "R. J. Williams"
+        }
+      ],
+      "venue": "Parallel distributed processing: Explorations in the microstructure of cognition"
+    },
+    {
+      "year": 1989,
+      "title": "Consistent Inference of Probabilities in Layered Networks: Predictions and Generalization",
+      "authors": [
+        {
+          "name": "N. Tishby"
+        },
+        {
+          "name": "E. Levin"
+        },
+        {
+          "name": "S. A. Solla"
+        }
+      ],
+      "venue": "Proceedings of the International Joint Conference on Neural Networks"
+    },
+    {
+      "year": 1988,
+      "title": "A Framework for Object Recognition in a Visually Complex Environment and its Application to Locating Address Blocks on Mail Pieces",
+      "authors": [
+        {
+          "name": "C. H. Wang"
+        },
+        {
+          "name": "S. N. Srihari"
+        }
+      ],
+      "venue": "International Journal of Computer Vision"
+    }
+  ],
+  "number_of_pages": 9,
+  "publication_date": "1989",
+  "publication_type": "Conference Paper"
+}
