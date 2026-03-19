@@ -1,0 +1,80 @@
+================================================================================
+EVALUATION REPORT: shah24--flashattention-3
+Timestamp: 2026-03-13T14:51:48.114782
+================================================================================
+
+OVERALL RESULTS
+----------------------------------------
+  Pass Rate: 66.7%
+  Overall Score: 0.711
+  Evaluated Fields: 15
+  Passed: 10
+  Failed: 5
+
+SCHEMA STATISTICS
+----------------------------------------
+  Total Nodes: 30
+  Required Keys: 6
+  Optional Keys: 13
+  By Type: anyof: 3, array: 4, integer: 2, null: 3, object: 4, string: 14
+
+COVERAGE
+----------------------------------------
+  Present in Both: 26
+  Missing in Extracted: 70
+  Spurious in Extracted: 26
+  Required Missing: 0
+
+PASS RATE BY METRIC
+----------------------------------------
+  array_llm: 33.3% (1/3)
+  error_2205659023872: 0.0% (0/1)
+  integer_exact: 100.0% (2/2)
+  string_exact: 66.7% (2/3)
+  string_semantic: 83.3% (5/6)
+
+LLM METRICS
+----------------------------------------
+  Calls: 9
+  Avg Score: 0.741
+  Median Score: 1.000
+
+  Top Lowest-Scoring Fields:
+    - venue (string_semantic): 0.000
+    - keywords (array_llm): 0.000
+      Reason: The gold array contains a single item 'NA'. The predicted array contains seven distinct items, none ...
+    - authors (array_llm): 0.667
+      Reason: The predicted array largely matches the gold array. There are 4 perfect matches where all fields (na...
+    - title (string_semantic): 1.000
+      Reason: The predicted string is an exact match to the gold string, indicating perfect semantic equivalence. ...
+    - abstract (string_semantic): 1.000
+      Reason: The predicted string is semantically identical to the gold string. The only difference is the presen...
+
+ERROR BREAKDOWN
+----------------------------------------
+  By Reason:
+    value_mismatch: 2
+    semantic_mismatch: 2
+    extracted_absent: 1
+  By Path Prefix:
+    ids: 1
+    venue: 1
+    keywords: 1
+    authors: 1
+    citations: 1
+
+FAILED FIELDS (first 10)
+----------------------------------------
+  ids
+    Metric: string_exact, Score: 0.000
+  venue
+    Metric: string_semantic, Score: 0.000
+    Reason: extracted_null
+  keywords
+    Metric: array_llm, Score: 0.000
+  authors
+    Metric: array_llm, Score: 0.667
+  citations
+    Metric: error_2205659023872, Score: 0.000
+
+================================================================================

@@ -1,0 +1,115 @@
+{
+  "ids": null,
+  "title": "A survey of dimensionality reduction techniques",
+  "venue": null,
+  "authors": [
+    {
+      "name": "C.O.S. Sorzano",
+      "email": "coss@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "J. Vargas",
+      "email": "jvargas@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    },
+    {
+      "name": "A. Pascual-Montano",
+      "email": "pascual@cnb.csic.es",
+      "affiliation": "Natl. Centre for Biotechnology (CSIC)"
+    }
+  ],
+  "abstract": "Experimental life sciences like biology or chemistry have seen in the recent decades an explosion of the data available from experiments. Laboratory instruments become more and more complex and report hundreds or thousands measurements for a single experiment and therefore the statistical methods face challenging tasks when dealing with such high-dimensional data. However, much of the data is highly redundant and can be efficiently brought down to a much smaller number of variables without a significant loss of information. The mathematical procedures making possible this reduction are called dimensionality reduction techniques; they have widely been developed by fields like Statistics or Machine Learning, and are currently a hot research topic. In this review we categorize the plethora of dimension reduction techniques available and give the mathematical insight behind them.",
+  "keywords": [
+    "Dimensionality Reduction",
+    "Data Mining",
+    "Machine Learning",
+    "Statistics"
+  ],
+  "citations": [
+    {
+      "title": "On Lines and Planes of Closest Fit to Systems of Points in Space",
+      "year": 1901,
+      "authors": [
+        {
+          "name": "K. Pearson"
+        }
+      ],
+      "venue": "Philosophical Magazine"
+    },
+    {
+      "title": "A survey of dimension reduction techniques",
+      "year": 1997,
+      "authors": [
+        {
+          "name": "M. A. Carreira-Perpi\u00f1\u00e1n"
+        }
+      ],
+      "venue": "Dept. Computer Science, Univ. Sheffield"
+    },
+    {
+      "title": "GTM: The Generative Topographic Mapping",
+      "year": 1998,
+      "authors": [
+        {
+          "name": "C. M. Bishop"
+        },
+        {
+          "name": "M. Svens\u00e9n"
+        },
+        {
+          "name": "C. K. I. Williams"
+        }
+      ],
+      "venue": "Neural Computation"
+    },
+    {
+      "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "S. T. Roweis"
+        },
+        {
+          "name": "L. K. Saul"
+        }
+      ],
+      "venue": "Science"
+    },
+    {
+      "title": "A global geometric framework for nonlinear dimensionality reduction",
+      "year": 2000,
+      "authors": [
+        {
+          "name": "J. B. Tenenbaum"
+        },
+        {
+          "name": "V. de Silva"
+        },
+        {
+          "name": "J. C. Langford"
+        }
+      ],
+      "venue": "Science"
+    },
+    {
+      "title": "Sparse Principal Component Analysis",
+      "year": 2006,
+      "authors": [
+        {
+          "name": "H. Zou"
+        },
+        {
+          "name": "T. Hastie"
+        },
+        {
+          "name": "R. Tibshirani"
+        }
+      ],
+      "venue": "J. Computational and Graphical Statistics"
+    }
+  ],
+  "number_of_pages": 19,
+  "publication_date": "2012",
+  "publication_type": "Journal Article"
+}

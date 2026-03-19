@@ -1,0 +1,11 @@
+path,normalized_path,metric_id,score,passed,gold_value,extracted_value,reason,reasoning
+$.properties.ids,ids,string_exact,0.000000,false,arXiv:2405.06211v3,arXiv:2404.14928,,
+$.properties.number_of_pages,number_of_pages,integer_exact,0.000000,false,18,12,,
+$.properties.publication_type,publication_type,string_exact,0.000000,false,Preprint,Conference Paper,,
+$.properties.venue,venue,string_semantic,0.000000,false,,,,"The predicted value 'KDD 2024' is a specific conference, while the gold value 'arXiv' is a pre-print server. These are distinct types of publication venues and are not semantically equivalent. The pre..."
+$.properties.title,title,string_semantic,1.000000,true,,,,"The predicted string is semantically equivalent to the gold string. The only difference is the capitalization of 'Meeting' and the addition of a space, which are minor formatting variations and do not..."
+$.properties.publication_date,publication_date,string_semantic,0.000000,false,,,,"The gold string represents a specific date and time, while the predicted string is only a year. Furthermore, the years themselves are different (2017 vs 2024). The prediction is meaningfully incorrect..."
+$.properties.abstract,abstract,string_semantic,0.700000,true,,,,"The predicted string is a truncated version of the gold string. It accurately reproduces the beginning of the abstract but omits a significant portion of the content, including details about LLM limit..."
+$.properties.keywords,keywords,array_llm,1.000000,true,,,,"The predicted array perfectly matches the gold array. All six items in the gold array were found in the predicted array, and there were no spurious predictions. The only difference was a trailing peri..."
+$.properties.authors,authors,array_llm,0.875000,true,,,,"The gold and predicted arrays are mostly similar, with one key difference. All fields are evaluated using exact string matching. Most items match perfectly. However, for the gold item with 'name': 'Da..."
+$.properties.citations,citations,array_llm,0.000000,false,,,,"The gold array contains bibliographic entries as strings, while the predicted array contains structured objects with fields like 'ids', 'year', 'title', and 'authors'. This fundamental difference in s..."
